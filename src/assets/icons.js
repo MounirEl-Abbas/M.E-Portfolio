@@ -1,0 +1,10 @@
+export { GiHamburgerMenu } from "react-icons/gi";
+export { FaRedhat } from "react-icons/fa";
+export { AiFillGithub } from "react-icons/ai";
+export { FaLinkedin } from "react-icons/fa";
+export { GrDocumentPdf } from "react-icons/gr";
+export { AiOutlineHome } from "react-icons/ai";
+export { IoBarChartOutline } from "react-icons/io5";
+export { FcMultipleDevices } from "react-icons/fc";
+export { BsPerson } from "react-icons/bs";
+export { FiMail } from "react-icons/fi";
