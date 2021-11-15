@@ -1,11 +1,70 @@
+@import "./utils/config", "./utils/themes";
+
+/**********************
+Main CSS (General tags)
+**********************/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
+body {
+  background-color: $bgColor;
+  color: $textColor;
+  transition: all 0.3s linear;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
+}
+li {
+  list-style-type: none;
+}
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $ff-primary;
+}
+
+//Flexbox
+.portfolio {
+  display: flex;
+  width: 1550px;
+  height: 950px;
+  border: 3px solid $shade1;
+  background-color: $shade1;
+  box-shadow: 1px 1px 10px 1px rgba($color: #000, $alpha: 0.5);
+  .nav-container {
+    width: 20%;
+    background-color: $shade3;
+    border-right: 1px solid $compColor;
+  }
+  .page-container {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+.initials {
+  color: $accentColor;
+  font-weight: 600;
+}
+
+@import "./pages/navbar", "./pages/allPages", "./pages/home",
+  "./pages/experience", "./pages/about", "./pages/contact", "./pages/fullView";

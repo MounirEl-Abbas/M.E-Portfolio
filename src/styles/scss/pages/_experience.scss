@@ -1,0 +1,98 @@
+/**********************
+Skills/Projects Page
+**********************/
+//Skills Portion
+.experience-page {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.skills {
+  /* Main layout of skills */
+  border-bottom: 2px solid $accentColor;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: 2vw;
+  &-fundamentals,
+  &-additional,
+  &-learning {
+    width: 33%;
+  }
+  /* Skills Lists (Not Dropdown) */
+  ul:not(.panel) {
+    &::before {
+      content: attr(title);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $accentColor;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      height: 70px;
+      img {
+        width: 50px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/* Dropdown Button */
+.skills-learning {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  left: -50px;
+  width: 120%;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $accentColor;
+    cursor: pointer;
+    svg {
+      transition: transform 0.3s linear;
+    }
+  }
+  /* Dropdown Explanation */
+  .panel {
+    position: absolute;
+    left: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    background-color: $shade3;
+    border-radius: 5px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    li:not(:last-of-type) {
+      list-style-type: circle;
+      list-style-position: inside;
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  /* When panel is open */
+  .panel-open {
+    padding: 10px;
+    height: 150px;
+  }
+  .rotate-chevron {
+    transform: rotateZ(450deg);
+  }
+}
+
+//Projects Portion

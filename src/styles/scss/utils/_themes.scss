@@ -1,0 +1,64 @@
+// .light {
+//   $backgroundColor: #fff;
+//   $textColor: #408bbd;
+//   $buttonTextColor: #408bbd;
+//   $buttonTextTransform: none;
+//   $buttonTextHoverColor: #61b0e7;
+//   $buttonColor: #fff;
+//   $buttonBorder: 2px solid #fff;
+// }
+// body.dark {
+//   @include theme(
+//   $backgroundColor: #222;
+//   $textColor: #ddd;
+//   $buttonTextColor: #aaa;
+//   $buttonTextTransform: uppercase;
+//   $buttonTextHoverColor: #ddd;
+//   $buttonColor: #333;
+//   $buttonBorder: 1px solid #aaa;
+//   )
+// }
+
+//Theme colors
+$light-bgColor: #ddd;
+$light-shade1: #fff;
+$light-shade2: #bbb;
+$light-shade3: #ccc;
+$light-textColor: #222;
+$light-compColor: #bbb;
+$light-accentColor: #408bdd;
+
+$dark-bgColor: #444;
+$dark-shade1: #111;
+$dark-shade2: #222;
+$dark-shade3: #333;
+$dark-textColor: #ddd;
+$dark-compColor: #444;
+$dark-accentColor: #ed7014;
+
+$bgColor: var(--bgColor);
+$shade1: var(--shade1);
+$shade2: var(--shade2);
+$shade3: var(--shade3);
+$textColor: var(--textColor);
+$compColor: var(--compColor);
+$accentColor: var(--accentColor);
+
+body.dark {
+  --bgColor: #{$dark-bgColor};
+  --shade1: #{$dark-shade1};
+  --shade2: #{$dark-shade2};
+  --shade3: #{$dark-shade3};
+  --textColor: #{$dark-textColor};
+  --compColor: #{$dark-compColor};
+  --accentColor: #{$dark-accentColor};
+}
+body.light {
+  --bgColor: #{$light-bgColor};
+  --shade1: #{$light-shade1};
+  --shade2: #{$light-shade2};
+  --shade3: #{$light-shade3};
+  --textColor: #{$light-textColor};
+  --compColor: #{$light-compColor};
+  --accentColor: #{$light-accentColor};
+}

@@ -1,0 +1,67 @@
+/**********************
+Home Page
+**********************/
+.home {
+  position: relative;
+}
+.home-intro {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+  color: #eee;
+
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  p:first-of-type {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+    position: relative;
+    &::after {
+      content: "";
+      width: 180px;
+      height: 4px;
+      background-color: $accentColor;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  p:last-of-type {
+    font-size: 1.3rem;
+    padding-bottom: 5rem;
+  }
+  &-btns {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-evenly;
+    a {
+      border: 3px solid $accentColor;
+      border-radius: 5px;
+      padding: 14px;
+      transition: all 0.2s linear;
+      font-size: 1.2rem;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    a:first-of-type {
+      background-color: $accentColor;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+/**********************
+Contact Page
+**********************/
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &:hover {
+      transform: scale(0.98);
+    }
+    svg {
+      background-color: $accentColor;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      padding: 10px;
+      color: #fff;
+    }
+  }
+}
