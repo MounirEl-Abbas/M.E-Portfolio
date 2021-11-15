@@ -1,36 +1,99 @@
 import React from "react";
+import { useAppContext } from "../../context/AppContext";
+
+//images
+import {
+  HTMLImg,
+  CSSImg,
+  javascriptImg,
+  reactImg,
+  reduxImg,
+  typescriptImg,
+  sassImg,
+  gitImg,
+  nodeImg,
+  expressImg,
+  mongoDBImg,
+} from "../../assets/icons";
+
+//icons
+import { FaChevronRight } from "../../assets/icons";
 
 const Skills = () => {
+  const { isDropdownOpen, setIsDropdownOpen } = useAppContext();
   return (
-    <article className="skills" style={{ border: "3px solid red" }}>
-      <h2>Skills</h2>
-      <ul class="skills-fundamentals" title="Fundamentals">
-        {/* ul[title]::before {
-        content:attr(title)
-        } */}
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>React</li>
+    <article className="skills">
+      <ul className="skills-fundamentals" title="Fundamentals">
+        <li>
+          <img src={HTMLImg} alt="" />
+          <p>HTML</p>
+        </li>
+        <li>
+          <img src={CSSImg} alt="" />
+          <p>CSS</p>
+        </li>
+        <li>
+          <img src={javascriptImg} alt="" />
+          <p>Javascript</p>
+        </li>
+        <li>
+          <img src={reactImg} alt="" />
+          <p>React</p>
+        </li>
       </ul>
-      <ul class="skills-additional" title="Noteworthy Additional Skills">
-        <li>Redux</li>
-        <li>Typescript</li>
-        <li>Sass</li>
-        <li>Git</li>
+      <ul className="skills-additional" title="Noteworthy Skills">
+        <li>
+          <img src={gitImg} alt="" />
+          <p>Git</p>
+        </li>
+        <li>
+          <img src={sassImg} alt="" />
+          <p>Sass</p>
+        </li>
+        <li>
+          <img src={reduxImg} alt="" />
+          <p>Redux</p>
+        </li>
+        <li>
+          <img src={typescriptImg} alt="" />
+          <p>Typescript</p>
+        </li>
       </ul>
-      <ul class="skills-inprogress" title="Currently Learning">
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>MongoDB</li>
-      </ul>
-      <h4>Why am I learning back-end?</h4>
-      <p>
-        Understanding how APIs function under the hood, how query parameters are
-        developed, as well as HTTP requests (CRUD operations) have proven
-        beneficial in the advancement of my front-end knowledge. I will shift my
-        focus back to front-end frameworks and/or libraries shortly.
-      </p>
+      <div className="skills-learning">
+        <ul className="skills-inprogress" title="Currently Learning">
+          <li>
+            <img src={nodeImg} alt="" />
+            <p>Node.js</p>
+          </li>
+          <li>
+            <img src={expressImg} alt="" />
+            <p>Express.js</p>
+          </li>
+          <li>
+            <img src={mongoDBImg} alt="" />
+            <p>MongoDB</p>
+          </li>
+        </ul>
+        <div className="dropdown">
+          <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+            Why am I learning back-end?{" "}
+            <FaChevronRight
+              className={`${isDropdownOpen ? "rotate-chevron" : ""}`}
+            />
+          </button>
+          <ul className={`${isDropdownOpen ? "panel panel-open" : "panel"}`}>
+            <li>Understanding how APIs function under the hood</li>
+            <li>How query parameters are set</li>
+            <li>HTTP requests (CRUD operations)</li>
+            <li>
+              <p>
+                Have collectively proven beneficial in the advancement of my
+                front-end knowledge.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </article>
   );
 };

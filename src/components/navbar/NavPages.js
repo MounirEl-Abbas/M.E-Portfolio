@@ -1,53 +1,58 @@
 import React from "react";
+
+//icons
 import { AiOutlineHome } from "../../assets/icons";
-import { IoBarChartOutline } from "../../assets/icons";
-import { FcMultipleDevices } from "../../assets/icons";
+import { VscCode } from "../../assets/icons";
 import { BsPerson } from "../../assets/icons";
 import { FiMail } from "../../assets/icons";
 
+//context
+import { useAppContext } from "../../context/AppContext";
 const NavPages = () => {
+  const { handleChangePage, currentPage } = useAppContext();
+
   return (
     <section className="nav-pages">
       <ul>
-        <li>
-          <button>
+        <li className={`${currentPage === "home" ? "current-page" : ""}`}>
+          <a onClick={(e) => handleChangePage(e)} name="home" href="#home">
             <i>
               <AiOutlineHome />
+              <span>Home</span>
             </i>
-            <span>Home</span>
-          </button>
+          </a>
         </li>
-        <li>
-          <button>
+        <li className={`${currentPage === "experience" ? "current-page" : ""}`}>
+          <a
+            onClick={(e) => handleChangePage(e)}
+            name="experience"
+            href="#experience"
+          >
             <i>
-              <IoBarChartOutline />
+              <VscCode />
+              <span>Projects</span>
             </i>
-            <span>Skills</span>
-          </button>
+          </a>
         </li>
-        <li>
-          <button>
-            <i>
-              <FcMultipleDevices />
-            </i>
-            <span>Projects</span>
-          </button>
-        </li>
-        <li>
-          <button>
+        <li className={`${currentPage === "about" ? "current-page" : ""}`}>
+          <a onClick={(e) => handleChangePage(e)} name="about" href="#about">
             <i>
               <BsPerson />
+              <span>About</span>
             </i>
-            <span>About</span>
-          </button>
+          </a>
         </li>
-        <li>
-          <button>
+        <li className={`${currentPage === "contact" ? "current-page" : ""}`}>
+          <a
+            onClick={(e) => handleChangePage(e)}
+            name="contact"
+            href="#contact"
+          >
             <i>
               <FiMail />
+              <span>Contact</span>
             </i>
-            <span>Contact</span>
-          </button>
+          </a>
         </li>
       </ul>
     </section>

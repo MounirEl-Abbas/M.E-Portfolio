@@ -1,30 +1,47 @@
 import React from "react";
-
+import { useAppContext } from "../../context/AppContext";
 //icons
-import { AiFillGithub } from "../../assets/icons";
-import { FaLinkedin } from "../../assets/icons";
-import { GrDocumentPdf } from "../../assets/icons";
+import {
+  AiFillGithub,
+  FaLinkedin,
+  VscFilePdf,
+  SiElasticstack,
+} from "../../assets/icons";
 const NavSocials = () => {
+  const { setIsShowAll, isShowAll } = useAppContext();
   return (
     <section className="nav-socials">
       <ul>
         <li>
-          <a href="">
+          <a
+            href="https://github.com/MounirEl-Abbas"
+            aria-label="View Mounir on GitHub"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub />
           </a>
         </li>
         <li>
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/mounir-el-abbas-04b733212/"
+            aria-label="View Mounir on LinkedIn"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
         </li>
         <li>
-          <a href="">
-            <GrDocumentPdf />
+          <a href="!#">
+            <VscFilePdf />
             <span>Resume</span>
           </a>
         </li>
       </ul>
+      <button onClick={() => setIsShowAll(!isShowAll)}>
+        Change Layout <SiElasticstack />
+      </button>
     </section>
   );
 };
