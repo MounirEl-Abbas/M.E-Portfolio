@@ -5,11 +5,8 @@ import { useAppContext } from "../../context/AppContext";
 const Home = () => {
   const { handleChangePage } = useAppContext();
   return (
-    <section className="home page-container">
-      <figure className="home img-container">
-        <img src={HomeBG} alt="Laptop outside facing a river in a valley." />
-      </figure>
-      <article className="home-intro">
+    <section className="home-page-container">
+      <header className="home-page-content">
         <h1>Hello!</h1>
         <p>I'm Mounir El-Abbas, a Front-End Web Developer.</p>
         <p>
@@ -19,7 +16,8 @@ const Home = () => {
           </span>
           for your Web Development needs!
         </p>
-        <div className="home-intro-btns">
+
+        <div className="home-page-btns">
           <a
             href="#experience"
             onClick={(e) => handleChangePage(e)}
@@ -31,7 +29,10 @@ const Home = () => {
             More About <span className="initials">ME</span>
           </a>
         </div>
-      </article>
+      </header>
+      <figure className="home-img">
+        <img src={HomeBG} alt="Laptop outside facing a river in a valley." />
+      </figure>
     </section>
   );
 };

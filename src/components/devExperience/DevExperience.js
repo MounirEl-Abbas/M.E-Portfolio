@@ -7,19 +7,19 @@ const DevExperience = () => {
   const { isShowAll } = useAppContext();
 
   return (
-    <section className="page-container">
+    <section className="page-container experience-page">
       <header>
         <h2>
           Skills <span className="initials">&</span> Projects
         </h2>
       </header>
-      <figure className="experience img-container">
+      <figure className="img-container experience-img">
         <img
           src={skillsImg}
           alt="Keyboard with custom ESC keycap and a cup of coffee."
         />
       </figure>
-      <main class="experience-page page-content">
+      <main className="page-content experience-page-content">
         <Skills />
         <Projects />
       </main>

@@ -8,26 +8,26 @@ const Contact = () => {
   const { isShowAll } = useAppContext();
 
   return (
-    <section className="contact-page-container page-container">
+    <section className="page-container contact-page">
       <header>
         <h2>
           Contact <span className="initials">ME</span>
         </h2>
       </header>
-      <figure className="contact img-container">
+      <figure className="img-container contact-img">
         <img
           src={contactImg}
           alt="Electronics on a bed with 'developer' written on the phone screen."
         />
       </figure>
-      <main className="contact-page page-content">
-        <p>
+      <main className="page-content contact-page-content">
+        <article>
           <a href="mailto:eamounir1@gmail.com" aria-label="Email Mounir">
             <FiMail />
+            <p>eamounir1@gmail.com</p>
           </a>
-          <a href="mailto:eamounir1@gmail.com">eamounir1@gmail.com</a>
-        </p>
-        <p>
+        </article>
+        <article>
           <a
             href="https://github.com/MounirEl-Abbas"
             aria-label="View Mounir on GitHub"
@@ -35,17 +35,10 @@ const Contact = () => {
             rel="noreferrer"
           >
             <AiFillGithub />
+            <p>github.com/MounirEl-Abbas</p>
           </a>
-          <a
-            href="https://github.com/MounirEl-Abbas"
-            target="_blank"
-            rel="noreferrer"
-          >
-            github.com/MounirEl-Abbas
-          </a>
-        </p>
-        <p>
-          {" "}
+        </article>
+        <article>
           <a
             href="https://www.linkedin.com/in/mounir-el-abbas-04b733212/"
             aria-label="View Mounir on LinkedIn"
@@ -53,15 +46,9 @@ const Contact = () => {
             rel="noreferrer"
           >
             <FaLinkedin />
+            <p>linkedin.com/in/mounir-el-abbas</p>
           </a>
-          <a
-            href="https://www.linkedin.com/in/mounir-el-abbas-04b733212/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            linkedin.com/in/mounir-el-abbas
-          </a>
-        </p>
+        </article>
       </main>
     </section>
   );

@@ -23,14 +23,14 @@ const App = () => {
       )}
       <div className="app-container">
         {isShowAll ? (
-          <div className="show-all">
+          <div className="portfolio-full-view">
             <Home />
             <DevExperience />
             <About />
             <Contact />
           </div>
         ) : (
-          <div className="portfolio">
+          <div className="portfolio-tabular-view">
             <Navbar />
             {currentPage === "home" ? (
               <Home />

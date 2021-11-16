@@ -36,50 +36,49 @@ const About = () => {
   };
   const [currentImage, setCurrentImage] = useState(typing1);
 
-  const switchFrames = (imgTag) => {
+  const switchFrames = () => {
     let n = 1;
     setInterval(() => {
-      if (n >= 14) {
-        n = 0;
-      }
-      n++;
+      n >= 14 ? (n = 1) : n++;
       let nextImg = typingImages[n];
       setCurrentImage(nextImg);
     }, 100);
-    clearInterval();
+    // clearInterval();
   };
 
   useEffect(() => {
-    const frameImg = document.getElementById("frameByFrameImg");
-    switchFrames(frameImg);
+    switchFrames();
   }, []);
 
   return (
-    <section className="page-container">
+    <section className="page-container about-page">
       <header>
         <h2>
           About <span className="initials">ME</span>
         </h2>
       </header>
-      <figure className="about img-container">
+      <figure className="img-container about-img">
         <img
           src={aboutImg}
           alt="Electronics on a bed with 'developer' written on the phone screen."
         />
       </figure>
-      <main className="about-page page-content">
+      <main className="page-content about-page-content">
         <img src={currentImage} id="frameByFrameImg"></img>
-        <h2>
-          Goal-oriented, enthusiastic front-end developer. Passionate for
-          intuitive and comprehensible website development.
-        </h2>
+        <h4>
+          <strong>
+            Goal-oriented, enthusiastic front-end developer. Passionate for
+            intuitive and comprehensible website development.
+          </strong>
+        </h4>
 
-        <section className="related">
-          <p>I'm Mounir El-Abbas (Moe for short).</p>
+        <section>
+          <p>Hello again! </p>
           <p>
+            I'm Mounir El-Abbas (Moe for short). <br />
             Although my path in formal education has taken many twists and
             turns, I've never stopped engaging my passion of helping others and
-            solving problems.
+            <em> solving problems</em>.
           </p>
           <p>
             I’ve always sought out opportunities and challenges. I enrolled in
@@ -88,7 +87,8 @@ const About = () => {
             Robotics Programming at St. Clair College made clear the
             desirability of practical knowledge. Finally, I've found something
             that is truly meaningful to me. As a web developer I am encouraged
-            to apply my obsessive attention to detail and perfectionism.
+            to apply my <em>obsessive attention to detail and perfectionism</em>
+            .
           </p>
           <p>
             I am extremely grateful for your interest in me and I look forward
@@ -102,7 +102,7 @@ const About = () => {
             “First, solve the problem. Then, write the code.”
             <cite>-John Johnson</cite>
           </blockquote>
-          <div></div>
+          <div id="quote-sep"></div>
           <blockquote>
             "Man is not disturbed by things, but of the views he takes of them."
             <cite>-Epictetus</cite>
