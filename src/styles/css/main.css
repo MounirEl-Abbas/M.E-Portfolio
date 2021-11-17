@@ -152,11 +152,11 @@ All Pages (NOT HOME)
   color: #fff;
   letter-spacing: 2px;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   max-width: 200px;
   background-color: rgba(255, 255, 255, 0.2);
   outline: 1px solid #000;
-  outline-offset: -10px;
+  outline-offset: -0.5rem;
 }
 
 .page-container:not(.home-page-container) .img-container {
@@ -187,8 +187,8 @@ All Pages (NOT HOME)
 }
 
 .page-content {
-  padding: 1rem 50px;
-  height: calc(100% - 320px);
+  padding: 1rem;
+  height: calc(100% - 30%);
 }
 
 /*******************************/
@@ -628,41 +628,40 @@ Projects Section
 /**********************
 About Page
 **********************/
-.about-page-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.about-page-content #frameByFrameImg {
+#frameByFrameImg {
   display: none;
   position: absolute;
-  top: 3rem;
-  right: 3rem;
-  width: 180px;
-  height: 160px;
+  top: 0.5rem;
+  right: 1rem;
+  width: 160px;
+  height: 140px;
   outline: 6px solid var(--accentColor);
   outline-offset: -6px;
   box-shadow: 1px 1px 10px 1px #000;
 }
 
+.about-page-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden auto;
+}
+
 .about-page-content h4 {
-  border-left: 8px solid var(--accentColor);
-  width: 70%;
-  max-width: 750px;
-  padding: 10px;
+  border-left: 0.4rem solid var(--accentColor);
+  width: 100%;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .about-page-content section {
   text-align: left;
-  margin: 20px auto 2rem 50px;
-  width: 70%;
+  width: 100%;
 }
 
 .about-page-content section p:not(:first-of-type) {
-  margin-left: 50px;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 .about-page-content section em {
@@ -742,15 +741,24 @@ Contact Page
   html body h2 {
     font-size: 3rem;
   }
-  html .page-container:not(.home-page-container) header h2 {
-    padding: 2rem 3rem;
-    max-width: none;
-  }
   .sideMenu {
     width: 250px;
   }
   .home-page-content .home-page-btns a {
     padding: 10px;
+  }
+  .page-container:not(.home-page-container) header h2 {
+    padding: 2rem 3rem;
+    max-width: none;
+  }
+  .page-content {
+    padding: 1rem 3rem;
+  }
+  .about-page-content {
+    justify-content: space-evenly;
+  }
+  .about-page-content h4 {
+    max-width: 450px;
   }
 }
 
@@ -760,6 +768,9 @@ Contact Page
   }
   html body {
     background-color: orange;
+  }
+  html #frameByFrameImg {
+    display: block;
   }
   .home-page-container header {
     height: 50%;
@@ -784,6 +795,9 @@ Contact Page
   .home-page-content .home-page-btns a {
     padding: 20px;
     font-size: 1.2rem;
+  }
+  .about-page-content section p:not(:first-of-type) {
+    margin-top: 1rem;
   }
 }
 
@@ -822,6 +836,14 @@ Contact Page
   .portfolio-tabular-view .page-container {
     width: 80%;
   }
+  .about-page-content h4 {
+    max-width: 1600px;
+    width: 85%;
+    font-size: 1.3rem;
+  }
+  .about-page-content section {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -831,11 +853,17 @@ Contact Page
   html body {
     background-color: green;
   }
+  #frameByFrameImg {
+    top: 2rem;
+    right: 2rem;
+    width: 320px;
+    height: 280px;
+  }
 }
 
 @media (min-width: 3000px) {
   html {
-    font-size: 40px;
+    font-size: 30px;
   }
   html body {
     background-color: orange;
@@ -848,7 +876,7 @@ Contact Page
 
 @media (min-width: 3840px) {
   html {
-    font-size: 46px;
+    font-size: 34px;
   }
   html body {
     background-color: red;

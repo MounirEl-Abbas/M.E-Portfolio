@@ -17,16 +17,29 @@
         font-size: 3rem;
       }
     }
-    .page-container:not(.home-page-container) header h2 {
-      padding: 2rem 3rem;
-      max-width: none;
-    }
   }
   .sideMenu {
     width: 250px;
   }
+  //Home page btns
   .home-page-content .home-page-btns a {
     padding: 10px;
+  }
+  //Pages header-title (not home)
+  .page-container:not(.home-page-container) header h2 {
+    padding: 2rem 3rem;
+    max-width: none;
+  }
+  //All Page content
+  .page-content {
+    padding: 1rem 3rem;
+  }
+  //About Page page-content
+  .about-page-content {
+    justify-content: space-evenly;
+    h4 {
+      max-width: 450px;
+    }
   }
 }
 
@@ -36,6 +49,9 @@
     font-size: 14px;
     body {
       background-color: orange;
+    }
+    #frameByFrameImg {
+      display: block;
     }
   }
 
@@ -67,6 +83,9 @@
         font-size: 1.2rem;
       }
     }
+  }
+  .about-page-content section p:not(:first-of-type) {
+    margin-top: 1rem;
   }
 }
 
@@ -111,6 +130,16 @@
       width: 80%;
     }
   }
+  .about-page-content {
+    h4 {
+      max-width: 1600px;
+      width: 85%;
+      font-size: 1.3rem;
+    }
+    section {
+      width: 80%;
+    }
+  }
 }
 
 @media (min-width: 1920px) {
@@ -121,11 +150,17 @@
       background-color: green;
     }
   }
+  #frameByFrameImg {
+    top: 2rem;
+    right: 2rem;
+    width: 320px;
+    height: 280px;
+  }
 }
 @media (min-width: 3000px) {
   //Transitory query
   html {
-    font-size: 40px;
+    font-size: 30px;
     body {
       background-color: orange;
     }
@@ -139,7 +174,7 @@
 @media (min-width: 3840px) {
   //For 4K Displays (Ultra HD) 3840x2160
   html {
-    font-size: 46px;
+    font-size: 34px;
     body {
       background-color: red;
     }
