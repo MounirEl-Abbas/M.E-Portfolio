@@ -525,19 +525,24 @@ Skills Section
 .skills {
   /* Main layout of skills */
   border-bottom: 2px solid var(--accentColor);
+  padding-bottom: 20px;
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  margin: auto;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: fit-content;
   /* Skills Lists */
 }
 
-.skills-fundamentals, .skills-additional, .skills-learning {
-  width: 33%;
+.skills ul:not(.panel) {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
 }
 
 .skills ul:not(.panel)::before {
   content: attr(title);
+  position: absolute;
+  top: -5px;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--accentColor);
@@ -545,51 +550,68 @@ Skills Section
 
 .skills ul:not(.panel) li {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   margin: 20px 0;
   height: 70px;
 }
 
 .skills ul:not(.panel) li img {
-  width: 50px;
+  width: 40px;
   margin-right: 10px;
 }
 
 /* Dropdown Button */
 .skills-learning {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-learning .skills-inprogress {
+  width: 100%;
 }
 
 .dropdown {
-  position: absolute;
-  left: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  position: relative;
+  width: 100%;
   /* Dropdown Explanation */
   /* When panel is open */
 }
 
 .dropdown button {
+  width: 600px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-color: transparent;
   border: none;
-  width: 300px;
-  padding: 10px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--accentColor);
   cursor: pointer;
 }
 
 .dropdown button svg {
+  width: 10px;
+  margin-left: 10px;
   transition: transform 0.3s linear;
 }
 
 .dropdown .panel {
   position: absolute;
-  right: -25px;
+  right: 0;
+  left: 0;
+  top: 70%;
+  margin: auto;
   height: 0;
-  width: 475px;
+  width: 90%;
+  max-width: 500px;
   overflow: hidden;
   transition: all 0.3s linear;
   background-color: var(--shade3);
@@ -611,10 +633,10 @@ Skills Section
 }
 
 .dropdown .panel-open {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
   height: 200px;
 }
 
@@ -760,6 +782,39 @@ Contact Page
   .about-page-content h4 {
     max-width: 450px;
   }
+  .skills {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+  }
+  .skills-fundamentals, .skills-additional, .skills-learning {
+    width: 33%;
+  }
+  .skills .skills-inprogress {
+    height: 75%;
+  }
+  .skills ul:not(.panel) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .skills ul:not(.panel)::before {
+    position: static;
+  }
+  .skills ul:not(.panel) li {
+    height: 20%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .skills ul:not(.panel) li img {
+    width: 50px;
+  }
+  .dropdown .panel {
+    width: 500px;
+    left: auto;
+    right: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -844,6 +899,13 @@ Contact Page
   .about-page-content section {
     width: 80%;
   }
+  .dropdown .panel {
+    max-width: none;
+    width: 40vw;
+  }
+  .dropdown .panel-open {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -858,6 +920,15 @@ Contact Page
     right: 2rem;
     width: 320px;
     height: 280px;
+  }
+  .skills-fundamentals,
+  .skills-additional,
+  .skills-learning {
+    height: 600px;
+  }
+  .skills ul:not(.panel) {
+    border: 1px solid red;
+    justify-content: space-between;
   }
 }
 

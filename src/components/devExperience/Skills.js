@@ -78,7 +78,7 @@ const Skills = () => {
           </ul>
           <div className="dropdown">
             <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-              Why am I learning back-end?{" "}
+              Why am I learning back-end?
               <FaChevronRight
                 className={`${isDropdownOpen ? "rotate-chevron" : ""}`}
               />

@@ -14,30 +14,34 @@ Skills Section
 .skills {
   /* Main layout of skills */
   border-bottom: 2px solid $accentColor;
+  padding-bottom: 20px;
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  margin: auto;
-  &-fundamentals,
-  &-additional,
-  &-learning {
-    width: 33%;
-  }
+  flex-flow: column nowrap;
+  width: 100%;
+  height: fit-content;
+
   /* Skills Lists */
   ul:not(.panel) {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
     &::before {
       content: attr(title);
+      position: absolute;
+      top: -5px;
       font-size: 1.2rem;
       font-weight: 600;
       color: $accentColor;
     }
     li {
       display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
       margin: 20px 0;
       height: 70px;
       img {
-        width: 50px;
+        width: 40px;
         margin-right: 10px;
       }
     }
@@ -46,39 +50,54 @@ Skills Section
 
 /* Dropdown Button */
 .skills-learning {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .skills-inprogress {
+    width: 100%;
+  }
 }
 .dropdown {
-  position: absolute;
-  left: -50px;
-  // width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  position: relative;
+  width: 100%;
+
   button {
+    width: 600px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     background-color: transparent;
     border: none;
-    width: 300px;
-    padding: 10px;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: bold;
     color: $accentColor;
     cursor: pointer;
     svg {
+      width: 10px;
+      margin-left: 10px;
       transition: transform 0.3s linear;
     }
   }
   /* Dropdown Explanation */
   .panel {
     position: absolute;
-    right: -25px;
+    right: 0;
+    left: 0;
+    top: 70%;
+    margin: auto;
     height: 0;
-    width: 475px;
+    width: 90%;
+    max-width: 500px;
     overflow: hidden;
     transition: all 0.3s linear;
     background-color: $shade3;
     outline: 1px solid $abs-black;
     outline-offset: -5px;
+
     border-radius: 5px;
     overflow-y: auto;
     &::-webkit-scrollbar {
@@ -93,10 +112,10 @@ Skills Section
   }
   /* When panel is open */
   .panel-open {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
     height: 200px;
   }
   .rotate-chevron {
