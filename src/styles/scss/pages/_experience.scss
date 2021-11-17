@@ -1,26 +1,29 @@
 /**********************
 Skills/Projects Page
 **********************/
-//Skills Portion
 .experience-page {
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
+/************************
+Skills Section
+************************/
 .skills {
   /* Main layout of skills */
   border-bottom: 2px solid $accentColor;
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-left: 2vw;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
   &-fundamentals,
   &-additional,
   &-learning {
     width: 33%;
   }
-  /* Skills Lists (Not Dropdown) */
+  /* Skills Lists */
   ul:not(.panel) {
     &::before {
       content: attr(title);
@@ -48,7 +51,7 @@ Skills/Projects Page
 .dropdown {
   position: absolute;
   left: -50px;
-  width: 120%;
+  // width: 120%;
   button {
     display: flex;
     align-items: center;
@@ -57,7 +60,7 @@ Skills/Projects Page
     border: none;
     width: 300px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
     color: $accentColor;
     cursor: pointer;
@@ -68,11 +71,14 @@ Skills/Projects Page
   /* Dropdown Explanation */
   .panel {
     position: absolute;
-    left: 10px;
+    right: -25px;
     height: 0;
+    width: 475px;
     overflow: hidden;
     transition: all 0.3s linear;
     background-color: $shade3;
+    outline: 1px solid $abs-black;
+    outline-offset: -5px;
     border-radius: 5px;
     overflow-y: auto;
     &::-webkit-scrollbar {
@@ -87,12 +93,17 @@ Skills/Projects Page
   }
   /* When panel is open */
   .panel-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
-    height: 150px;
+    height: 200px;
   }
   .rotate-chevron {
     transform: rotateZ(450deg);
   }
 }
 
-//Projects Portion
+/************************
+Projects Section
+************************/

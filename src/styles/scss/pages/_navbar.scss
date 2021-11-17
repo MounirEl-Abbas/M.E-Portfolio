@@ -1,56 +1,60 @@
 /**********************
+Side menu
+**********************/
+.sideMenu {
+  position: absolute;
+  transform: translateX(-100vw);
+  left: 0;
+  border: 3px solid red;
+  height: 100%;
+  z-index: 10;
+  transition: all 0.3s linear;
+  padding: 5px;
+  border: 1px solid $abs-black;
+  background-color: $shade3;
+  width: 200px;
+  box-shadow: 0px 2px 5px 1px $abs-black;
+  &-Open {
+    transform: translateX(0);
+  }
+  .nav-pages ul a:hover {
+    padding-left: 20px;
+  }
+  .nav-pages .current-page {
+    background-color: inherit;
+    border-right: none;
+    color: $accentColor;
+  }
+}
+/**********************
 Navbar
 **********************/
 
-.nav-container {
-  position: relative;
-
-  #hat-icon {
-    position: absolute;
-    top: -60px;
-    left: -40px;
-    font-size: 140px;
-    transform: rotateY(180deg);
-    mix-blend-mode: multiply;
-    z-index: 2;
-  }
-  &::after {
-    content: "";
-    width: 86px;
-    height: 34px;
-    background-color: $accentColor;
-    position: absolute;
-    top: -21px;
-    left: -18px;
-    border-radius: 50%;
-    transform: rotateZ(-13deg);
-    z-index: 1;
-  }
-}
 /* Navbar content */
 .nav {
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
-  align-items: center;
-
+  justify-content: center;
   &-header {
     height: 30%;
-    padding-top: 40%;
-    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    h2 {
+    width: 100%;
+    letter-spacing: 2px;
+    h3 {
       padding-bottom: 0.8rem;
-      span {
-        display: block;
-      }
+      width: 100%;
     }
     p {
       position: relative;
       &::after {
         content: "";
         position: absolute;
-        top: 35px;
+        bottom: -0.5rem;
         left: 0;
         width: 100%;
         height: 2px;
@@ -65,25 +69,31 @@ Navbar
       display: flex;
       flex-flow: column nowrap;
       font-size: 1.4rem;
+      li:first-of-type {
+        border-top: 1px solid $shade1;
+      }
       li {
         border-right: 6px solid transparent;
         width: 100%;
-        transition: all 0.2s linear;
-        &:hover {
-          padding-left: 10px;
-        }
+        border-bottom: 1px solid $shade1;
+
         a {
-          padding: 15px 25px;
+          padding: 25px 20px;
+          transition: all 0.2s linear;
+
           background: none;
           border: none;
           display: block;
+          &:hover {
+            padding-left: 30px;
+          }
           i {
             font-style: normal;
             display: flex;
             align-items: center;
             svg {
-              font-size: 26px;
-              margin-right: 10px;
+              font-size: 2rem;
+              margin-right: 0.8rem;
             }
           }
         }
@@ -99,11 +109,12 @@ Navbar
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
     ul {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       width: 80%;
+      height: 60%;
       margin: auto;
       li:hover {
         opacity: 0.7;
@@ -114,32 +125,39 @@ Navbar
         flex-direction: column;
         align-items: center;
         span {
-          font-size: 8px;
+          font-size: 1rem;
           color: $accentColor;
         }
       }
       svg {
-        font-size: 26px;
+        font-size: 2rem;
         color: $accentColor;
       }
     }
-    button {
-      height: 70px;
-      background-color: $accentColor;
-      border: 4px solid $shade2;
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      color: $textColor;
-      cursor: pointer;
-      transform: all 0.3s linear;
-      &:hover {
-        background-color: $textColor;
-        color: $accentColor;
-      }
-    }
+  }
+}
+//Hat Icon
+.nav-container {
+  position: relative;
+
+  #hat-icon {
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    transform: rotateY(180deg);
+    mix-blend-mode: multiply;
+    z-index: 2;
+  }
+  &::after {
+    content: "";
+    width: 86px;
+    height: 34px;
+    background-color: $accentColor;
+    position: absolute;
+    top: -21px;
+    left: -18px;
+    border-radius: 50%;
+    transform: rotateZ(-13deg);
+    z-index: 1;
   }
 }

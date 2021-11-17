@@ -1,0 +1,147 @@
+@media (min-width: 200px) {
+  // For Phones -- 200px - 600px
+  html {
+    font-size: 12px;
+    body {
+      background-color: purple;
+    }
+  }
+}
+@media (min-width: 600px) {
+  //For Tablets -- 600px - 768px
+  html {
+    font-size: 12px;
+    body {
+      background-color: purple;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    .page-container:not(.home-page-container) header h2 {
+      padding: 2rem 3rem;
+      max-width: none;
+    }
+  }
+  .sideMenu {
+    width: 250px;
+  }
+  .home-page-content .home-page-btns a {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  //For Laptops -- 768px - 992px
+  html {
+    font-size: 14px;
+    body {
+      background-color: orange;
+    }
+  }
+
+  .home-page-container {
+    header {
+      height: 50%;
+
+      p:first-of-type {
+        position: relative;
+        &::after {
+          content: "";
+          max-width: 10rem;
+          height: 0.3rem;
+          background-color: $accentColor;
+          position: absolute;
+          top: 2rem;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .home-page-content {
+    .home-page-btns {
+      justify-content: space-evenly;
+      a {
+        padding: 20px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  //For Large Laptops -- 992px - 1280px
+  html {
+    font-size: 14px;
+    body {
+      background-color: yellow;
+    }
+  }
+
+  #menu-btn {
+    display: none;
+  }
+  .sideMenu {
+    display: none;
+  }
+  .nav-container {
+    width: 25%;
+    display: block;
+    // transform: translateX(0);
+  }
+  .page-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1280px) {
+  //For HD Screens/Desktop Monitors -- 1280px - 1920px
+  html {
+    font-size: 18px;
+    body {
+      background-color: blue;
+    }
+  }
+  .portfolio-tabular-view {
+    .nav-container {
+      width: 20%;
+    }
+    .page-container {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  //For Higher Resolution Screens/Large Monitors -- 1920px - 3840px
+  html {
+    font-size: 22px;
+    body {
+      background-color: green;
+    }
+  }
+}
+@media (min-width: 3000px) {
+  //Transitory query
+  html {
+    font-size: 40px;
+    body {
+      background-color: orange;
+    }
+  }
+
+  .home-page-btns {
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+}
+@media (min-width: 3840px) {
+  //For 4K Displays (Ultra HD) 3840x2160
+  html {
+    font-size: 46px;
+    body {
+      background-color: red;
+    }
+  }
+}

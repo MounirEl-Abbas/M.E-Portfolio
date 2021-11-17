@@ -1,46 +1,42 @@
 /**********************
 About Page
 **********************/
-.about-page {
+.about-page-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   #frameByFrameImg {
-    // border: 4px solid $accentColor;
-    outline: 6px solid $accentColor;
-    outline-offset: -6px;
+    display: none;
     position: absolute;
-    right: 100px;
-    top: 350px;
+    top: 3rem;
+    right: 3rem;
     width: 180px;
     height: 160px;
-    box-shadow: 1px 1px 10px 1px black;
+    outline: 6px solid $accentColor;
+    outline-offset: -6px;
+    box-shadow: 1px 1px 10px 1px $abs-black;
   }
-  h2 {
+  h4 {
     border-left: 8px solid $accentColor;
-    width: 700px;
+    width: 70%;
+    max-width: 750px;
     padding: 10px;
-    margin-top: -10px;
   }
   section {
     text-align: left;
-    margin: 20px auto 50px 50px;
+    margin: 20px auto 2rem 50px;
+    width: 70%;
+    p:not(:first-of-type) {
+      margin-left: 50px;
+      margin-top: 1rem;
+    }
+    em {
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
   }
 
-  p {
-    width: 600px;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  // p:first-of-type {
-  // }
-  p:nth-of-type(2) {
-    margin-left: 50px;
-  }
-  p:nth-of-type(3) {
-    margin-left: 50px;
-    width: 800px;
-  }
-  p:last-of-type {
-    margin-left: 50px;
-  }
   .quotes {
     display: flex;
     justify-content: space-between;
@@ -53,7 +49,7 @@ About Page
     blockquote:first-of-type {
       text-align: right;
     }
-    div {
+    #quote-sep {
       border-right: 4px solid $accentColor;
     }
   }
