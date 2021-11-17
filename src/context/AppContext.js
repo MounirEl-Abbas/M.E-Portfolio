@@ -9,6 +9,7 @@ const AppContextProvider = ({ children }) => {
   const [appTheme, setAppTheme] = useState("dark");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isShowAll, setIsShowAll] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const changeTheme = () => {
     bodyTag.classList.contains("dark")
@@ -19,6 +20,7 @@ const AppContextProvider = ({ children }) => {
   const handleChangePage = (e) => {
     const pageSelected = e.currentTarget.name;
     setCurrentPage(pageSelected);
+    isMenuOpen && setIsMenuOpen(false);
   };
   return (
     <AppContext.Provider
@@ -31,6 +33,8 @@ const AppContextProvider = ({ children }) => {
         setIsDropdownOpen,
         setIsShowAll,
         isShowAll,
+        setIsMenuOpen,
+        isMenuOpen,
       }}
     >
       {children}

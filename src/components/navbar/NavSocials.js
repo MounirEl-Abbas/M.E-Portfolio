@@ -39,9 +39,6 @@ const NavSocials = () => {
           </a>
         </li>
       </ul>
-      <button onClick={() => setIsShowAll(!isShowAll)}>
-        Change Layout <SiElasticstack />
-      </button>
     </section>
   );
 };

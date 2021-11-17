@@ -2,12 +2,10 @@ import React from "react";
 
 const NavHeader = () => {
   return (
-    <section className="nav-header">
-      <h3>
-        Mounir <span>El-Abbas</span>
-      </h3>
+    <header className="nav-header">
+      <h3>Mounir El-Abbas</h3>
       <p>Front-End Developer</p>
-    </section>
+    </header>
   );
 };
 

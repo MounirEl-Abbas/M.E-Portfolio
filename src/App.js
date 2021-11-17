@@ -4,45 +4,44 @@ import { useAppContext } from "./context/AppContext";
 //Components
 import ThemeToggle from "./components/utils/ThemeToggle";
 import Navbar from "./components/navbar/Navbar";
+import SideMenu from "./components/navbar/SideMenu";
 import Home from "./components/home/Home";
 import DevExperience from "./components/devExperience/DevExperience";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 
+//Icons
 import { ImCross } from "./assets/icons";
+import { GiHamburgerMenu } from "./assets/icons";
 
 const App = () => {
-  const { currentPage, isShowAll, setIsShowAll } = useAppContext();
+  const { currentPage, isShowAll, setIsShowAll, isMenuOpen, setIsMenuOpen } =
+    useAppContext();
   return (
     <div className="app">
-      <ThemeToggle />
-      {isShowAll && (
-        <button id="remove-show-all-btn" onClick={() => setIsShowAll(false)}>
-          <ImCross />
-        </button>
-      )}
       <div className="app-container">
-        {isShowAll ? (
-          <div className="portfolio-full-view">
+        <ThemeToggle />
+        <div className="portfolio-tabular-view">
+          <SideMenu />
+          <Navbar />
+          {isMenuOpen ? (
+            <ImCross id="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)} />
+          ) : (
+            <GiHamburgerMenu
+              id="menu-btn"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            />
+          )}
+          {currentPage === "home" ? (
             <Home />
+          ) : currentPage === "experience" ? (
             <DevExperience />
+          ) : currentPage === "about" ? (
             <About />
+          ) : (
             <Contact />
-          </div>
-        ) : (
-          <div className="portfolio-tabular-view">
-            <Navbar />
-            {currentPage === "home" ? (
-              <Home />
-            ) : currentPage === "experience" ? (
-              <DevExperience />
-            ) : currentPage === "about" ? (
-              <About />
-            ) : (
-              <Contact />
-            )}
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

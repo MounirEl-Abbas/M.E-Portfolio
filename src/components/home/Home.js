@@ -5,7 +5,7 @@ import { useAppContext } from "../../context/AppContext";
 const Home = () => {
   const { handleChangePage } = useAppContext();
   return (
-    <section className="home-page-container">
+    <section className="page-container home-page-container">
       <header className="home-page-content">
         <h1>Hello!</h1>
         <p>I'm Mounir El-Abbas, a Front-End Web Developer.</p>
