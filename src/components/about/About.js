@@ -76,9 +76,9 @@ const About = () => {
           <p>Hello again! </p>
           <p>
             I'm Mounir El-Abbas (Moe for short). <br />
-            Although my path in formal education has taken many twists and
-            turns, I've never stopped engaging my passion of helping others and
-            <em> solving problems</em>.
+            My path in formal education has taken many twists and turns as a
+            result of my pursuit to help others and
+            <em> solve problems</em>.
           </p>
           <p>
             I’ve always sought out opportunities and challenges. I enrolled in
@@ -87,8 +87,9 @@ const About = () => {
             Robotics Programming at St. Clair College made clear the
             desirability of practical knowledge. Finally, I've found something
             that is truly meaningful to me. As a web developer I am encouraged
-            to apply my <em>obsessive attention to detail and perfectionism</em>
-            .
+            to apply my{" "}
+            <em>obsessive attention to detail and perfectionism </em>
+            to serve <span className="initials">our customers/users</span>.
           </p>
           <p>
             I am extremely grateful for your interest in me and I look forward
