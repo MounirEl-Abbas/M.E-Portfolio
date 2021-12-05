@@ -9,6 +9,7 @@ import gitImg from "./images/git.PNG";
 import nodeImg from "./images/node.PNG";
 import expressImg from "./images/express.PNG";
 import mongoDBImg from "./images/mongoDB.PNG";
+import SelfShot from "./images/me-headshot.png";
 
 export { GiHamburgerMenu } from "react-icons/gi";
 export { FaRedhat } from "react-icons/fa";
@@ -36,4 +37,5 @@ export {
   nodeImg,
   expressImg,
   mongoDBImg,
+  SelfShot,
 };
