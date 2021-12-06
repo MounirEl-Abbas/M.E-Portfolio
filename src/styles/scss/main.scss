@@ -68,16 +68,6 @@ li {
 img {
   width: 200px;
 }
-.navbar {
-  border: 1px solid red;
-  display: none;
-}
-.navbar-open {
-  display: block;
-}
-.container {
-  display: flex;
-}
 
 .skills {
   border: 3px solid green;
@@ -88,3 +78,6 @@ img {
     display: flex;
   }
 }
+
+@import "./components/global";
+@import "./utils/mediaQueries";

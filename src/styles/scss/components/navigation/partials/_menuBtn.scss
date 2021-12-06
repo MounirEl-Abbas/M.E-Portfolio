@@ -1,0 +1,15 @@
+#menu-btn {
+  position: fixed;
+  top: 6rem;
+  right: 2.2rem;
+  background: transparent;
+  border: none;
+  width: 25px;
+  height: 25px;
+  z-index: 9;
+  svg {
+    height: 100%;
+    width: 100%;
+    color: $oppositeColor;
+  }
+}
