@@ -6,11 +6,10 @@ const bodyTag = document.getElementById("bodyTag");
 
 const AppContextProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState("home");
-  const [appTheme, setAppTheme] = useState("dark");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isShowAll, setIsShowAll] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [appTheme, setAppTheme] = useState("dark");
   const changeTheme = () => {
     bodyTag.classList.contains("dark")
       ? bodyTag.classList.replace("dark", "light") && setAppTheme("light")
@@ -31,8 +30,6 @@ const AppContextProvider = ({ children }) => {
         handleChangePage,
         isDropdownOpen,
         setIsDropdownOpen,
-        setIsShowAll,
-        isShowAll,
         setIsMenuOpen,
         isMenuOpen,
       }}

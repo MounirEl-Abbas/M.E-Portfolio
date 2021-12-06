@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../context/AppContext";
+import { useAppContext } from "../../../context/AppContext";
 
 //images
 import {
@@ -14,17 +14,17 @@ import {
   nodeImg,
   expressImg,
   mongoDBImg,
-} from "../../assets/icons";
+} from "../../../assets";
 
 //icons
-import { FaChevronRight } from "../../assets/icons";
+import { FaChevronRight } from "../../../assets";
 
 const Skills = () => {
   const { isDropdownOpen, setIsDropdownOpen } = useAppContext();
   return (
     <>
       {/* <h4>Skills</h4> */}
-      <article className="skills">
+      <section className="skills">
         <ul className="skills-fundamentals" title="Fundamentals">
           <li>
             <img src={HTMLImg} alt="" />
@@ -52,10 +52,7 @@ const Skills = () => {
             <img src={sassImg} alt="" />
             <p>Sass</p>
           </li>
-          <li>
-            <img src={typescriptImg} alt="" />
-            <p>Typescript</p>
-          </li>
+
           <li>
             <img src={reduxImg} alt="" />
             <p>Redux</p>
@@ -63,6 +60,10 @@ const Skills = () => {
         </ul>
         <div className="skills-learning">
           <ul className="skills-inprogress" title="Currently Learning">
+            <li>
+              <img src={typescriptImg} alt="" />
+              <p>Typescript</p>
+            </li>
             <li>
               <img src={nodeImg} alt="" />
               <p>Node.js</p>
@@ -96,7 +97,7 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-      </article>
+      </section>
     </>
   );
 };

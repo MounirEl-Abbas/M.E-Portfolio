@@ -1,12 +1,12 @@
 import React from "react";
-import { useAppContext } from "../../context/AppContext";
+import { useAppContext } from "../../../context/AppContext";
 //icons
 import {
   AiFillGithub,
   FaLinkedin,
   VscFilePdf,
   SiElasticstack,
-} from "../../assets/icons";
+} from "../../../assets";
 const NavSocials = () => {
   const { setIsShowAll, isShowAll } = useAppContext();
   return (

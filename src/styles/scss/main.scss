@@ -8,6 +8,9 @@ Main CSS (General tags)
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 10px;
+}
 //Containers
 html,
 body,
@@ -17,39 +20,42 @@ body,
   height: 100%;
   overflow: auto;
 }
-html {
-  font-size: 10px;
-}
 body {
   background-color: $bgColor;
   color: $textColor;
   transition: all 0.3s linear;
+  font-family: $ff-secondary;
+  font-size: 1.4rem;
 }
 //Tags
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $ff-primary;
+}
 h1 {
-  font-size: 4rem;
+  font-size: 2.4rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
-p,
-li {
-  font-size: 1.1rem;
-}
-a {
-  font-size: 1rem;
+h5 {
+  font-size: 1.6rem;
 }
 
 //Remove default <a> styles
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
   &:visited {
     color: inherit;
   }
@@ -59,207 +65,26 @@ li {
   list-style-type: none;
 }
 
-//Cascading containers
-
-// .app {
-//   font-size: 1.1rem;
-// }
-
-.app-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: $ff-primary;
+img {
+  width: 200px;
 }
-
-/**********************
-Default View (tabs)
-**********************/
-.portfolio-tabular-view {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  max-width: 3000px;
-  max-height: 2000px;
-  height: 90%;
-  border: 3px solid $shade1;
-  background-color: $shade1;
-  box-shadow: 1px 1px 10px 1px rgba($color: #000, $alpha: 0.5);
-}
-.nav-container {
-  width: 0;
+.navbar {
+  border: 1px solid red;
   display: none;
-  background-color: $shade3;
-  border-right: 1px solid $compColor;
-  // transform: translateX(-100vw);
 }
-.page-container {
-  width: 100%;
-  height: 100%;
+.navbar-open {
+  display: block;
 }
-
-/**********************
-All Pages (NOT HOME)
-**********************/
-.page-container:not(.home-page-container) {
-  /* All Pages Header Titles*/
-  position: relative;
+.container {
   display: flex;
-  flex-direction: column;
-
-  header {
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-    h2 {
-      color: $abs-white;
-      letter-spacing: 2px;
-      text-align: center;
-      padding: 1rem;
-      max-width: 200px;
-      background-color: rgba($color: $abs-white, $alpha: 0.2);
-      outline: 1px solid $abs-black;
-      outline-offset: -0.5rem;
-    }
-  }
-  /* All Pages - Header Images */
-  .img-container {
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    height: 30%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 100% 90%;
-    }
-    &::after {
-      outline: 1px solid $abs-white;
-      outline-offset: -10px;
-      content: "";
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: calc(100% - 20px);
-      height: calc(100% - 20px);
-      background-color: rgba($color: #000000, $alpha: 0.65);
-      z-index: 1;
-    }
-  }
 }
-.page-content {
-  padding: 1rem;
-  height: calc(100% - 30%);
-}
-/*******************************/
 
-/**********************
-Theme Toggles (Tabular & FullPage)
-**********************/
-.theme-toggle-btn {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  border: none;
-  width: 2rem;
-  height: 2rem;
-  max-width: 50px;
-  max-height: 50px;
-  background-color: transparent;
-  z-index: 9;
-  cursor: pointer;
-
+.skills {
+  border: 3px solid green;
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 50px;
+  }
+  ul {
+    display: flex;
   }
 }
-#menu-btn {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  z-index: 20;
-  top: 25px;
-  right: 25px;
-  color: $abs-white;
-  cursor: pointer;
-}
-
-.initials {
-  color: $accentColor;
-  font-weight: 600;
-}
-
-// .theme-toggle-btn-fullPage {
-//   position: absolute;
-//   right: 70px;
-//   top: 50px;
-//   border: none;
-//   width: 50px;
-//   height: 50px;
-//   background-color: transparent;
-//   z-index: 9;
-//   cursor: pointer;
-//   img {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//   }
-// }
-
-// //Full Page remove btn
-// #remove-show-all-btn {
-//   position: absolute;
-//   left: 50px;
-//   top: 50px;
-//   z-index: 9;
-//   background-color: transparent;
-//   border: none;
-//   color: red;
-//   font-size: 26px;
-//   cursor: pointer;
-// }
-
-/**********************
-Changed View (Full)
-**********************/
-// .portfolio-full-view {
-//   border: 3px solid $shade2;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   flex-flow: column;
-//   overflow: auto;
-//   justify-content: space-between;
-
-//   .page-container {
-//     width: 100%;
-//     height: 100%;
-//     .img-container:not(.home) {
-//       height: 500px;
-//     }
-//     .about-page #frameByFrameImg {
-//       top: 550px;
-//     }
-//   }
-//   .page-container:nth-child(3) {
-//     height: 150%;
-//     padding-bottom: 100px;
-//   }
-//   .page-container:nth-child(4) {
-//     padding-bottom: 100px;
-//   }
-
-// }
-@import "./pages/navbar", "./pages/home", "./pages/experience", "./pages/about",
-  "./pages/contact", "./utils/mediaQueries";

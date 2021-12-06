@@ -1,13 +1,13 @@
 import React from "react";
 
 //icons
-import { AiOutlineHome } from "../../assets/icons";
-import { VscCode } from "../../assets/icons";
-import { BsPerson } from "../../assets/icons";
-import { FiMail } from "../../assets/icons";
+import { AiOutlineHome } from "../../../assets";
+import { VscCode } from "../../../assets";
+import { BsPerson } from "../../../assets";
+import { FiMail } from "../../../assets";
 
 //context
-import { useAppContext } from "../../context/AppContext";
+import { useAppContext } from "../../../context/AppContext";
 const NavPages = () => {
   const { handleChangePage, currentPage } = useAppContext();
 

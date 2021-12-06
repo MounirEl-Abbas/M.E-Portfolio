@@ -1,26 +1,18 @@
 import React from "react";
-import contactImg from "../../assets/images/contactImg.jpg";
-import { FiMail } from "../../assets/icons";
-import { AiFillGithub } from "../../assets/icons";
-import { FaLinkedin } from "../../assets/icons";
+import { FiMail } from "../../assets";
+import { AiFillGithub } from "../../assets";
+import { FaLinkedin } from "../../assets";
 import { useAppContext } from "../../context/AppContext";
 const Contact = () => {
-  const { isShowAll } = useAppContext();
-
   return (
-    <section className="page-container contact-page">
+    <section className="contact page">
       <header>
         <h2>
-          Contact <span className="initials">ME</span>
+          Contact <span>ME</span>
         </h2>
       </header>
-      <figure className="img-container contact-img">
-        <img
-          src={contactImg}
-          alt="Electronics on a bed with 'developer' written on the phone screen."
-        />
-      </figure>
-      <main className="page-content contact-page-content">
+
+      <main>
         <article>
           <a href="mailto:eamounir1@gmail.com" aria-label="Email Mounir">
             <FiMail />
