@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutInfo = () => {
   return (
-    <section className="hero-info">
-      <article className="hero-info-title">
+    <section className="about-info">
+      <article className="about-info-title">
         <h1>Hello!</h1>
         <p>I'm Mounir El-Abbas, a Front-End Web Developer.</p>
         <p>
@@ -14,7 +14,7 @@ const AboutInfo = () => {
           for your Web Development needs!
         </p>
       </article>
-      <article className="hero-info-body">
+      <article className="about-info-body">
         <p>
           I am enthusiastic to apply my obsessive attention to detail and
           perfectionism to serve our customers/users.
@@ -24,7 +24,7 @@ const AboutInfo = () => {
           individuals.
         </p>
       </article>
-      <article className="hero-info-btns">
+      <article className="about-info-btns">
         <a href="me-resume.pdf" name="resume" download>
           Resume
         </a>

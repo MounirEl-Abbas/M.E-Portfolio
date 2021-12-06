@@ -4,44 +4,24 @@ import { useAppContext } from "./context/AppContext";
 //Components
 import ThemeToggle from "./components/utils/ThemeToggle";
 import Navbar from "./components/navbar/Navbar";
-import SideMenu from "./components/navbar/SideMenu";
-import Home from "./components/home/Home";
-import DevExperience from "./components/devExperience/DevExperience";
+import Experience from "./components/experience/Experience";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
-
-//Icons
-import { ImCross } from "./assets/icons";
-import { GiHamburgerMenu } from "./assets/icons";
+import MenuBtn from "./components/navbar/partials/MenuBtn";
 
 const App = () => {
-  const { currentPage, isShowAll, setIsShowAll, isMenuOpen, setIsMenuOpen } =
-    useAppContext();
   return (
     <div className="app">
-      <div className="app-container">
-        <ThemeToggle />
-        <div className="portfolio-tabular-view">
-          <SideMenu />
-          <Navbar />
-          {isMenuOpen ? (
-            <ImCross id="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)} />
-          ) : (
-            <GiHamburgerMenu
-              id="menu-btn"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            />
-          )}
-          {currentPage === "home" ? (
-            <Home />
-          ) : currentPage === "experience" ? (
-            <DevExperience />
-          ) : currentPage === "about" ? (
-            <About />
-          ) : (
-            <Contact />
-          )}
-        </div>
+      <ThemeToggle />
+      <MenuBtn />
+
+      <div className="container">
+        <Navbar />
+        <main className="pages">
+          <About />
+          <Experience />
+          <Contact />
+        </main>
       </div>
     </div>
   );

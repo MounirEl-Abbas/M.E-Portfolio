@@ -1,23 +1,19 @@
 import React from "react";
+import { useAppContext } from "../../context/AppContext";
 
 //Components
-import NavHeader from "./NavHeader";
-import NavPages from "./NavPages";
-import NavSocials from "./NavSocials";
-
-//Icons
-import hatIcon from "../../assets/images/hat.png";
+import NavHeader from "./partials/NavHeader";
+import NavPages from "./partials/NavPages";
+import NavSocials from "./partials/NavSocials";
 
 const Navbar = () => {
+  const { isMenuOpen, setIsMenuOpen } = useAppContext();
   return (
-    <aside className="nav-container">
-      <img src={hatIcon} id="hat-icon" alt="" />
-      <nav className="nav">
-        <NavHeader />
-        <NavPages />
-        <NavSocials />
-      </nav>
-    </aside>
+    <nav className={`${isMenuOpen ? "navbar navbar-open" : "navbar"}`}>
+      <NavHeader />
+      <NavPages />
+      <NavSocials />
+    </nav>
   );
 };
 

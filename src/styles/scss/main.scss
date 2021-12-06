@@ -25,6 +25,7 @@ body {
   color: $textColor;
   transition: all 0.3s linear;
   font-family: $ff-secondary;
+  font-size: 1.4rem;
 }
 //Tags
 h1,
@@ -49,16 +50,12 @@ h4 {
 h5 {
   font-size: 1.6rem;
 }
-p,
-li,
-a {
-  font-size: 1.4rem;
-}
 
 //Remove default <a> styles
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
   &:visited {
     color: inherit;
   }
@@ -70,4 +67,24 @@ li {
 
 img {
   width: 200px;
+}
+.navbar {
+  border: 1px solid red;
+  display: none;
+}
+.navbar-open {
+  display: block;
+}
+.container {
+  display: flex;
+}
+
+.skills {
+  border: 3px solid green;
+  img {
+    width: 50px;
+  }
+  ul {
+    display: flex;
+  }
 }

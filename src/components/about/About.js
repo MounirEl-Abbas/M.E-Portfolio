@@ -5,12 +5,11 @@ import AboutInfo from "./partials/AboutInfo";
 import AboutSocials from "./partials/AboutSocials";
 
 const About = () => {
-  const { handleChangePage } = useAppContext();
   return (
-    <main className="hero">
+    <section className="about page">
       <AboutInfo />
       <AboutSocials />
-    </main>
+    </section>
   );
 };
 
