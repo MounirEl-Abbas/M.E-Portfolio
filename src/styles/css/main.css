@@ -360,17 +360,17 @@ img {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: 80%;
   margin: auto;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 
 .about-info-title {
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 60%;
   justify-content: space-evenly;
 }
 
@@ -407,9 +407,10 @@ img {
   max-width: 370px;
 }
 
-.about-info-title p:last-child {
+.about-info-title > p:last-child {
   width: 80%;
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 .about-info-body {
@@ -422,9 +423,9 @@ img {
 
 .about-info-btns {
   display: flex;
-  justify-content: space-between;
-  width: 60%;
-  max-width: 300px;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 30rem;
   margin: auto;
 }
 
@@ -436,47 +437,15 @@ img {
   background-color: #0c2745;
 }
 
-.about-socials-container {
-  z-index: 2;
-  position: absolute;
-  bottom: 4rem;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-
-.about-socials-container article {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.about-socials-container article ul {
-  width: 70%;
-  max-width: 300px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.about-socials-container article ul li {
-  font-size: 2.5rem;
-  color: var(--accentColor);
-}
-
-.about-socials-container-self-shot {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .about {
     flex-direction: row;
     justify-content: space-between;
   }
   .about-info {
-    width: 60%;
-    margin-top: 5rem 0 0 0;
+    width: 90%;
     text-align: left;
-    height: 70%;
+    height: 55rem;
   }
   .about-info div p:last-of-type::after {
     width: 80%;
@@ -488,24 +457,41 @@ img {
   .about-info-body {
     display: block;
     padding-bottom: 3rem;
+    font-size: 1.4rem;
   }
   .about-info-btns {
     width: 100%;
     justify-content: space-around;
     margin: 0;
   }
-  .about-socials-container {
-    position: static;
-    margin: 0;
-    width: 30%;
-  }
-  .about-socials-container-self-shot {
-    display: block;
+}
+
+@media (min-width: 3000px) {
+  .about .about-info {
+    margin-top: 8rem;
   }
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 3000px) {
+  html {
+    font-size: 24px;
   }
 }
