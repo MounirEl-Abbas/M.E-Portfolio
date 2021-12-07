@@ -22,10 +22,12 @@ import { FaChevronRight } from "../../../assets";
 const Skills = () => {
   const { isDropdownOpen, setIsDropdownOpen } = useAppContext();
   return (
-    <>
-      {/* <h4>Skills</h4> */}
-      <section className="skills">
-        <ul className="skills-fundamentals" title="Fundamentals">
+    <section className="skills-container">
+      <header>
+        <h2>Skills</h2>
+      </header>
+      <div className="skills">
+        <ul className="skills-fundamentals skills-list" title="Fundamentals">
           <li>
             <img src={HTMLImg} alt="" />
             <p>HTML</p>
@@ -43,7 +45,7 @@ const Skills = () => {
             <p>React</p>
           </li>
         </ul>
-        <ul className="skills-additional" title="Noteworthy Skills">
+        <ul className="skills-additional skills-list" title="Noteworthy Skills">
           <li>
             <img src={gitImg} alt="" />
             <p>Git</p>
@@ -59,7 +61,10 @@ const Skills = () => {
           </li>
         </ul>
         <div className="skills-learning">
-          <ul className="skills-inprogress" title="Currently Learning">
+          <ul
+            className="skills-inprogress skills-list"
+            title="Currently Learning"
+          >
             <li>
               <img src={typescriptImg} alt="" />
               <p>Typescript</p>
@@ -85,20 +90,24 @@ const Skills = () => {
               />
             </button>
             <ul className={`${isDropdownOpen ? "panel panel-open" : "panel"}`}>
-              <li>Understanding how APIs function under the hood</li>
-              <li>How query parameters are set</li>
-              <li>HTTP requests (CRUD operations)</li>
               <li>
-                <p>
-                  Have collectively proven beneficial in the advancement of my
-                  front-end knowledge.
-                </p>
+                <span>How APIs function under the hood</span>
               </li>
+              <li>
+                <span>How query parameters are set</span>
+              </li>
+              <li>
+                <span>HTTP requests (CRUD operations)</span>
+              </li>
+              <p>
+                Have collectively proven beneficial in the advancement of my
+                front-end knowledge.
+              </p>
             </ul>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

@@ -68,16 +68,15 @@ li {
 img {
   width: 200px;
 }
-
-.skills {
-  border: 3px solid green;
-  img {
-    width: 50px;
-  }
-  ul {
-    display: flex;
+.page header {
+  background: linear-gradient(to right, $oppositeColor 0%, $accentColor 10%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  h2 {
+    letter-spacing: 2px;
   }
 }
+
 .accent-color {
   color: $accentColor;
 }

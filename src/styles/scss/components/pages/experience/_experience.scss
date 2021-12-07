@@ -1,0 +1,205 @@
+.skills-container {
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 80rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 60rem;
+  width: 100%;
+  height: 90%;
+  margin: auto;
+
+  .skills-list {
+    position: relative;
+    &::before {
+      content: attr(title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $accentColor;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+
+      width: 10rem;
+      height: 6rem;
+      img {
+        object-fit: contain;
+        height: 80%;
+        width: 100%;
+      }
+      p {
+        height: 20%;
+      }
+    }
+    li:not(li:last-child) {
+      border-right: 1px dashed $shade2;
+    }
+  }
+
+  &-fundamentals {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  &-additional {
+    width: 75%;
+    height: 30%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+  }
+  &-learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    .skills-inprogress {
+      width: 100%;
+      height: 75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+  }
+}
+
+.dropdown {
+  height: 25%;
+  z-index: 5;
+  width: 20rem;
+  position: relative;
+  button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: $accentColor;
+    border: none;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 10px;
+      transition: all 0.3s linear;
+    }
+  }
+}
+.panel {
+  position: absolute;
+  top: 2rem;
+  // left: 20rem;
+  left: -15%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  background-color: $shade1;
+  width: 130%;
+  line-height: 1.4;
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+    span {
+      position: relative;
+      left: -10px;
+    }
+  }
+  p {
+    border-top: 1px solid $shade2;
+    text-align: center;
+  }
+}
+.panel-open {
+  padding: 10px;
+  height: 13rem;
+  border: 2px solid $shade3;
+}
+.rotate-chevron {
+  transform: rotateZ(450deg);
+}
+@media (min-width: 460px) {
+  .skills .skills-list li:not(li:last-child) {
+    border-right-width: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills {
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 2rem auto;
+    max-width: 80rem;
+    .skills-list {
+      flex-direction: column;
+      border-left: 3px dotted $shade1;
+
+      &::before {
+        top: -3rem;
+        left: 1rem;
+      }
+      li {
+        flex-direction: row;
+        width: 5rem;
+        p {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    &-fundamentals {
+      height: 90%;
+      width: 33%;
+      margin: 0;
+      align-items: flex-start;
+    }
+    &-additional {
+      height: 90%;
+      width: 33%;
+      margin: 0;
+      padding-bottom: 10rem;
+      align-items: flex-start;
+    }
+    &-learning {
+      height: 90%;
+      width: 33%;
+      margin: 0;
+      position: relative;
+
+      .skills-inprogress {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        align-items: flex-start;
+      }
+    }
+  }
+  .dropdown {
+    position: absolute;
+    bottom: -10rem;
+    left: -3rem;
+  }
+  .panel {
+    right: 0;
+    left: auto;
+  }
+}
