@@ -15,6 +15,7 @@ $dark-accentColor: #fd7014;
 $dark-shade1: #222832;
 $dark-shade2: #393e46;
 $dark-shade3: #484d55;
+$dark-opposite-color: #fff;
 
 $light-bgColor: #fafafa;
 $light-textColor: #484b6a;
@@ -22,6 +23,7 @@ $light-accentColor: #408bdd;
 $light-shade1: #e4e5f1;
 $light-shade2: #d2d3db;
 $light-shade3: #9394a5;
+$light-opposite-color: #000;
 
 $bgColor: var(--bgColor);
 $shade1: var(--shade1);
@@ -29,6 +31,7 @@ $shade2: var(--shade2);
 $shade3: var(--shade3);
 $textColor: var(--textColor);
 $accentColor: var(--accentColor);
+$oppositeColor: var(--opposite);
 
 body.dark {
   --bgColor: #{$dark-bgColor};
@@ -37,6 +40,7 @@ body.dark {
   --shade1: #{$dark-shade1};
   --shade2: #{$dark-shade2};
   --shade3: #{$dark-shade3};
+  --opposite: #{$dark-opposite-color};
 }
 body.light {
   --bgColor: #{$light-bgColor};
@@ -45,4 +49,5 @@ body.light {
   --shade1: #{$light-shade1};
   --shade2: #{$light-shade2};
   --shade3: #{$light-shade3};
+  --opposite: #{$light-opposite-color};
 }

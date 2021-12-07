@@ -8,9 +8,8 @@ import {
   SiElasticstack,
 } from "../../../assets";
 const NavSocials = () => {
-  const { setIsShowAll, isShowAll } = useAppContext();
   return (
-    <section className="nav-socials">
+    <section className="navbar-socials">
       <ul>
         <li>
           <a
