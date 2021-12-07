@@ -99,16 +99,6 @@ img {
   width: 200px;
 }
 
-.page header {
-  background: linear-gradient(to right, var(--opposite) 0%, var(--accentColor) 10%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.page header h2 {
-  letter-spacing: 2px;
-}
-
 .accent-color {
   color: var(--accentColor);
 }
@@ -141,8 +131,12 @@ img {
 }
 
 .pages {
-  border: 1px solid blue;
   width: 100%;
+}
+
+.page {
+  margin: auto;
+  padding: 0 0.5rem;
 }
 
 .page header {
@@ -482,9 +476,8 @@ img {
 }
 
 .skills-container {
-  width: 90%;
+  width: 100%;
   margin: 2rem auto;
-  max-width: 80rem;
   height: 45rem;
   display: flex;
   flex-direction: column;
@@ -696,6 +689,107 @@ img {
   .panel {
     right: 0;
     left: auto;
+  }
+}
+
+.projects {
+  border: 1px solid red;
+}
+
+.projects article {
+  width: 20rem;
+  height: 200px;
+  border: 1px solid green;
+}
+
+.contact {
+  height: 40rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 80%, var(--accentColor) 100%);
+}
+
+.contact header {
+  height: 20%;
+  max-width: 90rem;
+  margin: auto;
+  width: 100%;
+}
+
+.contact main {
+  max-width: 80rem;
+  margin: auto;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact main article {
+  margin-bottom: 4rem;
+}
+
+.contact main article a {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact main article a:hover {
+  opacity: 0.8;
+}
+
+.contact main article a::before {
+  content: "";
+  background-color: var(--shade3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.contact main article a svg {
+  font-size: 2rem;
+  color: var(--accentColor);
+}
+
+.contact main article a p {
+  margin-top: 1rem;
+}
+
+#frameByFrameImg {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  width: 13rem;
+  height: 12rem;
+}
+
+#frameByFrameImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 4px solid var(--accentColor);
+  outline-offset: -2px;
+}
+
+@media (min-width: 768px) {
+  #frameByFrameImg {
+    display: block;
   }
 }
 

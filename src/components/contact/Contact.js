@@ -2,10 +2,11 @@ import React from "react";
 import { FiMail } from "../../assets";
 import { AiFillGithub } from "../../assets";
 import { FaLinkedin } from "../../assets";
-import { useAppContext } from "../../context/AppContext";
+import FrameByFrame from "./partials/FrameByFrame";
 const Contact = () => {
   return (
     <section className="contact page">
+      <FrameByFrame />
       <header>
         <h2>
           Contact <span>ME</span>
