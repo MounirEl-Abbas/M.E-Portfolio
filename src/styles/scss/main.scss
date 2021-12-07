@@ -78,6 +78,9 @@ img {
     display: flex;
   }
 }
+.accent-color {
+  color: $accentColor;
+}
 
 @import "./components/global";
 @import "./utils/mediaQueries";
