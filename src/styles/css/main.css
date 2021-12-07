@@ -99,16 +99,14 @@ img {
   width: 200px;
 }
 
-.skills {
-  border: 3px solid green;
+.page header {
+  background: linear-gradient(to right, var(--opposite) 0%, var(--accentColor) 10%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.skills img {
-  width: 50px;
-}
-
-.skills ul {
-  display: flex;
+.page header h2 {
+  letter-spacing: 2px;
 }
 
 .accent-color {
@@ -145,6 +143,17 @@ img {
 .pages {
   border: 1px solid blue;
   width: 100%;
+}
+
+.page header {
+  background: linear-gradient(to right, var(--opposite) 0%, var(--accentColor) 10%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.page header h2 {
+  letter-spacing: 2px;
 }
 
 #selfie-container {
@@ -469,6 +478,224 @@ img {
 @media (min-width: 3000px) {
   .about .about-info {
     margin-top: 8rem;
+  }
+}
+
+.skills-container {
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 80rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 60rem;
+  width: 100%;
+  height: 90%;
+  margin: auto;
+}
+
+.skills .skills-list {
+  position: relative;
+}
+
+.skills .skills-list::before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--accentColor);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.skills .skills-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 10rem;
+  height: 6rem;
+}
+
+.skills .skills-list li img {
+  object-fit: contain;
+  height: 80%;
+  width: 100%;
+}
+
+.skills .skills-list li p {
+  height: 20%;
+}
+
+.skills .skills-list li:not(li:last-child) {
+  border-right: 1px dashed var(--shade2);
+}
+
+.skills-fundamentals {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.skills-additional {
+  width: 75%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
+}
+
+.skills-learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+}
+
+.skills-learning .skills-inprogress {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.dropdown {
+  height: 25%;
+  z-index: 5;
+  width: 20rem;
+  position: relative;
+}
+
+.dropdown button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: none;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown button svg {
+  margin-left: 10px;
+  transition: all 0.3s linear;
+}
+
+.panel {
+  position: absolute;
+  top: 2rem;
+  left: -15%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  background-color: var(--shade1);
+  width: 130%;
+  line-height: 1.4;
+}
+
+.panel li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.panel li span {
+  position: relative;
+  left: -10px;
+}
+
+.panel p {
+  border-top: 1px solid var(--shade2);
+  text-align: center;
+}
+
+.panel-open {
+  padding: 10px;
+  height: 13rem;
+  border: 2px solid var(--shade3);
+}
+
+.rotate-chevron {
+  transform: rotateZ(450deg);
+}
+
+@media (min-width: 460px) {
+  .skills .skills-list li:not(li:last-child) {
+    border-right-width: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills {
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 2rem auto;
+    max-width: 80rem;
+  }
+  .skills .skills-list {
+    flex-direction: column;
+    border-left: 3px dotted var(--shade1);
+  }
+  .skills .skills-list::before {
+    top: -3rem;
+    left: 1rem;
+  }
+  .skills .skills-list li {
+    flex-direction: row;
+    width: 5rem;
+  }
+  .skills .skills-list li p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+  .skills-fundamentals {
+    height: 90%;
+    width: 33%;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .skills-additional {
+    height: 90%;
+    width: 33%;
+    margin: 0;
+    padding-bottom: 10rem;
+    align-items: flex-start;
+  }
+  .skills-learning {
+    height: 90%;
+    width: 33%;
+    margin: 0;
+    position: relative;
+  }
+  .skills-learning .skills-inprogress {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .dropdown {
+    position: absolute;
+    bottom: -10rem;
+    left: -3rem;
+  }
+  .panel {
+    right: 0;
+    left: auto;
   }
 }
 

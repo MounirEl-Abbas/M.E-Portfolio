@@ -25,7 +25,15 @@
   border: 1px solid blue;
   width: 100%;
 }
-
+.page header {
+  background: linear-gradient(to right, $oppositeColor 0%, $accentColor 10%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  h2 {
+    letter-spacing: 2px;
+  }
+}
 @import "./navigation/navbar";
 @import "./pages/about/about", "./pages/experience/experience",
   "./pages/contact/contact";

@@ -5,11 +5,6 @@ import Projects from "./partials/Projects";
 const Experience = () => {
   return (
     <section className="experience page">
-      <header>
-        <h2>
-          Skills <span className="initials">&</span> Projects
-        </h2>
-      </header>
       <Skills />
       <Projects />
     </section>
