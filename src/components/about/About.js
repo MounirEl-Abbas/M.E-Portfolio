@@ -7,8 +7,8 @@ import AboutSocials from "./partials/AboutSocials";
 const About = () => {
   return (
     <section className="about page">
+      <figure id="hero-bg-container"></figure>
       <AboutInfo />
-      <AboutSocials />
     </section>
   );
 };

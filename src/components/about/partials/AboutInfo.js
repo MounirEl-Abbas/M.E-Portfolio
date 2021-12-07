@@ -5,10 +5,18 @@ const AboutInfo = () => {
     <section className="about-info">
       <article className="about-info-title">
         <h1>Hello!</h1>
-        <p>I'm Mounir El-Abbas, a Front-End Web Developer.</p>
+
+        <div>
+          <p>
+            I'm <span>Mounir El-Abbas</span>
+          </p>
+          <p>
+            a <span>Front-End Web Developer</span>.
+          </p>
+        </div>
         <p>
           Thank you for considering
-          <span className="initials" title="My Initials">
+          <span className="accent-color" title="My Initials">
             {" ME "}
           </span>
           for your Web Development needs!
@@ -16,12 +24,12 @@ const AboutInfo = () => {
       </article>
       <article className="about-info-body">
         <p>
-          I am enthusiastic to apply my obsessive attention to detail and
-          perfectionism to serve our customers/users.
+          <strong>Enthusiastic</strong> to apply my obsessive attention to
+          detail and perfectionism to serve our customers/users.
         </p>
         <p>
-          I am eager to meet, collaborate, and learn with like-minded
-          individuals.
+          <strong>Eager</strong> to meet, collaborate, and learn with
+          like-minded individuals.
         </p>
       </article>
       <article className="about-info-btns">
