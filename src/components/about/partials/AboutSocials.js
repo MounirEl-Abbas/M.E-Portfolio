@@ -4,7 +4,7 @@ import { AiFillGithub, FaLinkedin, VscFilePdf } from "../../../assets";
 const AboutSocials = () => {
   return (
     <section className="about-socials-container">
-      <article className="about-socials-container-socials">
+      <article>
         <ul>
           <li>
             <AiFillGithub />
