@@ -6,7 +6,7 @@ import AboutSocials from "./partials/AboutSocials";
 
 const About = () => {
   return (
-    <section className="about page">
+    <section className="about">
       <figure id="hero-bg-container"></figure>
       <AboutInfo />
       {/* <AboutSocials /> */}
