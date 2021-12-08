@@ -8,8 +8,9 @@ const AppContextProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState("home");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [appTheme, setAppTheme] = useState("light");
+  const [isModalOpen, setisModalOpen] = useState(false);
 
-  const [appTheme, setAppTheme] = useState("dark");
   const changeTheme = () => {
     bodyTag.classList.contains("dark")
       ? bodyTag.classList.replace("dark", "light") && setAppTheme("light")
@@ -20,6 +21,20 @@ const AppContextProvider = ({ children }) => {
     const pageSelected = e.currentTarget.name;
     setCurrentPage(pageSelected);
     isMenuOpen && setIsMenuOpen(false);
+  };
+
+  const handleModalView = (e) => {
+    const projectSelected = e.currentTarget.name;
+    switch (projectSelected) {
+      case "travel":
+        setisModalOpen(true);
+      case "memories":
+      case "placeholder":
+
+      default:
+        setisModalOpen(false);
+        break;
+    }
   };
   return (
     <AppContext.Provider
@@ -32,6 +47,7 @@ const AppContextProvider = ({ children }) => {
         setIsDropdownOpen,
         setIsMenuOpen,
         isMenuOpen,
+        handleModalView,
       }}
     >
       {children}

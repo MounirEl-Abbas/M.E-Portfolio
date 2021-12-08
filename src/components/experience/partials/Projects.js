@@ -1,8 +1,12 @@
 import { MdOpenInNew } from "../../../assets";
 import placeholderImg from "../../../assets/images/hero-bg2.jpg";
+import { useAppContext } from "../../../context/AppContext";
+import ProjectModal from "./ProjectModal";
 const Projects = () => {
+  const { handleModalView } = useAppContext();
   return (
     <section className="projects" id="projects">
+      <ProjectModal />
       <header>
         <h2>Projects</h2>
       </header>
@@ -12,8 +16,10 @@ const Projects = () => {
             <img src={placeholderImg} alt="" />
           </figure>
           <div>
-            <h4>Travel Website</h4>
-            <button>Learn More</button>
+            <h4>City Viewer</h4>
+            <button name="cityViewer" onClick={(e) => handleModalView(e)}>
+              Learn More
+            </button>
           </div>
         </article>
         <article>
@@ -24,7 +30,9 @@ const Projects = () => {
             <h4>
               Memories <span>MERN</span>
             </h4>
-            <button>Learn More</button>
+            <button name="memories" onClick={(e) => handleModalView(e)}>
+              Learn More
+            </button>
           </div>
         </article>
         <article>
@@ -33,7 +41,9 @@ const Projects = () => {
           </figure>
           <div>
             <h4>Project 3</h4>
-            <button>Learn More</button>
+            <button name="placeholder" onClick={(e) => handleModalView(e)}>
+              Learn More
+            </button>
           </div>
         </article>
       </div>
