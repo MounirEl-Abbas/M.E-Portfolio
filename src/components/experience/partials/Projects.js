@@ -2,7 +2,7 @@ import { MdOpenInNew } from "../../../assets";
 import placeholderImg from "../../../assets/images/hero-bg2.jpg";
 const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <header>
         <h2>Projects</h2>
       </header>

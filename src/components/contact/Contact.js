@@ -5,7 +5,7 @@ import { FaLinkedin } from "../../assets";
 import FrameByFrame from "./partials/FrameByFrame";
 const Contact = () => {
   return (
-    <section className="contact page">
+    <section className="contact page" id="contact">
       <FrameByFrame />
       <header>
         <h2>

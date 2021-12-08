@@ -22,7 +22,7 @@ import { FaChevronRight } from "../../../assets";
 const Skills = () => {
   const { isDropdownOpen, setIsDropdownOpen } = useAppContext();
   return (
-    <section className="skills-container">
+    <section className="skills-container" id="skills">
       <header>
         <h2>Skills</h2>
       </header>
