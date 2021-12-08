@@ -440,6 +440,17 @@ img {
   background-color: #0c2745;
 }
 
+.about-info-btns a:first-of-type {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 2rem;
+}
+
+.about-info-btns a:first-of-type svg {
+  position: relative;
+  top: 2px;
+}
+
 @media (min-width: 768px) {
   .about {
     flex-direction: row;
@@ -482,6 +493,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 90rem;
 }
 
 .skills {
@@ -694,12 +706,76 @@ img {
 
 .projects {
   border: 1px solid red;
+  max-width: 90rem;
+  margin: 2rem auto;
 }
 
-.projects article {
-  width: 20rem;
-  height: 200px;
-  border: 1px solid green;
+.projects header {
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  max-width: 60rem;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.projects-container article {
+  width: 90%;
+  margin: auto;
+  max-width: 30rem;
+  height: 30%;
+  max-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+}
+
+.projects-container article figure {
+  height: 80%;
+  border-radius: inherit;
+}
+
+.projects-container article figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.projects-container article div {
+  border: 1px solid var(--accentColor);
+  background-color: var(--shade1);
+  border-top: 3px solid var(--accentColor);
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-container article div h4 {
+  align-self: flex-end;
+  padding: 0 0 2px 2px;
+}
+
+.projects-container article div button {
+  border: none;
+  background-color: var(--accentColor);
+  width: 35%;
+  font-weight: 600;
+  color: var(--bgColor);
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    max-width: 70rem;
+  }
 }
 
 .contact {
@@ -783,8 +859,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  outline: 4px solid var(--accentColor);
-  outline-offset: -2px;
+  outline: 5px solid var(--accentColor);
+  outline-offset: -3px;
 }
 
 @media (min-width: 768px) {
