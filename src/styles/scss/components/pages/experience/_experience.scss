@@ -1,10 +1,1 @@
-@import "./partials/skills";
-
-.projects {
-  border: 1px solid red;
-  article {
-    width: 20rem;
-    height: 200px;
-    border: 1px solid green;
-  }
-}
+@import "./partials/skills", "./partials/projects";

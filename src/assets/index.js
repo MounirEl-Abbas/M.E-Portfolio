@@ -42,6 +42,8 @@ export { FiMail } from "react-icons/fi";
 export { FaChevronRight } from "react-icons/fa";
 export { SiElasticstack } from "react-icons/si";
 export { ImCross } from "react-icons/im";
+export { MdOpenInNew } from "react-icons/md";
+export { HiDownload } from "react-icons/hi";
 
 export {
   HTMLImg,
