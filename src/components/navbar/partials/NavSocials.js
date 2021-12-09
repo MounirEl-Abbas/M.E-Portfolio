@@ -1,12 +1,6 @@
 import React from "react";
-import { useAppContext } from "../../../context/AppContext";
 //icons
-import {
-  AiFillGithub,
-  FaLinkedin,
-  VscFilePdf,
-  SiElasticstack,
-} from "../../../assets";
+import { AiFillGithub, FaLinkedin, VscFilePdf } from "../../../assets";
 const NavSocials = () => {
   return (
     <section className="navbar-socials">

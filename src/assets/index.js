@@ -1,15 +1,15 @@
 //Images
-import HTMLImg from "./images/html.PNG";
-import CSSImg from "./images/css.PNG";
-import javascriptImg from "./images/javascript.PNG";
-import reactImg from "./images/react.PNG";
-import reduxImg from "./images/redux.PNG";
-import typescriptImg from "./images/typescript.PNG";
-import sassImg from "./images/sass.PNG";
-import gitImg from "./images/git.PNG";
-import nodeImg from "./images/node.PNG";
-import expressImg from "./images/express.PNG";
-import mongoDBImg from "./images/mongoDB.PNG";
+import HTMLImg from "./images/skills/html.PNG";
+import CSSImg from "./images/skills/css.PNG";
+import javascriptImg from "./images/skills/javascript.PNG";
+import reactImg from "./images/skills/react.PNG";
+import reduxImg from "./images/skills/redux.PNG";
+import typescriptImg from "./images/skills/typescript.PNG";
+import sassImg from "./images/skills/sass.PNG";
+import gitImg from "./images/skills/git.PNG";
+import nodeImg from "./images/skills/node.PNG";
+import expressImg from "./images/skills/express.PNG";
+import mongoDBImg from "./images/skills/mongoDB.PNG";
 import SelfShot from "./images/me-headshot.png";
 
 //FrameByFram Image

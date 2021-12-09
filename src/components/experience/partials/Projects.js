@@ -1,4 +1,4 @@
-import { MdOpenInNew } from "../../../assets";
+// import { MdOpenInNew } from "../../../assets";
 import placeholderImg from "../../../assets/images/hero-bg2.jpg";
 import { useAppContext } from "../../../context/AppContext";
 import ProjectModal from "./ProjectModal";
