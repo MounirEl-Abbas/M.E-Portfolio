@@ -17,6 +17,7 @@ import {
 } from "../../../assets";
 
 let n = 1;
+
 const FrameByFrame = () => {
   const [currentImage, setCurrentImage] = useState(typing1);
 
