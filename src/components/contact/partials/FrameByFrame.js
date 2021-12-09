@@ -16,37 +16,35 @@ import {
   typing14,
 } from "../../../assets";
 
+let n = 1;
 const FrameByFrame = () => {
-  const typingImages = {
-    1: typing1,
-    2: typing2,
-    3: typing3,
-    4: typing4,
-    5: typing5,
-    6: typing6,
-    7: typing7,
-    8: typing8,
-    9: typing9,
-    10: typing10,
-    11: typing11,
-    12: typing12,
-    13: typing13,
-    14: typing14,
-  };
   const [currentImage, setCurrentImage] = useState(typing1);
 
-  const switchFrames = () => {
-    let n = 1;
-    setInterval(() => {
+  useEffect(() => {
+    const typingImages = {
+      1: typing1,
+      2: typing2,
+      3: typing3,
+      4: typing4,
+      5: typing5,
+      6: typing6,
+      7: typing7,
+      8: typing8,
+      9: typing9,
+      10: typing10,
+      11: typing11,
+      12: typing12,
+      13: typing13,
+      14: typing14,
+    };
+    const switchFrames = setInterval(() => {
       n >= 14 ? (n = 1) : n++;
       let nextImg = typingImages[n];
       setCurrentImage(nextImg);
     }, 100);
-    // clearInterval();
-  };
-
-  useEffect(() => {
-    switchFrames();
+    return () => {
+      clearInterval(switchFrames);
+    };
   }, []);
 
   return (
