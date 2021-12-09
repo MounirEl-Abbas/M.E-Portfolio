@@ -9,7 +9,7 @@ const AppContextProvider = ({ children }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [appTheme, setAppTheme] = useState("light");
-  const [isModalOpen, setisModalOpen] = useState(false);
+  // const [isModalOpen, setisModalOpen] = useState(false);
 
   const changeTheme = () => {
     bodyTag.classList.contains("dark")
@@ -24,17 +24,18 @@ const AppContextProvider = ({ children }) => {
   };
 
   const handleModalView = (e) => {
-    const projectSelected = e.currentTarget.name;
-    switch (projectSelected) {
-      case "travel":
-        setisModalOpen(true);
-      case "memories":
-      case "placeholder":
+    console.log(`e.currentTarget.name`, e.currentTarget.name);
+    // const projectSelected = e.currentTarget.name;
+    // switch (projectSelected) {
+    //   case "travel":
+    //     setisModalOpen(true);
+    //   case "memories":
+    //   case "placeholder":
 
-      default:
-        setisModalOpen(false);
-        break;
-    }
+    //   default:
+    //     setisModalOpen(false);
+    //     break;
+    // }
   };
   return (
     <AppContext.Provider
