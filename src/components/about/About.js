@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useAppContext } from "../../context/AppContext";
+import React from "react";
 
 import AboutInfo from "./partials/AboutInfo";
-import AboutSocials from "./partials/AboutSocials";
 
 const About = () => {
   return (

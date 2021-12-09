@@ -1,4 +1,4 @@
-import { MdOpenInNew } from "../../../assets";
+// import { MdOpenInNew } from "../../../assets";
 import placeholderImg from "../../../assets/images/hero-bg2.jpg";
 const Projects = () => {
   return (

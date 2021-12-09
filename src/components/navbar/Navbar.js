@@ -7,7 +7,7 @@ import NavPages from "./partials/NavPages";
 import NavSocials from "./partials/NavSocials";
 
 const Navbar = () => {
-  const { isMenuOpen, setIsMenuOpen } = useAppContext();
+  const { isMenuOpen } = useAppContext();
   return (
     <nav className={`${isMenuOpen ? "navbar navbar-open" : "navbar"}`}>
       <NavHeader />

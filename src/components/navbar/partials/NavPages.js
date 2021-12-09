@@ -1,7 +1,6 @@
 import React from "react";
 
 //icons
-import { AiOutlineHome } from "../../../assets";
 import { VscCode } from "../../../assets";
 import { BsPerson } from "../../../assets";
 import { FiMail } from "../../../assets";

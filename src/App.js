@@ -1,6 +1,3 @@
-//context
-import { useAppContext } from "./context/AppContext";
-
 //Components
 import ThemeToggle from "./components/utils/ThemeToggle";
 import Navbar from "./components/navbar/Navbar";

@@ -15,7 +15,6 @@ import {
   typing13,
   typing14,
 } from "../../../assets";
-import { useAppContext } from "../../../context/AppContext";
 
 const FrameByFrame = () => {
   const typingImages = {
@@ -52,7 +51,7 @@ const FrameByFrame = () => {
 
   return (
     <div id="frameByFrameImg">
-      <img src={currentImage}></img>
+      <img src={currentImage} alt=""></img>
     </div>
   );
 };
