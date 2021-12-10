@@ -1,6 +1,7 @@
 import React from "react";
 //icons
 import { AiFillGithub, FaLinkedin, VscFilePdf } from "../../../assets";
+import resume from "../../../assets/ME-Resume.pdf";
 const NavSocials = () => {
   return (
     <section className="navbar-socials">
@@ -26,7 +27,7 @@ const NavSocials = () => {
           </a>
         </li>
         <li>
-          <a href="!#">
+          <a href={resume} target="_blank" rel="noreferrer">
             <VscFilePdf />
             <span>Resume</span>
           </a>
