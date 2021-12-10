@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useAppContext } from "../../../context/AppContext";
-import { FaChevronLeft, FaChevronRight } from "../../../assets";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  ImCross,
+  MdOpenInNew,
+  AiFillGithub,
+} from "../../../assets";
 
 const ProjectModal = () => {
   const { isModalOpen, setIsModalOpen, projectInfo } = useAppContext();
@@ -49,23 +55,26 @@ const ProjectModal = () => {
               </button>
             </div>
           </div>
-          <article>
-            <div>
+          <article className="modal-info">
+            <div className="modal-info-header">
               <h3>{projectInfo.name}</h3>
               <p>{projectInfo.subTitle}</p>
             </div>
-            <div>
+            <div className="modal-info-description">
               <p>{projectInfo.description}</p>
-              <div>
-                <div>
+              <div className="modal-info-btn-container">
+                <div className="modal-info-urls">
                   <a href={projectInfo.url} target="_blank" rel="noreferrer">
-                    View Site
+                    <MdOpenInNew />
+                    <p>View Site</p>
                   </a>
                   <a href={projectInfo.github} target="_blank" rel="noreferrer">
-                    Github
+                    <AiFillGithub /> <p>Github</p>
                   </a>
                 </div>
-                <button onClick={() => setIsModalOpen(false)}>X</button>
+                <button onClick={() => setIsModalOpen(false)}>
+                  <ImCross />
+                </button>
               </div>
             </div>
           </article>

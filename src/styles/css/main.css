@@ -96,10 +96,6 @@ li {
   list-style-type: none;
 }
 
-img {
-  width: 200px;
-}
-
 .accent-color {
   color: var(--accentColor);
 }
@@ -706,9 +702,9 @@ img {
 }
 
 .projects {
-  border: 1px solid red;
   max-width: 90rem;
-  margin: 2rem auto;
+  margin: 10rem auto;
+  height: 70rem;
 }
 
 .projects header {
@@ -722,13 +718,13 @@ img {
   flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 2rem;
-  height: 100%;
-  border: 1px solid red;
+  height: 90%;
+  padding-top: 2rem;
 }
 
 .projects-container article {
   width: 90%;
-  margin: auto;
+  margin: 2rem auto;
   max-width: 30rem;
   height: 40rem;
   max-height: 25rem;
@@ -736,11 +732,11 @@ img {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
-  border-radius: 10px 10px 0 0;
+  border-radius: 25px 25px 0 0;
 }
 
 .projects-container article figure {
-  height: 80%;
+  height: 85%;
   border-radius: inherit;
 }
 
@@ -752,30 +748,200 @@ img {
 }
 
 .projects-container article div {
-  border: 1px solid var(--accentColor);
+  border: 2px solid var(--accentColor);
   background-color: var(--shade1);
   border-top: 3px solid var(--accentColor);
-  height: 20%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-container article div h4 {
+  padding-left: 1rem;
+  letter-spacing: 1px;
+}
+
+.projects-container article div button {
+  width: 35%;
+  height: 100%;
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  border: none;
+  border-left: 3px solid var(--accentColor);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.projects-container article div button:hover {
+  background-color: transparent;
+  color: var(--accentColor);
+}
+
+.projects {
+  position: relative;
+}
+
+.projects .modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.projects .modal section {
+  width: 100%;
+  max-width: 50rem;
+  height: 100%;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .slider-container {
+  position: relative;
+  height: 65%;
+}
+
+.projects .slider-container figure {
+  display: none;
+}
+
+.projects .slider-container .activeImage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.projects .slider-container .activeImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projects .slider-container div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.projects-container article div h4 {
-  align-self: flex-end;
-  padding: 0 0 2px 2px;
+.projects .slider-container div button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.projects-container article div button {
+.projects .slider-container div button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.projects .slider-container div .prev {
+  left: 0;
+  border-radius: 0 10px 0 0;
+}
+
+.projects .slider-container div .next {
+  right: 0;
+  border-radius: 10px 0 0 0;
+}
+
+.projects .modal-info {
+  border-top: 3px solid var(--accentColor);
+  height: 35%;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.projects .modal-info-header {
+  height: 40%;
+  border-bottom: 1px solid var(--shade1);
+  margin-bottom: 1rem;
+}
+
+.projects .modal-info-header h3 {
+  letter-spacing: 1px;
+  padding-bottom: 0.5rem;
+}
+
+.projects .modal-info-header p {
+  opacity: 0.7;
+}
+
+.projects .modal-info-description {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  font-size: 1.2rem;
+}
+
+.projects .modal-info-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects .modal-info-btn-container button {
+  background-color: transparent;
   border: none;
-  background-color: var(--accentColor);
-  width: 35%;
-  font-weight: 600;
-  color: var(--bgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  opacity: 0.4;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.projects .modal-info-urls {
+  width: 70%;
+  max-width: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects .modal-info-urls a {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  max-width: 8rem;
+}
+
+.projects .modal-info-urls a svg {
+  margin-right: 3px;
+}
+
+.projects .modal-info-urls a:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 768px) {
   .projects-container {
     max-width: 70rem;
+  }
+}
+
+@media (min-width: 1174px) {
+  .projects {
+    height: 50rem;
   }
 }
 
