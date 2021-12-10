@@ -1,51 +1,29 @@
 // import { MdOpenInNew } from "../../../assets";
-import placeholderImg from "../../../assets/images/hero-bg2.jpg";
 import { useAppContext } from "../../../context/AppContext";
 import ProjectModal from "./ProjectModal";
+import projects from "../../utils/projectsData";
 const Projects = () => {
-  const { handleModalView } = useAppContext();
+  const { handleModalView, isModalOpen } = useAppContext();
   return (
     <section className="projects" id="projects">
-      <ProjectModal />
+      {isModalOpen && <ProjectModal />}
       <header>
         <h2>Projects</h2>
       </header>
       <div className="projects-container">
-        <article>
-          <figure>
-            <img src={placeholderImg} alt="" />
-          </figure>
-          <div>
-            <h4>City Viewer</h4>
-            <button name="cityViewer" onClick={(e) => handleModalView(e)}>
-              Learn More
-            </button>
-          </div>
-        </article>
-        <article>
-          <figure>
-            <img src={placeholderImg} alt="" />
-          </figure>
-          <div>
-            <h4>
-              Memories <span>MERN</span>
-            </h4>
-            <button name="memories" onClick={(e) => handleModalView(e)}>
-              Learn More
-            </button>
-          </div>
-        </article>
-        <article>
-          <figure>
-            <img src={placeholderImg} alt="" />
-          </figure>
-          <div>
-            <h4>Project 3</h4>
-            <button name="placeholder" onClick={(e) => handleModalView(e)}>
-              Learn More
-            </button>
-          </div>
-        </article>
+        {projects.map((project) => (
+          <article key={project.id}>
+            <figure>
+              <img src={project.images[0]} alt="" />
+            </figure>
+            <div>
+              <h4>{project.name}</h4>
+              <button name={project.name} onClick={(e) => handleModalView(e)}>
+                Learn More
+              </button>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
