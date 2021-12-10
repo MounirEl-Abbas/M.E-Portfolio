@@ -1,17 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useAppContext } from "../../../context/AppContext";
+import { FaChevronLeft, FaChevronRight } from "../../../assets";
 
 const ProjectModal = () => {
   const { isModalOpen, setIsModalOpen, projectInfo } = useAppContext();
-  console.log(`projectInfo`, projectInfo);
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    if (!Object.keys(projectInfo).length) return;
+    const { images } = projectInfo;
+    const lastIndex = images.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, Object.keys(projectInfo).length]);
+
   return (
     <div className={`${isModalOpen ? "modal modal-open" : "modal"}`}>
       {Object.keys(projectInfo).length && (
         <section>
           <div className="slider-container">
-            <figure>
-              <img src={projectInfo.images[0]} alt="" />
-            </figure>
+            {projectInfo.images.map((image, imageIndex) => {
+              let position = "otherImage";
+              if (
+                imageIndex === index + 1 ||
+                (index === projectInfo.images.length - 1 && imageIndex === 0)
+              ) {
+                position = "nextImage";
+              }
+              if (imageIndex === index) {
+                position = "activeImage";
+              }
+
+              return (
+                <figure className={position}>
+                  <img src={image} alt="" />
+                </figure>
+              );
+            })}
+            <div>
+              <button className="prev" onClick={() => setIndex(index - 1)}>
+                <FaChevronLeft />
+              </button>
+              <button className="next" onClick={() => setIndex(index + 1)}>
+                <FaChevronRight />
+              </button>
+            </div>
           </div>
           <article>
             <div>

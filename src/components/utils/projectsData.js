@@ -1,5 +1,11 @@
-import cityViewerHero from "../../assets/images/projects/cityViewer/cityViewer-hero.PNG";
-import placeholder from "../../assets/images/projects/cityViewer/cityViewer-city.PNG";
+import {
+  cityViewerHero,
+  cityViewerPricing,
+  cityViewerCountries,
+  cityViewerCities,
+  cityViewerCity,
+  placeholder,
+} from "../../assets";
 
 const projects = [
   {
@@ -10,7 +16,13 @@ const projects = [
       "Wesbite capable of browsing countries to see real-time events offered by ticketmaster, as well as the current weather and of course, beautiful images",
     url: "https://pseudo-travel-app.netlify.app/",
     github: "https://github.com/MounirEl-Abbas/Travel-portfolio-project",
-    images: [cityViewerHero],
+    images: [
+      cityViewerHero,
+      cityViewerPricing,
+      cityViewerCountries,
+      cityViewerCities,
+      cityViewerCity,
+    ],
   },
   // {
   //   id: 2,
