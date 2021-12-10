@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import projects from "../components/utils/projectsData";
 
 //Create Context
 const AppContext = React.createContext();
@@ -6,10 +7,14 @@ const bodyTag = document.getElementById("bodyTag");
 
 const AppContextProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState("home");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [appTheme, setAppTheme] = useState("light");
-  // const [isModalOpen, setisModalOpen] = useState(false);
+  //State for navbar < 768px
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  //State for projects
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [projectInfo, setProjectInfo] = useState({});
+  //State for skills section dropdown
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const changeTheme = () => {
     bodyTag.classList.contains("dark")
@@ -24,19 +29,14 @@ const AppContextProvider = ({ children }) => {
   };
 
   const handleModalView = (e) => {
-    console.log(`e.currentTarget.name`, e.currentTarget.name);
-    // const projectSelected = e.currentTarget.name;
-    // switch (projectSelected) {
-    //   case "travel":
-    //     setisModalOpen(true);
-    //   case "memories":
-    //   case "placeholder":
-
-    //   default:
-    //     setisModalOpen(false);
-    //     break;
-    // }
+    const projectSelected = e.currentTarget.name;
+    const projectSelectedInfo = projects.find(
+      (project) => project.name === projectSelected
+    );
+    setProjectInfo(projectSelectedInfo);
+    setIsModalOpen(true);
   };
+
   return (
     <AppContext.Provider
       value={{
@@ -49,6 +49,9 @@ const AppContextProvider = ({ children }) => {
         setIsMenuOpen,
         isMenuOpen,
         handleModalView,
+        setIsModalOpen,
+        isModalOpen,
+        projectInfo,
       }}
     >
       {children}

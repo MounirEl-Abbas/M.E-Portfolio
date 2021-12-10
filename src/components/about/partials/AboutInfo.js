@@ -1,5 +1,6 @@
 import React from "react";
-import { HiDownload } from "../../../assets";
+import { HiDownload, MdOpenInNew } from "../../../assets";
+import resume from "../../../assets/ME-Resume.pdf";
 
 const AboutInfo = () => {
   return (
@@ -34,12 +35,23 @@ const AboutInfo = () => {
         </p>
       </article>
       <article className="about-info-btns">
-        <a href="me-resume.pdf" name="resume" download>
-          <i>
+        <div>
+          <a
+            href={resume}
+            name="resume"
+            target="_blank"
+            rel="noreferrer"
+            // download="Me-Resume.pdf"
+          >
+            <i>
+              <MdOpenInNew />
+            </i>
+            <p>Resume</p>
+          </a>
+          <a href={resume} download={resume}>
             <HiDownload />
-          </i>
-          <p>Resume</p>
-        </a>
+          </a>
+        </div>
         <a href="#about" name="about">
           Projects
         </a>
