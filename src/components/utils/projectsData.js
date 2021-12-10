@@ -13,7 +13,7 @@ const projects = [
     name: "City Viewer",
     subTitle: "Browse Countries to find real-time data on a city",
     description:
-      "Wesbite capable of browsing countries to see real-time events offered by ticketmaster, as well as the current weather and of course, beautiful images",
+      "Wesbite capable of browsing countries to see real-time events offered by ticketmaster, as well as the current weather and of course, beautiful images. Created using Create-React-App, Redux, SCSS and React-Router v6",
     url: "https://pseudo-travel-app.netlify.app/",
     github: "https://github.com/MounirEl-Abbas/Travel-portfolio-project",
     images: [
