@@ -15,7 +15,7 @@ const ProjectModal = () => {
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, Object.keys(projectInfo).length]);
+  }, [index, projectInfo]);
 
   return (
     <div className={`${isModalOpen ? "modal modal-open" : "modal"}`}>
@@ -35,7 +35,7 @@ const ProjectModal = () => {
               }
 
               return (
-                <figure className={position}>
+                <figure className={position} key={imageIndex}>
                   <img src={image} alt="" />
                 </figure>
               );
