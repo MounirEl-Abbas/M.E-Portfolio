@@ -35,24 +35,21 @@ const AboutInfo = () => {
         </p>
       </article>
       <article className="about-info-btns">
-        <div>
-          <a
-            href={resume}
-            name="resume"
-            target="_blank"
-            rel="noreferrer"
-            // download="Me-Resume.pdf"
-          >
-            <i>
-              <MdOpenInNew />
-            </i>
-            <p>Resume</p>
-          </a>
-          <a href={resume} download={resume}>
-            <HiDownload />
-          </a>
+        <div id="resume-btns-container">
+          <p>Resume</p>
+          <div>
+            <a href={resume} name="resume" target="_blank" rel="noreferrer">
+              <i>
+                <MdOpenInNew />
+              </i>
+            </a>
+            <a href={resume} download={resume}>
+              <HiDownload />
+            </a>
+          </div>
         </div>
-        <a href="#about" name="about">
+
+        <a id="projects-btn" href="#projects" name="about">
           Projects
         </a>
       </article>
