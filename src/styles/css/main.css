@@ -821,13 +821,26 @@ li {
 
 .projects {
   position: relative;
+  margin: auto;
+}
+
+.projects-modal::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--opposite);
+  opacity: 0.4;
+  margin: auto;
+  right: 0;
+  left: 0;
+  border-radius: 1rem;
 }
 
 .projects .modal {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -844,28 +857,28 @@ li {
   flex-direction: column;
 }
 
-.projects .slider-container {
+.modal .slider-container {
   position: relative;
   height: 65%;
 }
 
-.projects .slider-container figure {
+.modal .slider-container figure {
   display: none;
 }
 
-.projects .slider-container .activeImage {
+.modal .slider-container .activeImage {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.projects .slider-container .activeImage img {
+.modal .slider-container .activeImage img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.projects .slider-container div {
+.modal .slider-container div {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -873,7 +886,7 @@ li {
   justify-content: space-between;
 }
 
-.projects .slider-container div button {
+.modal .slider-container div button {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   width: 4rem;
@@ -886,21 +899,21 @@ li {
   cursor: pointer;
 }
 
-.projects .slider-container div button:hover {
+.modal .slider-container div button:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.projects .slider-container div .prev {
+.modal .slider-container div .prev {
   left: 0;
   border-radius: 0 10px 0 0;
 }
 
-.projects .slider-container div .next {
+.modal .slider-container div .next {
   right: 0;
   border-radius: 10px 0 0 0;
 }
 
-.projects .modal-info {
+.modal .modal-info {
   border-top: 3px solid var(--accentColor);
   height: 35%;
   background-color: var(--bgColor);
@@ -910,22 +923,23 @@ li {
   padding: 1.5rem 1rem 1rem 1rem;
 }
 
-.projects .modal-info-header {
+.modal .modal-info-header {
   height: 40%;
   border-bottom: 1px solid var(--shade1);
   margin-bottom: 1rem;
 }
 
-.projects .modal-info-header h3 {
+.modal .modal-info-header h3 {
   letter-spacing: 1px;
   padding-bottom: 0.5rem;
 }
 
-.projects .modal-info-header p {
+.modal .modal-info-header p {
   opacity: 0.7;
+  font-size: 1.2rem;
 }
 
-.projects .modal-info-description {
+.modal .modal-info-description {
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -934,42 +948,42 @@ li {
   font-size: 1.2rem;
 }
 
-.projects .modal-info-btn-container {
+.modal .modal-info-btn-container {
   display: flex;
   justify-content: space-between;
 }
 
-.projects .modal-info-btn-container button {
+.modal .modal-info-btn-container button {
   background-color: transparent;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: var(--opposite);
   opacity: 0.4;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.projects .modal-info-urls {
+.modal .modal-info-urls {
   width: 70%;
   max-width: 20rem;
   display: flex;
   justify-content: space-between;
 }
 
-.projects .modal-info-urls a {
+.modal .modal-info-urls a {
   display: flex;
   align-items: center;
   width: 45%;
   max-width: 8rem;
 }
 
-.projects .modal-info-urls a svg {
+.modal .modal-info-urls a svg {
   margin-right: 3px;
 }
 
-.projects .modal-info-urls a:hover {
+.modal .modal-info-urls a:hover {
   opacity: 0.7;
 }
 

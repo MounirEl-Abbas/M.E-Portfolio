@@ -5,7 +5,10 @@ import projects from "../../utils/projectsData";
 const Projects = () => {
   const { handleModalView, isModalOpen } = useAppContext();
   return (
-    <section className="projects" id="projects">
+    <section
+      className={`${isModalOpen ? "projects projects-modal" : "projects"}`}
+      id="projects"
+    >
       {isModalOpen && <ProjectModal />}
       <header>
         <h2>Projects</h2>
