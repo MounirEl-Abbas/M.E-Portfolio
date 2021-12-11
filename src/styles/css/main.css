@@ -304,6 +304,7 @@ li {
   width: 25px;
   height: 25px;
   z-index: 9;
+  cursor: pointer;
 }
 
 #menu-btn svg {
