@@ -1,11 +1,11 @@
 import React from "react";
-import Binary from "./Binary";
+import selfShot from "../../../assets/images/me-headshot.png";
 const NavHeader = () => {
   return (
     <header className="navbar-header">
-      <div id="selfie-container">
-        <Binary />
-      </div>
+      <figure id="selfie-container">
+        <img src={selfShot} alt="Head shot of myself." />
+      </figure>
       <h3>Mounir El-Abbas</h3>
       <p>Front-End Developer</p>
     </header>

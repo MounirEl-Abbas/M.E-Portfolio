@@ -1,8 +1,7 @@
 #selfie-container {
-  width: 90%;
-  margin: 0 auto;
-  height: 70%;
-  // background-color: $shade1;
+  width: 70%;
+  margin: auto;
+  height: 60%;
   background: linear-gradient(
     to right,
     rgba(255, 50, 50, 0) 0%,
@@ -10,28 +9,17 @@
     $accentColor 90%,
     rgba(255, 48, 48, 0) 100%
   );
-  // display: flex;
-  // justify-content: center;
-  -webkit-text-fill-color: transparent;
-  border-radius: 50% 50% 10px 10px;
-  overflow: hidden;
-  cursor: default;
+  box-shadow: -7px 5px 10px 2px rgba($color: #000000, $alpha: 0.5);
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+    border-left: 6px outset $accentColor;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
-#selfie {
-  border-radius: 50% 50% 10px 10px;
-  background: url("../../assets/images/me-headshot.png") no-repeat center;
-  width: 100%;
-  word-spacing: 0px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  height: 100%;
-  font-size: 10px;
-  line-height: 0.4;
-  font-weight: 900;
-  letter-spacing: -1px;
-  background-size: cover;
-  border: 2px solid $accentColor;
-}
+
 .navbar {
   width: 70%;
   max-width: 20rem;
