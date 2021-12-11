@@ -6,15 +6,18 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import MenuBtn from "./components/navbar/partials/MenuBtn";
 
+import { useAppContext } from "./context/AppContext";
+
 const App = () => {
+  const { setIsMenuOpen } = useAppContext();
   return (
-    <div className="app">
+    <div className="app" onScroll={() => setIsMenuOpen(false)}>
       <ThemeToggle />
       <MenuBtn />
 
       <div className="container">
         <Navbar />
-        <main className="pages">
+        <main className="pages" onClick={() => setIsMenuOpen(false)}>
           <About />
           <Experience />
           <Contact />
@@ -25,9 +28,3 @@ const App = () => {
 };
 
 export default App;
-
-/* 
-https://www.drewrawitz.com/#/
-https://andrewborstein.com/
-https://www.ngoako.com/index.html#about
-*/
