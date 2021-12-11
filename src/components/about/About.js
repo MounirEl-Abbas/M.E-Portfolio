@@ -7,7 +7,6 @@ const About = () => {
     <section className="about" id="about">
       <figure id="hero-bg-container"></figure>
       <AboutInfo />
-      {/* <AboutSocials /> */}
     </section>
   );
 };

@@ -8,9 +8,9 @@ import Contact from "./components/contact/Contact";
 import MenuBtn from "./components/navbar/partials/MenuBtn";
 
 import { useAppContext } from "./context/AppContext";
-
 const App = () => {
   const { setIsMenuOpen } = useAppContext();
+
   return (
     <div className="app" onScroll={() => setIsMenuOpen(false)}>
       <ThemeToggle />
