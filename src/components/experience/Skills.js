@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../../context/AppContext";
+import { useAppContext } from "../../context/AppContext";
 
 //images
 import {
@@ -14,10 +14,10 @@ import {
   nodeImg,
   expressImg,
   mongoDBImg,
-} from "../../../assets";
+} from "../../assets";
 
 //icons
-import { FaChevronRight } from "../../../assets";
+import { FaChevronRight } from "../../assets";
 
 const Skills = () => {
   const { isDropdownOpen, setIsDropdownOpen } = useAppContext();

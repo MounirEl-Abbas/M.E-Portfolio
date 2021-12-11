@@ -1,8 +1,9 @@
 //Components
 import ThemeToggle from "./components/utils/ThemeToggle";
 import Navbar from "./components/navbar/Navbar";
-import Experience from "./components/experience/Experience";
 import About from "./components/about/About";
+import Skills from "./components/experience/Skills";
+import Projects from "./components/experience/Projects";
 import Contact from "./components/contact/Contact";
 import MenuBtn from "./components/navbar/partials/MenuBtn";
 
@@ -19,7 +20,8 @@ const App = () => {
         <Navbar />
         <main className="pages" onClick={() => setIsMenuOpen(false)}>
           <About />
-          <Experience />
+          <Skills />
+          <Projects />
           <Contact />
         </main>
       </div>

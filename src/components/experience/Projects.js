@@ -1,7 +1,7 @@
 // import { MdOpenInNew } from "../../../assets";
-import { useAppContext } from "../../../context/AppContext";
-import ProjectModal from "./ProjectModal";
-import projects from "../../utils/projectsData";
+import { useAppContext } from "../../context/AppContext";
+import ProjectModal from "./partials/ProjectModal";
+import projects from "../utils/projectsData";
 const Projects = () => {
   const { handleModalView, isModalOpen } = useAppContext();
   return (
