@@ -20,7 +20,7 @@ const Projects = () => {
               <img src={project.images[0]} alt="" />
             </figure>
             <div>
-              <h4>{project.name}</h4>
+              <p>{project.name}</p>
               <button name={project.name} onClick={(e) => handleModalView(e)}>
                 Learn More
               </button>

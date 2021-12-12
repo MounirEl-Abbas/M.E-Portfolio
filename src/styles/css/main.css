@@ -792,9 +792,11 @@ li {
   align-items: center;
 }
 
-.projects-container article div h4 {
+.projects-container article div p {
   padding-left: 1rem;
   letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .projects-container article div button {
