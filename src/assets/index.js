@@ -1,8 +1,6 @@
 //Images
-
-import SelfShot from "./images/me-headshot.png";
-
 //webp images
+import headshot from "./images/me-headshot.webp";
 import HTMLImg from "./images/skills/html.webp";
 import CSSImg from "./images/skills/css.webp";
 import javascriptImg from "./images/skills/javascript.webp";
@@ -68,7 +66,7 @@ export {
   nodeImg,
   expressImg,
   mongoDBImg,
-  SelfShot,
+  headshot,
   typing1,
   typing2,
   typing3,
