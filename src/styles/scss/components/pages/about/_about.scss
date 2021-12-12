@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background: url("../../assets/images/hero-bg2.jpg") no-repeat center;
+  background: url("../../assets/images/hero-bg/hero-bg-sm.jpg") no-repeat center;
   background-size: cover;
   #hero-bg-container {
     position: absolute;
@@ -138,6 +138,7 @@
   .about {
     flex-direction: row;
     justify-content: space-between;
+    background-image: url("../../assets/images/hero-bg/hero-bg-sm-med.jpg");
     &-info {
       width: 90%;
       text-align: left;
@@ -164,6 +165,23 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .about {
+    background-image: url("../../assets/images/hero-bg/hero-bg-med.jpg");
+  }
+}
+@media (min-width: 1500px) {
+  .about {
+    background-image: url("../../assets/images/hero-bg/hero-bg-med-lg.jpg");
+  }
+}
+@media (min-width: 1800px) {
+  .about {
+    background-image: url("../../assets/images/hero-bg/hero-bg-lg.jpg");
+  }
+}
+
 @media (min-width: 2500px) {
   #resume-btns-container div {
     a:first-of-type {
