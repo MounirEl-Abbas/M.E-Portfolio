@@ -1001,7 +1001,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: auto;
+  margin: 2rem auto;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, var(--accentColor) 115%);
 }
 
