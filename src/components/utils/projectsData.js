@@ -1,3 +1,4 @@
+//City Viewer Images
 import {
   cityViewerHero,
   cityViewerPricing,
@@ -5,6 +6,13 @@ import {
   cityViewerCities,
   cityViewerCity,
   placeholder,
+} from "../../assets";
+//Portfolio Images
+import {
+  portfolioHero,
+  portfolioSkills,
+  portfolioContact,
+  portfolioLighthouse,
 } from "../../assets";
 
 const projects = [
@@ -42,7 +50,12 @@ const projects = [
       "Feel free to browse my projects and see what I'm capable of. Also do not hesitate to contact me, I'm very approachable!",
     url: "https://www.mounirelabbas.com",
     github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
-    images: [placeholder],
+    images: [
+      portfolioLighthouse,
+      portfolioHero,
+      portfolioSkills,
+      portfolioContact,
+    ],
   },
 ];
 

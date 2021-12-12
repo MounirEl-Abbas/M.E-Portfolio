@@ -20,7 +20,12 @@ import cityViewerPricing from "./images/projects/cityViewer/cityViewer-pricing.P
 import cityViewerCountries from "./images/projects/cityViewer/cityViewer-countries.PNG";
 import cityViewerCities from "./images/projects/cityViewer/cityViewer-cities.PNG";
 import cityViewerCity from "./images/projects/cityViewer/cityViewer-city.PNG";
-import placeholder from "./images/projects/cityViewer/cityViewer-city.PNG";
+
+//Portfolio
+import portfolioHero from "./images/projects/portfolio/portfolio-hero.PNG";
+import portfolioSkills from "./images/projects/portfolio/portfolio-skills.PNG";
+import portfolioContact from "./images/projects/portfolio/portfolio-contact.PNG";
+import portfolioLighthouse from "./images/projects/portfolio/portfolio-lighthouse.PNG";
 
 //FrameByFrame Image
 import typing1 from "./framebyframe/typing1.PNG";
@@ -55,6 +60,9 @@ export { MdOpenInNew } from "react-icons/md";
 export { HiDownload } from "react-icons/hi";
 
 export {
+  //headshot
+  headshot,
+  //Skills
   HTMLImg,
   CSSImg,
   javascriptImg,
@@ -66,7 +74,7 @@ export {
   nodeImg,
   expressImg,
   mongoDBImg,
-  headshot,
+  //FrameByFrame
   typing1,
   typing2,
   typing3,
@@ -81,10 +89,16 @@ export {
   typing12,
   typing13,
   typing14,
+  /* Projects */
+  //CityViewer
   cityViewerHero,
   cityViewerPricing,
   cityViewerCountries,
   cityViewerCities,
   cityViewerCity,
-  placeholder,
+  //Portfolio
+  portfolioHero,
+  portfolioSkills,
+  portfolioContact,
+  portfolioLighthouse,
 };
