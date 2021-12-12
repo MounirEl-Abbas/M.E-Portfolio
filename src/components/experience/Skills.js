@@ -99,10 +99,12 @@ const Skills = () => {
               <li>
                 <span>HTTP requests (CRUD operations)</span>
               </li>
-              <p>
-                Have collectively proven beneficial in the advancement of my
-                front-end knowledge.
-              </p>
+              <li>
+                <p>
+                  Have collectively proven beneficial in the advancement of my
+                  front-end knowledge.
+                </p>
+              </li>
             </ul>
           </div>
         </div>

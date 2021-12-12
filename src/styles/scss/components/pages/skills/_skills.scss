@@ -121,6 +121,9 @@
       left: -10px;
     }
   }
+  li:last-child {
+    list-style-type: none;
+  }
   p {
     border-top: 1px solid $shade2;
     text-align: center;

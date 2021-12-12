@@ -655,6 +655,10 @@ li {
   left: -10px;
 }
 
+.panel li:last-child {
+  list-style-type: none;
+}
+
 .panel p {
   border-top: 1px solid var(--shade2);
   text-align: center;
