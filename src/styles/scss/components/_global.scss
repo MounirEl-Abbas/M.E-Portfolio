@@ -28,15 +28,12 @@
   margin: auto;
   padding: 0 0.5rem;
 }
-.page header {
-  background: linear-gradient(to right, $oppositeColor 0%, $accentColor 10%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  h2 {
-    letter-spacing: 2px;
-  }
+.pages header h2 {
+  letter-spacing: 2px;
+  color: $accentColor;
+  padding-left: 1rem;
 }
+
 @import "./navigation/navbar";
 @import "./pages/about/about", "./pages/skills/skills",
   "./pages/projects/projects", "./pages/contact/contact";

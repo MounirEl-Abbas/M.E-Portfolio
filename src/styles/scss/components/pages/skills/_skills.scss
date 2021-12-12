@@ -1,6 +1,6 @@
 .skills-container {
   width: 100%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   height: 45rem;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      color: $accentColor;
+      color: $textColor;
       font-weight: 600;
       font-size: 1.5rem;
     }

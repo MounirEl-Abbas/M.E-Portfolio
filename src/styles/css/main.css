@@ -136,15 +136,10 @@ li {
   padding: 0 0.5rem;
 }
 
-.page header {
-  background: linear-gradient(to right, var(--opposite) 0%, var(--accentColor) 10%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.page header h2 {
+.pages header h2 {
   letter-spacing: 2px;
+  color: var(--accentColor);
+  padding-left: 1rem;
 }
 
 #selfie-container {
@@ -526,7 +521,7 @@ li {
 
 .skills-container {
   width: 100%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   height: 45rem;
   display: flex;
   flex-direction: column;
@@ -553,7 +548,7 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--accentColor);
+  color: var(--textColor);
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -1007,7 +1002,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 80%, var(--accentColor) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, var(--accentColor) 115%);
 }
 
 .contact header {
