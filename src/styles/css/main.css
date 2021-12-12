@@ -564,8 +564,8 @@ li {
 
 .skills .skills-list li img {
   object-fit: contain;
-  height: 80%;
-  width: 100%;
+  height: 4rem;
+  width: 5rem;
 }
 
 .skills .skills-list li p {

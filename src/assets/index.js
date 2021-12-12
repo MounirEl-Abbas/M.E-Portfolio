@@ -1,16 +1,29 @@
 //Images
-import HTMLImg from "./images/skills/html.PNG";
+// import HTMLImg from "./images/skills/html.PNG";
 import CSSImg from "./images/skills/css.PNG";
-import javascriptImg from "./images/skills/javascript.PNG";
-import reactImg from "./images/skills/react.PNG";
-import reduxImg from "./images/skills/redux.PNG";
-import typescriptImg from "./images/skills/typescript.PNG";
-import sassImg from "./images/skills/sass.PNG";
-import gitImg from "./images/skills/git.PNG";
-import nodeImg from "./images/skills/node.PNG";
-import expressImg from "./images/skills/express.PNG";
-import mongoDBImg from "./images/skills/mongoDB.PNG";
+// import javascriptImg from "./images/skills/javascript.PNG";
+// import reactImg from "./images/skills/react.PNG";
+// import reduxImg from "./images/skills/redux.PNG";
+// import typescriptImg from "./images/skills/typescript.PNG";
+// import sassImg from "./images/skills/sass.PNG";
+// import gitImg from "./images/skills/git.PNG";
+// import nodeImg from "./images/skills/node.PNG";
+// import expressImg from "./images/skills/express.PNG";
+// import mongoDBImg from "./images/skills/mongoDB.PNG";
 import SelfShot from "./images/me-headshot.png";
+
+//webp images
+import HTMLImg from "./images/skills2/html.webp";
+// import CSSImg from "./images/skills2/css.webp";
+import javascriptImg from "./images/skills2/javascript.webp";
+import reactImg from "./images/skills2/react.webp";
+import reduxImg from "./images/skills2/redux.webp";
+import typescriptImg from "./images/skills2/typescript.webp";
+import sassImg from "./images/skills2/sass.webp";
+import gitImg from "./images/skills2/git.webp";
+import nodeImg from "./images/skills2/node.webp";
+import expressImg from "./images/skills2/express.webp";
+import mongoDBImg from "./images/skills2/mongoDB.webp";
 
 //Project Images
 //City Viewer
