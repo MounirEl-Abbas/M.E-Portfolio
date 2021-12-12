@@ -896,7 +896,8 @@ li {
 .modal .slider-container .activeImage img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: var(--bgColor);
 }
 
 .modal .slider-container div {
