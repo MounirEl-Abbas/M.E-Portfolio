@@ -42,7 +42,7 @@ const About = () => {
             <div>
               <a
                 href={resume}
-                name="resume-openInTab"
+                aria-label="open resume in new tab"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -50,13 +50,13 @@ const About = () => {
                   <MdOpenInNew />
                 </i>
               </a>
-              <a href={resume} name="resume-download" download={resume}>
+              <a href={resume} download={resume} aria-label="download resume">
                 <HiDownload />
               </a>
             </div>
           </div>
 
-          <a id="projects-btn" href="#projects" name="about">
+          <a id="projects-btn" href="#projects">
             Projects
           </a>
         </article>
