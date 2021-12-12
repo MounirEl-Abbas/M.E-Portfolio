@@ -284,7 +284,7 @@ li {
 
 .navbar-socials ul li a:last-of-type span {
   font-size: 0.9rem;
-  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .navbar-open {
