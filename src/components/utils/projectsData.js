@@ -5,7 +5,6 @@ import {
   cityViewerCountries,
   cityViewerCities,
   cityViewerCity,
-  placeholder,
 } from "../../assets";
 //Portfolio Images
 import {
