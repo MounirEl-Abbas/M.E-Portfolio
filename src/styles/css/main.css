@@ -351,7 +351,7 @@ li {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 70%;
   margin: auto;
   position: relative;
   justify-content: space-between;
@@ -361,8 +361,8 @@ li {
 .about-info-title {
   display: flex;
   flex-direction: column;
-  height: 60%;
-  justify-content: space-evenly;
+  height: 40%;
+  justify-content: space-between;
 }
 
 .about-info-title h1 {
