@@ -1,0 +1,67 @@
+.scrollTop {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: 9;
+  border: none;
+  background-color: $shade1;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    font-size: 2rem;
+    color: $oppositeColor;
+  }
+  &:hover {
+    -webkit-animation: bounce-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: bounce-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+@media (min-width: 768px) {
+  .scrollTop {
+    left: auto;
+    right: 2rem;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes bounce-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

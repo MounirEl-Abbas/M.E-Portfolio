@@ -313,6 +313,64 @@ li {
   color: var(--accentColor);
 }
 
+.scrollTop {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: 9;
+  border: none;
+  background-color: var(--shade1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollTop svg {
+  font-size: 2rem;
+  color: var(--opposite);
+}
+
+.scrollTop:hover {
+  animation: bounce-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media (min-width: 768px) {
+  .scrollTop {
+    left: auto;
+    right: 2rem;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     display: flex;

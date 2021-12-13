@@ -47,7 +47,12 @@ import typing14 from "./images/framebyframe/typing14.webp";
 export { GiHamburgerMenu } from "react-icons/gi";
 export { FaRedhat } from "react-icons/fa";
 export { AiFillGithub } from "react-icons/ai";
-export { FaLinkedin, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+export {
+  FaLinkedin,
+  FaChevronLeft,
+  FaChevronRight,
+  FaArrowCircleUp,
+} from "react-icons/fa";
 export { VscFilePdf } from "react-icons/vsc";
 export { AiOutlineHome } from "react-icons/ai";
 export { IoBarChartOutline } from "react-icons/io5";
