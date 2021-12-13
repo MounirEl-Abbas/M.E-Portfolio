@@ -7,6 +7,7 @@ body.dark {
   --bgColor: #121212;
   --textColor: #eee;
   --accentColor: #fd7014;
+  --accentColor-highContrast: #fd7014;
   --shade1: #222832;
   --shade2: #393e46;
   --shade3: #484d55;
@@ -17,6 +18,7 @@ body.light {
   --bgColor: #fafafa;
   --textColor: #484b6a;
   --accentColor: #408bdd;
+  --accentColor-highContrast: #0f4783;
   --shade1: #e4e5f1;
   --shade2: #d2d3db;
   --shade3: #9394a5;
@@ -285,6 +287,8 @@ li {
 .navbar-socials ul li a:last-of-type span {
   font-size: 0.9rem;
   text-transform: uppercase;
+  font-weight: 900;
+  color: var(--accentColor-highContrast);
 }
 
 .navbar-open {
@@ -638,10 +642,10 @@ li {
 }
 
 .dropdown button {
+  color: var(--accentColor-highContrast);
   font-size: 1.2rem;
   cursor: pointer;
   background-color: transparent;
-  color: var(--accentColor);
   border: none;
   text-decoration: underline;
   display: flex;
@@ -826,18 +830,19 @@ li {
 .projects-container article div button {
   width: 35%;
   height: 100%;
-  background-color: var(--accentColor);
+  background-color: var(--accentColor-highContrast);
   color: var(--bgColor);
-  border: none;
-  border-left: 3px solid var(--accentColor);
+  text-transform: uppercase;
+  border: 2px outset var(--accentColor-highContrast);
+  border-left: 3px outset var(--accentColor);
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.projects-container article div button:hover {
-  background-color: transparent;
-  color: var(--accentColor);
+.projects-container article div button:active {
+  border: 2px inset var(--accentColor-highContrast);
+  border-left: 3px inset var(--accentColor);
 }
 
 .projects {

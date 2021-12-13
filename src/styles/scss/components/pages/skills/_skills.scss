@@ -88,10 +88,10 @@
   width: 20rem;
   position: relative;
   button {
+    color: $accentColor-highContrast;
     font-size: 1.2rem;
     cursor: pointer;
     background-color: transparent;
-    color: $accentColor;
     border: none;
     text-decoration: underline;
     display: flex;

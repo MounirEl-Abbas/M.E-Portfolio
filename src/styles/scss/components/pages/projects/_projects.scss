@@ -53,16 +53,17 @@
       button {
         width: 35%;
         height: 100%;
-        background-color: $accentColor;
+        background-color: $accentColor-highContrast;
         color: $bgColor;
-        border: none;
-        border-left: 3px solid $accentColor;
+        text-transform: uppercase;
+        border: 2px outset $accentColor-highContrast;
+        border-left: 3px outset $accentColor;
         font-weight: 600;
         font-size: 1rem;
         cursor: pointer;
-        &:hover {
-          background-color: transparent;
-          color: $accentColor;
+        &:active {
+          border: 2px inset $accentColor-highContrast;
+          border-left: 3px inset $accentColor;
         }
       }
     }
