@@ -118,7 +118,7 @@
     justify-content: space-between;
     padding-top: 0.2rem;
     a {
-      width: 49%;
+      width: 49.99%;
       padding: 0.2rem 0;
       background-color: darken($color: #408bdd, $amount: 30%);
       &:hover {
@@ -127,9 +127,15 @@
     }
     a:first-of-type {
       border-radius: 0 0 0 1.75rem;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      border-color: $accentColor;
     }
     a:last-child {
       border-radius: 0 0 1.75rem 0;
+      border-width: 1px 0 0 1px;
+      border-style: solid;
+      border-color: $accentColor;
     }
   }
 }

@@ -462,7 +462,7 @@ li {
 }
 
 #resume-btns-container div a {
-  width: 49%;
+  width: 49.99%;
   padding: 0.2rem 0;
   background-color: #144070;
 }
@@ -473,10 +473,16 @@ li {
 
 #resume-btns-container div a:first-of-type {
   border-radius: 0 0 0 1.75rem;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: var(--accentColor);
 }
 
 #resume-btns-container div a:last-child {
   border-radius: 0 0 1.75rem 0;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: var(--accentColor);
 }
 
 @media (min-width: 768px) {
