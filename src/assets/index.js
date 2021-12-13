@@ -15,33 +15,33 @@ import mongoDBImg from "./images/skills/mongoDB.webp";
 
 //Project Images
 //City Viewer
-import cityViewerHero from "./images/projects/cityViewer/cityViewer-hero.PNG";
-import cityViewerPricing from "./images/projects/cityViewer/cityViewer-pricing.PNG";
-import cityViewerCountries from "./images/projects/cityViewer/cityViewer-countries.PNG";
-import cityViewerCities from "./images/projects/cityViewer/cityViewer-cities.PNG";
-import cityViewerCity from "./images/projects/cityViewer/cityViewer-city.PNG";
+import cityViewerHero from "./images/projects/cityViewer/cityViewer-hero.webp";
+import cityViewerPricing from "./images/projects/cityViewer/cityViewer-pricing.webp";
+import cityViewerCountries from "./images/projects/cityViewer/cityViewer-countries.webp";
+import cityViewerCities from "./images/projects/cityViewer/cityViewer-cities.webp";
+import cityViewerCity from "./images/projects/cityViewer/cityViewer-city.webp";
 
 //Portfolio
-import portfolioHero from "./images/projects/portfolio/portfolio-hero.PNG";
-import portfolioSkills from "./images/projects/portfolio/portfolio-skills.PNG";
-import portfolioContact from "./images/projects/portfolio/portfolio-contact.PNG";
-import portfolioLighthouse from "./images/projects/portfolio/portfolio-lighthouse.PNG";
+import portfolioHero from "./images/projects/portfolio/portfolio-hero.webp";
+import portfolioSkills from "./images/projects/portfolio/portfolio-skills.webp";
+import portfolioContact from "./images/projects/portfolio/portfolio-contact.webp";
+import portfolioLighthouse from "./images/projects/portfolio-png/portfolio-lighthouse.PNG";
 
 //FrameByFrame Image
-import typing1 from "./framebyframe/typing1.PNG";
-import typing2 from "./framebyframe/typing2.PNG";
-import typing3 from "./framebyframe/typing3.PNG";
-import typing4 from "./framebyframe/typing4.PNG";
-import typing5 from "./framebyframe/typing5.PNG";
-import typing6 from "./framebyframe/typing6.PNG";
-import typing7 from "./framebyframe/typing7.PNG";
-import typing8 from "./framebyframe/typing8.PNG";
-import typing9 from "./framebyframe/typing9.PNG";
-import typing10 from "./framebyframe/typing10.PNG";
-import typing11 from "./framebyframe/typing11.PNG";
-import typing12 from "./framebyframe/typing12.PNG";
-import typing13 from "./framebyframe/typing13.PNG";
-import typing14 from "./framebyframe/typing14.PNG";
+import typing1 from "./images/framebyframe/typing1.webp";
+import typing2 from "./images/framebyframe/typing2.webp";
+import typing3 from "./images/framebyframe/typing3.webp";
+import typing4 from "./images/framebyframe/typing4.webp";
+import typing5 from "./images/framebyframe/typing5.webp";
+import typing6 from "./images/framebyframe/typing6.webp";
+import typing7 from "./images/framebyframe/typing7.webp";
+import typing8 from "./images/framebyframe/typing8.webp";
+import typing9 from "./images/framebyframe/typing9.webp";
+import typing10 from "./images/framebyframe/typing10.webp";
+import typing11 from "./images/framebyframe/typing11.webp";
+import typing12 from "./images/framebyframe/typing12.webp";
+import typing13 from "./images/framebyframe/typing13.webp";
+import typing14 from "./images/framebyframe/typing14.webp";
 
 //Icons
 export { GiHamburgerMenu } from "react-icons/gi";
