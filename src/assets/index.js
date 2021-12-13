@@ -25,7 +25,7 @@ import cityViewerCity from "./images/projects/cityViewer/cityViewer-city.webp";
 import portfolioHero from "./images/projects/portfolio/portfolio-hero.webp";
 import portfolioSkills from "./images/projects/portfolio/portfolio-skills.webp";
 import portfolioContact from "./images/projects/portfolio/portfolio-contact.webp";
-import portfolioLighthouse from "./images/projects/portfolio-png/portfolio-lighthouse.PNG";
+import portfolioLighthouse from "./images/projects/portfolio/portfolio-lighthouse.webp";
 
 //FrameByFrame Image
 import typing1 from "./images/framebyframe/typing1.webp";
