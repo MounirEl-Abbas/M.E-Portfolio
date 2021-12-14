@@ -14,7 +14,7 @@ import { useAppContext } from "./context/AppContext";
 
 const App = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
 
     document.getElementById("app").addEventListener("scroll", () => {
       AOS.refresh();
