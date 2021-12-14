@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 //Components
 import ThemeToggle from "./components/utils/ThemeToggle";
 import Navbar from "./components/navbar/Navbar";
@@ -8,7 +11,16 @@ import Contact from "./components/contact/Contact";
 import MenuBtn from "./components/navbar/partials/MenuBtn";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import { useAppContext } from "./context/AppContext";
+
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+
+    document.getElementById("app").addEventListener("scroll", () => {
+      AOS.refresh();
+    });
+  }, []);
+
   const { setIsMenuOpen } = useAppContext();
 
   return (
@@ -16,10 +28,13 @@ const App = () => {
       <ThemeToggle />
       <MenuBtn />
       <ScrollToTop />
-
       <div className="container">
         <Navbar />
-        <main className="pages" onClick={() => setIsMenuOpen(false)}>
+        <main
+          className="pages"
+          id="pages-container"
+          onClick={() => setIsMenuOpen(false)}
+        >
           <About />
           <Skills />
           <Projects />

@@ -5,9 +5,17 @@ import resume from "../../assets/ME-Resume.pdf";
 const About = () => {
   return (
     <section className="about" id="about">
-      <figure id="hero-bg-container"></figure>
+      <figure
+        id="hero-bg-container"
+        data-aos="fade-in"
+        data-aos-duration="3000"
+      ></figure>
       <section className="about-info">
-        <article className="about-info-title">
+        <article
+          className="about-info-title"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <h1>Hello!</h1>
 
           <div>
@@ -26,7 +34,12 @@ const About = () => {
             for your Web Development needs!
           </p>
         </article>
-        <article className="about-info-body">
+        <article
+          className="about-info-body"
+          data-aos="fade-left"
+          data-aos-delay="150"
+          data-aos-anchor=".about-info-btns"
+        >
           <p>
             <strong>Enthusiastic</strong> to apply my obsessive attention to
             detail and perfectionism to serve our customers/users.
@@ -36,7 +49,11 @@ const About = () => {
             like-minded individuals.
           </p>
         </article>
-        <article className="about-info-btns">
+        <article
+          className="about-info-btns"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div id="resume-btns-container">
             <p>Resume</p>
             <div>

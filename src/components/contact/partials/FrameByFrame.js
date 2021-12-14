@@ -49,7 +49,7 @@ const FrameByFrame = () => {
   }, []);
 
   return (
-    <div id="frameByFrameImg">
+    <div id="frameByFrameImg" data-aos="fade-in">
       <img src={currentImage} alt=""></img>
     </div>
   );

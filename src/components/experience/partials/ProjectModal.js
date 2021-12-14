@@ -24,7 +24,10 @@ const ProjectModal = () => {
   }, [index, projectInfo]);
 
   return (
-    <div className={`${isModalOpen ? "modal modal-open" : "modal"}`}>
+    <div
+      className={`${isModalOpen ? "modal modal-open" : "modal"}`}
+      data-aos="zoom-out-down"
+    >
       {Object.keys(projectInfo).length && (
         <section>
           <div className="slider-container">

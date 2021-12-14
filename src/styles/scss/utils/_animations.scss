@@ -1,3 +1,63 @@
 /**********************
 Animations
 **********************/
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-in-ver
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}

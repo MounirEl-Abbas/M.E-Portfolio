@@ -23,11 +23,16 @@ const Skills = () => {
   const { isDropdownOpen, setIsDropdownOpen } = useAppContext();
   return (
     <section className="skills-container" id="skills">
-      <header>
+      <header data-aos="fade-left">
         <h2>Skills</h2>
       </header>
       <div className="skills">
-        <ul className="skills-fundamentals skills-list" title="Fundamentals">
+        <ul
+          className="skills-fundamentals skills-list"
+          title="Fundamentals"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <li>
             <img src={HTMLImg} alt="" />
             <p>HTML</p>
@@ -45,7 +50,12 @@ const Skills = () => {
             <p>React</p>
           </li>
         </ul>
-        <ul className="skills-additional skills-list" title="Noteworthy Skills">
+        <ul
+          className="skills-additional skills-list"
+          title="Noteworthy Skills"
+          data-aos="fade-right"
+          data-aos-delay="600"
+        >
           <li>
             <img src={gitImg} alt="" />
             <p>Git</p>
@@ -60,7 +70,11 @@ const Skills = () => {
             <p>Redux</p>
           </li>
         </ul>
-        <div className="skills-learning">
+        <div
+          className="skills-learning"
+          data-aos="fade-right"
+          data-aos-delay="900"
+        >
           <ul
             className="skills-inprogress skills-list"
             title="Currently Learning"

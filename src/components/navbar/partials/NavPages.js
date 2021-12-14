@@ -16,7 +16,13 @@ const NavPages = () => {
     <section className="navbar-pages">
       <ul>
         <li className={`${currentPage === "about" ? "current-page" : ""}`}>
-          <a onClick={(e) => handleChangePage(e)} name="about" href="#about">
+          <a
+            onClick={(e) => handleChangePage(e)}
+            name="about"
+            href="#about"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <i>
               <BsPerson />
               <span>About</span>
@@ -24,7 +30,14 @@ const NavPages = () => {
           </a>
         </li>
         <li className={`${currentPage === "skills" ? "current-page" : ""}`}>
-          <a onClick={(e) => handleChangePage(e)} name="skills" href="#skills">
+          <a
+            onClick={(e) => handleChangePage(e)}
+            name="skills"
+            href="#skills"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <i>
               <BsBarChartLine />
               <span>Skills</span>
@@ -36,6 +49,9 @@ const NavPages = () => {
             onClick={(e) => handleChangePage(e)}
             name="projects"
             href="#projects"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="400"
           >
             <i>
               <VscCode />
@@ -49,6 +65,9 @@ const NavPages = () => {
             onClick={(e) => handleChangePage(e)}
             name="contact"
             href="#contact"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="600"
           >
             <i>
               <FiMail />

@@ -56,6 +56,10 @@ body {
   font-size: 1.4rem;
 }
 
+.app {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -151,6 +155,7 @@ li {
   background: linear-gradient(to right, rgba(255, 50, 50, 0) 0%, rgba(255, 50, 50, 0) 70%, var(--accentColor) 90%, rgba(255, 48, 48, 0) 100%);
   box-shadow: -7px 5px 10px 2px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+  animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 #selfie-container img {
@@ -175,7 +180,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 0 1rem 0.5rem;
-  z-index: 8;
+  z-index: 10;
 }
 
 .navbar-header {
@@ -256,6 +261,9 @@ li {
 }
 
 .navbar-socials {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+  animation-duration: 500ms;
   color: var(--accentColor);
   height: 10%;
   display: flex;
@@ -398,7 +406,7 @@ li {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   outline: 1px solid #fff;
   outline-offset: -1rem;
 }
@@ -932,6 +940,7 @@ li {
   right: 0;
   left: 0;
   border-radius: 1rem;
+  z-index: 5;
 }
 
 .projects .modal {
@@ -943,6 +952,7 @@ li {
   justify-content: center;
   padding: 1rem;
   border-radius: 5px;
+  z-index: 5;
 }
 
 .projects .modal section {
@@ -1211,5 +1221,42 @@ li {
 @media (min-width: 3000px) {
   html {
     font-size: 24px;
+  }
+}
+
+/**********************
+Animations
+**********************/
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-in-ver
+ * ----------------------------------------
+ */
+
+@keyframes rotate-in-ver {
+  0% {
+    transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
   }
 }

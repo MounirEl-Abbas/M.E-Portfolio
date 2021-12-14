@@ -7,13 +7,13 @@ const Contact = () => {
   return (
     <section className="contact page" id="contact">
       <FrameByFrame />
-      <header>
+      <header data-aos="fade-left">
         <h2>
           Contact <span>ME</span>
         </h2>
       </header>
 
-      <main>
+      <main data-aos="fade-up">
         <article>
           <a href="mailto:eamounir1@gmail.com" aria-label="Email Mounir">
             <FiMail />

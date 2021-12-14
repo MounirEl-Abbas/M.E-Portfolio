@@ -28,6 +28,9 @@ body {
   font-family: $ff-secondary;
   font-size: 1.4rem;
 }
+.app {
+  overflow-x: hidden;
+}
 //Tags
 h1,
 h2,
@@ -72,3 +75,4 @@ li {
 
 @import "./components/global";
 @import "./utils/mediaQueries";
+@import "./utils/animations";

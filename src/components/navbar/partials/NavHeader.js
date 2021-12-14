@@ -2,7 +2,7 @@ import React from "react";
 import { headshot } from "../../../assets";
 const NavHeader = () => {
   return (
-    <header className="navbar-header">
+    <header className="navbar-header" data-aos="zoom-in-down">
       <figure id="selfie-container">
         <img src={headshot} alt="Head shot of myself." />
       </figure>
