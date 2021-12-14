@@ -635,7 +635,7 @@ li {
   content: attr(title);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1rem;
   color: var(--textColor);
   font-weight: 600;
   font-size: 1.5rem;
@@ -645,19 +645,20 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px;
+  justify-content: center;
+  margin: 5px;
   width: 10rem;
   height: 6rem;
 }
 
 .skills .skills-list li img {
   object-fit: contain;
-  height: 4rem;
+  height: 70%;
   width: 5rem;
 }
 
 .skills .skills-list li p {
-  height: 20%;
+  height: 30%;
 }
 
 .skills .skills-list li:not(li:last-child) {
@@ -785,10 +786,16 @@ li {
   }
   .skills .skills-list li {
     flex-direction: row;
-    width: 5rem;
+    width: 10rem;
+  }
+  .skills .skills-list li img {
+    justify-self: flex-start;
+    width: 50%;
+    height: 100%;
   }
   .skills .skills-list li p {
     height: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     margin-left: 0.5rem;

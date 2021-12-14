@@ -22,7 +22,7 @@
       content: attr(title);
       position: absolute;
       top: 0;
-      left: 0;
+      left: 1rem;
       color: $textColor;
       font-weight: 600;
       font-size: 1.5rem;
@@ -31,17 +31,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 5px;
-
+      justify-content: center;
+      margin: 5px;
       width: 10rem;
       height: 6rem;
       img {
         object-fit: contain;
-        height: 4rem;
+        height: 70%;
         width: 5rem;
       }
       p {
-        height: 20%;
+        height: 30%;
       }
     }
     li:not(li:last-child) {
@@ -159,9 +159,16 @@
       }
       li {
         flex-direction: row;
-        width: 5rem;
+        width: 10rem;
+        // max-width: 140px;
+        img {
+          justify-self: flex-start;
+          width: 50%;
+          height: 100%;
+        }
         p {
           height: 100%;
+          width: 50%;
           display: flex;
           align-items: center;
           margin-left: 0.5rem;
