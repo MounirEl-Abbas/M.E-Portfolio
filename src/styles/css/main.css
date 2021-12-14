@@ -319,8 +319,8 @@ li {
   left: 0;
   margin: auto;
   bottom: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   z-index: 9;
   border: none;
   background-color: var(--shade1);
@@ -332,7 +332,7 @@ li {
 }
 
 .scrollTop svg {
-  font-size: 2rem;
+  font-size: 2.7rem;
   color: var(--opposite);
 }
 
@@ -464,7 +464,7 @@ li {
 
 .about-info-body {
   position: absolute;
-  bottom: -2rem;
+  bottom: -15%;
   font-size: 1rem;
   text-align: left;
   padding-left: 1.1rem;
@@ -1091,7 +1091,7 @@ li {
 }
 
 .contact {
-  height: 50rem;
+  height: 45rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1101,7 +1101,7 @@ li {
 }
 
 .contact header {
-  height: 20%;
+  height: 10%;
   max-width: 90rem;
   margin: auto;
   width: 100%;
