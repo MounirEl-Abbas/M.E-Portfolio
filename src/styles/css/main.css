@@ -795,7 +795,7 @@ li {
   }
   .skills .skills-list li {
     flex-direction: row;
-    width: 10rem;
+    width: 8rem;
   }
   .skills .skills-list li img {
     justify-self: flex-start;
