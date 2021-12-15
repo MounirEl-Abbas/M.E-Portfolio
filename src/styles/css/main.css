@@ -863,6 +863,7 @@ li {
   justify-content: space-evenly;
   gap: 2rem;
   height: 90%;
+  padding-top: 3rem;
 }
 
 .projects-container article {
