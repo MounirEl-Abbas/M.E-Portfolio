@@ -27,6 +27,11 @@ import portfolioSkills from "./images/projects/portfolio/portfolio-skills.webp";
 import portfolioContact from "./images/projects/portfolio/portfolio-contact.webp";
 import portfolioLighthouse from "./images/projects/portfolio/portfolio-lighthouse.webp";
 
+//Daily Inspiration
+import dailyInspirationHeader from "./images/projects/dailyInspiration-png/dailyInspiration-hero.PNG";
+import dailyInspirationHero from "./images/projects/dailyInspiration-png/dailyInspiration-quotes.PNG";
+import dailyInspirationMealDrink from "./images/projects/dailyInspiration-png/dailyInspiration-mealDrink.PNG";
+
 //FrameByFrame Image
 import typing1 from "./images/framebyframe/typing1.webp";
 import typing2 from "./images/framebyframe/typing2.webp";
@@ -106,4 +111,8 @@ export {
   portfolioSkills,
   portfolioContact,
   portfolioLighthouse,
+  //Daily inspiration
+  dailyInspirationHero,
+  dailyInspirationHeader,
+  dailyInspirationMealDrink,
 };
