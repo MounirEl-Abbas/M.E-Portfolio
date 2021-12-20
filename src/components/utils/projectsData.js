@@ -14,6 +14,12 @@ import {
   portfolioLighthouse,
 } from "../../assets";
 
+import {
+  dailyInspirationHero,
+  dailyInspirationHeader,
+  dailyInspirationMealDrink,
+} from "../../assets";
+
 const projects = [
   {
     id: 1,
@@ -31,18 +37,9 @@ const projects = [
       cityViewerCity,
     ],
   },
-  // {
-  //   id: 2,
-  //   name: "Memories MERN",
-  //   subTitle: "Save your precious memories into MongoDB",
-  //   description:
-  //     "This website was created using the MERN stack as a way to familiarize myself with basic back-end knowledge such as CRUD operations (Used Mongoose and Axios)",
-  //   url: "",
-  //   github: "https://github.com/MounirEl-Abbas/memories-MERN",
-  //   images: [],
-  // },
+
   {
-    id: 3,
+    id: 2,
     name: "Portfolio",
     subTitle: "A little about me, and where to find me",
     description:
@@ -54,6 +51,20 @@ const projects = [
       portfolioHero,
       portfolioSkills,
       portfolioContact,
+    ],
+  },
+  {
+    id: 2,
+    name: "Daily Inspiration",
+    subTitle: "Randomized quotes, sayings and more.",
+    description:
+      "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
+    url: "https://me-time.netlify.app/",
+    github: "https://github.com/MounirEl-Abbas/daily-inspiration",
+    images: [
+      dailyInspirationHero,
+      dailyInspirationHeader,
+      dailyInspirationMealDrink,
     ],
   },
 ];

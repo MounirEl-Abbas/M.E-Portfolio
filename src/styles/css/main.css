@@ -848,7 +848,6 @@ li {
 .projects {
   max-width: 90rem;
   margin: 10rem auto;
-  height: 70rem;
 }
 
 .projects header {
@@ -1100,12 +1099,6 @@ li {
 @media (min-width: 768px) {
   .projects-container {
     max-width: 70rem;
-  }
-}
-
-@media (min-width: 1174px) {
-  .projects {
-    height: 50rem;
   }
 }
 
