@@ -1,78 +1,77 @@
-// @import "./utils/config";
+@import "./utils/config";
 
-// /**********************
-// Main CSS (General tags)
-// **********************/
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-// }
-// html {
-//   font-size: 10px;
-// }
-// //Containers
-// html,
-// body,
-// #root,
-// .app {
-//   width: 100%;
-//   height: 100%;
-//   overflow: auto;
-//   scroll-behavior: smooth;
-// }
-// body {
-//   background-color: $bgColor;
-//   color: $textColor;
-//   transition: all 0.3s linear;
-//   font-family: $ff-secondary;
-//   font-size: 1.4rem;
-// }
-// .app {
-//   overflow-x: hidden;
-// }
-// //Tags
-// h1,
-// h2,
-// h3,
-// h4,
-// h5 {
-//   font-family: $ff-primary;
-// }
-// h1 {
-//   font-size: 2.4rem;
-// }
-// h2 {
-//   font-size: 2.2rem;
-// }
-// h3 {
-//   font-size: 2rem;
-// }
-// h4 {
-//   font-size: 1.8rem;
-// }
-// h5 {
-//   font-size: 1.6rem;
-// }
+/**********************
+Main CSS (General tags)
+**********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+//Containers
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $bgColor;
+  color: $textColor;
+  transition: all 0.3s linear;
+  font-family: $ff-secondary;
+  font-size: 1.4rem;
+}
+.app {
+  overflow-x: hidden;
+}
+//Tags
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $ff-primary;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
 
-// //Remove default <a> styles
-// a {
-//   text-decoration: none;
-//   color: inherit;
-//   cursor: pointer;
-//   &:visited {
-//     color: inherit;
-//   }
-// }
-// //Remove list bullet points
-// li {
-//   list-style-type: none;
-// }
+//Remove default <a> styles
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:visited {
+    color: inherit;
+  }
+}
+//Remove list bullet points
+li {
+  list-style-type: none;
+}
 
-// .accent-color {
-//   color: $accentColor;
-// }
+.accent-color {
+  color: $accentColor;
+}
 
-// @import "./components/global";
-// @import "./utils/mediaQueries";
-// @import "./utils/animations";
+@import "./utils/mediaQueries";
+@import "./utils/animations";
