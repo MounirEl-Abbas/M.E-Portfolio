@@ -4,18 +4,10 @@ import resume from "../../assets/ME-Resume.pdf";
 
 const About = () => {
   return (
-    <section className="about" id="about">
-      <figure
-        id="hero-bg-container"
-        data-aos="fade-in"
-        data-aos-duration="3000"
-      ></figure>
+    <section className="about">
+      <figure id="hero-bg-container"></figure>
       <section className="about-info">
-        <article
-          className="about-info-title"
-          data-aos="fade-right"
-          data-aos-delay="100"
-        >
+        <article className="about-info-title">
           <h1>Hello!</h1>
 
           <div>
@@ -34,12 +26,7 @@ const About = () => {
             for your Web Development needs!
           </p>
         </article>
-        <article
-          className="about-info-body"
-          data-aos="fade-left"
-          data-aos-delay="150"
-          data-aos-anchor=".about-info-btns"
-        >
+        <article className="about-info-body">
           <p>
             <strong>Enthusiastic</strong> to apply my obsessive attention to
             detail and perfectionism to serve our customers/users.
@@ -49,11 +36,7 @@ const About = () => {
             like-minded individuals.
           </p>
         </article>
-        <article
-          className="about-info-btns"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <article className="about-info-btns">
           <div id="resume-btns-container">
             <p>Resume</p>
             <div>
@@ -61,8 +44,7 @@ const About = () => {
                 href={resume}
                 aria-label="open resume in new tab"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <i>
                   <MdOpenInNew />
                 </i>
