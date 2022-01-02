@@ -1,65 +1,23 @@
 import React from "react";
-import { HiDownload, MdOpenInNew } from "../../assets";
-import resume from "../../assets/ME-Resume.pdf";
+import Socials from "../navbar/partials/Socials";
 
 const About = () => {
   return (
     <section className="about">
-      <figure id="hero-bg-container"></figure>
       <section className="about-info">
         <article className="about-info-title">
-          <h1>Hello!</h1>
-
-          <div>
-            <p>
-              I'm <span>Mounir El-Abbas</span>
-            </p>
-            <p>
-              a <span>Front-End Web Developer</span>.
-            </p>
-          </div>
+          <h1>Hello, I'm Mounir</h1>
           <p>
-            Thank you for considering
-            <span className="accent-color" title="My Initials">
-              {" ME "}
-            </span>
-            for your Web Development needs!
-          </p>
-        </article>
-        <article className="about-info-body">
-          <p>
-            <strong>Enthusiastic</strong> to apply my obsessive attention to
-            detail and perfectionism to serve our customers/users.
-          </p>
-          <p>
-            <strong>Eager</strong> to meet, collaborate, and learn with
+            A self-motivated Front-End Developer. Enthusiastic to apply my
+            obsessive attention to detail and perfectionism to serve our
+            customers/users. Eager to meet, collaborate, and learn with
             like-minded individuals.
           </p>
         </article>
-        <article className="about-info-btns">
-          <div id="resume-btns-container">
-            <p>Resume</p>
-            <div>
-              <a
-                href={resume}
-                aria-label="open resume in new tab"
-                target="_blank"
-                rel="noreferrer">
-                <i>
-                  <MdOpenInNew />
-                </i>
-              </a>
-              <a href={resume} download={resume} aria-label="download resume">
-                <HiDownload />
-              </a>
-            </div>
-          </div>
-
-          <a id="projects-btn" href="#projects">
-            Projects
-          </a>
-        </article>
+        <Socials />
       </section>
+
+      <figure></figure>
     </section>
   );
 };

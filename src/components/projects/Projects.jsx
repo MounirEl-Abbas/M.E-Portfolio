@@ -14,6 +14,7 @@ const Projects = () => {
             </figure>
             <div>
               <p>{project.name}</p>
+              <p>project desc</p>
               <button>Code</button>
               <button>Live Demo</button>
             </div>

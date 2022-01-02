@@ -2,10 +2,10 @@ import React from "react";
 //Components
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
-import Skills from "./components/experience/Skills";
-import Projects from "./components/experience/Projects";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Education from "./components/education/Education";
 import Contact from "./components/contact/Contact";
-import MenuBtn from "./components/navbar/partials/MenuBtn";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import { useAppContext } from "./context/AppContext";
 
@@ -14,7 +14,6 @@ const App = () => {
 
   return (
     <div className="app" id="app" onScroll={() => setIsMenuOpen(false)}>
-      <MenuBtn />
       <ScrollToTop />
       <div className="container">
         <Navbar />
@@ -25,6 +24,7 @@ const App = () => {
           <About />
           <Skills />
           <Projects />
+          <Education />
           <Contact />
         </main>
       </div>
