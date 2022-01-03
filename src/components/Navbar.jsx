@@ -2,8 +2,8 @@ import React from "react";
 import { useAppContext } from "../context/AppContext";
 
 //Components
-import Socials from "./partials/Socials";
-import MenuBtn from "./partials/MenuBtn";
+import Socials from "./Socials";
+import MenuBtn from "./MenuBtn";
 
 const Navbar = () => {
   const { isMenuOpen } = useAppContext();

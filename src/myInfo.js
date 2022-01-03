@@ -7,20 +7,20 @@
 //   cityViewerCity,
 // } from "../../assets";
 // //Portfolio Images
-import {
-  portfolioHero,
-  portfolioSkills,
-  portfolioContact,
-  portfolioLighthouse,
-} from "../../assets";
+// import {
+//   portfolioHero,
+//   portfolioSkills,
+//   portfolioContact,
+//   portfolioLighthouse,
+// } from "../../assets";
 
-import {
-  dailyInspirationHero,
-  dailyInspirationHeader,
-  dailyInspirationMealDrink,
-} from "../../assets";
+// import {
+//   dailyInspirationHero,
+//   dailyInspirationHeader,
+//   dailyInspirationMealDrink,
+// } from "../../assets";
 
-const projects = [
+export const projects = [
   {
     id: 1,
     name: "City Viewer",
@@ -38,38 +38,36 @@ const projects = [
     ],
   },
 
-  {
-    id: 2,
-    name: "Portfolio",
-    subTitle: "A little about me, and where to find me",
-    description:
-      "Feel free to browse my projects and see what I'm capable of. Also do not hesitate to contact me, I'm very approachable!",
-    url: "https://www.mounirelabbas.com",
-    github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
-    images: [
-      portfolioLighthouse,
-      portfolioHero,
-      portfolioSkills,
-      portfolioContact,
-    ],
-  },
-  {
-    id: 2,
-    name: "Daily Inspiration",
-    subTitle: "Randomized quotes, sayings and more.",
-    description:
-      "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
-    url: "https://me-time.netlify.app/",
-    github: "https://github.com/MounirEl-Abbas/daily-inspiration",
-    images: [
-      dailyInspirationHero,
-      dailyInspirationHeader,
-      dailyInspirationMealDrink,
-    ],
-  },
+  // {
+  //   id: 2,
+  //   name: "Portfolio",
+  //   subTitle: "A little about me, and where to find me",
+  //   description:
+  //     "Feel free to browse my projects and see what I'm capable of. Also do not hesitate to contact me, I'm very approachable!",
+  //   url: "https://www.mounirelabbas.com",
+  //   github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
+  //   images: [
+  //     portfolioLighthouse,
+  //     portfolioHero,
+  //     portfolioSkills,
+  //     portfolioContact,
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   name: "Daily Inspiration",
+  //   subTitle: "Randomized quotes, sayings and more.",
+  //   description:
+  //     "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
+  //   url: "https://me-time.netlify.app/",
+  //   github: "https://github.com/MounirEl-Abbas/daily-inspiration",
+  //   images: [
+  //     dailyInspirationHero,
+  //     dailyInspirationHeader,
+  //     dailyInspirationMealDrink,
+  //   ],
+  // },
 ];
-
-export default projects;
 
 export const greetings = {
   name: "Mounir El-Abbas",
@@ -95,15 +93,15 @@ export const skillsSection = {
   title: "What I do",
   subTitle:
     "Front-End Developer on a mission to become a well-rounded programmer",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    ),
-  ],
+  // skills: [
+  //   emoji(
+  //     "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+  //   ),
+  //   emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+  //   emoji(
+  //     "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+  //   ),
+  // ],
 
   softwareSkills: [
     {
@@ -211,24 +209,24 @@ export const experience = [
   // },
 ];
 
-export const projects = [
-  {
-    name: "lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    link: "https://example.com",
-  },
-  {
-    name: "lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    github: "https://github.com/1hanzla100",
-  },
-  {
-    name: "lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    github: "https://github.com/1hanzla100",
-    link: "https://example.com",
-  },
-];
+// export const projects = [
+//   {
+//     name: "lorem ipsum",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+//     link: "https://example.com",
+//   },
+//   {
+//     name: "lorem ipsum",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+//     github: "https://github.com/1hanzla100",
+//   },
+//   {
+//     name: "lorem ipsum",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+//     github: "https://github.com/1hanzla100",
+//     link: "https://example.com",
+//   },
+// ];
 
 export const feedbacks = [
   // {

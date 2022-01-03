@@ -1,16 +1,16 @@
 import React from "react";
 
 //images
-import {
-  HTMLImg,
-  CSSImg,
-  javascriptImg,
-  reactImg,
-  reduxImg,
-  typescriptImg,
-  sassImg,
-  gitImg,
-} from "../assets";
+// import {
+//   HTMLImg,
+//   CSSImg,
+//   javascriptImg,
+//   reactImg,
+//   reduxImg,
+//   typescriptImg,
+//   sassImg,
+//   gitImg,
+// } from "../assets";
 
 const Skills = () => {
   return (
@@ -23,7 +23,7 @@ const Skills = () => {
       <div>
         <figure></figure>
         <div className="skills">
-          <ul className="skills-fundamentals skills-list" title="Fundamentals">
+          {/* <ul className="skills-fundamentals skills-list" title="Fundamentals">
             <li>
               <img src={HTMLImg} alt="" />
               <p>HTML</p>
@@ -66,7 +66,7 @@ const Skills = () => {
               <img src={typescriptImg} alt="" />
               <p>Typescript</p>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>

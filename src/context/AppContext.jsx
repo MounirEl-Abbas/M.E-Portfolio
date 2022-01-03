@@ -27,15 +27,6 @@ const AppContextProvider = ({ children }) => {
     isMenuOpen && setIsMenuOpen(false);
   };
 
-  // const handleModalView = (e) => {
-  //   const projectSelected = e.currentTarget.name;
-  //   const projectSelectedInfo = projects.find(
-  //     (project) => project.name === projectSelected
-  //   );
-  //   setProjectInfo(projectSelectedInfo);
-  //   setIsModalOpen(true);
-  // };
-
   return (
     <AppContext.Provider
       value={{
@@ -47,7 +38,6 @@ const AppContextProvider = ({ children }) => {
         setIsDropdownOpen,
         setIsMenuOpen,
         isMenuOpen,
-        handleModalView,
         setIsModalOpen,
         isModalOpen,
         projectInfo,

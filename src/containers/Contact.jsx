@@ -2,7 +2,7 @@ import React from "react";
 import { FiMail } from "../assets";
 import { AiFillGithub } from "../assets";
 import { FaLinkedin } from "../assets";
-import Socials from "../navbar/partials/Socials";
+import Socials from "../components/Socials";
 const Contact = () => {
   return (
     <footer className="contact page">

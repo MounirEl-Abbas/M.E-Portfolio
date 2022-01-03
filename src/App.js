@@ -2,7 +2,7 @@ import React from "react";
 
 //Containers
 import About from "./containers/About";
-import Skills from "./components/skills/Skills";
+import Skills from "./containers/Skills";
 import Projects from "./containers/Projects";
 import Education from "./containers/Education";
 import Contact from "./containers/Contact";

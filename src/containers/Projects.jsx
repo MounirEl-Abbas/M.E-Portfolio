@@ -1,5 +1,5 @@
 // import ProjectModal from "./partials/ProjectModal";
-import projects from "../utils/projectsData";
+import { projects } from "../myInfo";
 const Projects = () => {
   return (
     <section className="projects">

@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../../assets/ME-Resume.pdf";
+import resume from "../assets/ME-Resume.pdf";
 //icons
 import {
   AiFillGithub,
@@ -7,7 +7,7 @@ import {
   VscFilePdf,
   HiDownload,
   MdOpenInNew,
-} from "../../../assets";
+} from "../assets";
 const Socials = () => {
   return (
     <section className="navbar-socials">

@@ -1,17 +1,17 @@
 //Images
 //webp images
-import headshot from "./images/me-headshot.webp";
-import HTMLImg from "./images/skills/html.webp";
-import CSSImg from "./images/skills/css.webp";
-import javascriptImg from "./images/skills/javascript.webp";
-import reactImg from "./images/skills/react.webp";
-import reduxImg from "./images/skills/redux.webp";
-import typescriptImg from "./images/skills/typescript.webp";
-import sassImg from "./images/skills/sass.webp";
-import gitImg from "./images/skills/git.webp";
-import nodeImg from "./images/skills/node.webp";
-import expressImg from "./images/skills/express.webp";
-import mongoDBImg from "./images/skills/mongoDB.webp";
+// import headshot from "./images/me-headshot.webp";
+// import HTMLImg from "./images/skills/html.webp";
+// import CSSImg from "./images/skills/css.webp";
+// import javascriptImg from "./images/skills/javascript.webp";
+// import reactImg from "./images/skills/react.webp";
+// import reduxImg from "./images/skills/redux.webp";
+// import typescriptImg from "./images/skills/typescript.webp";
+// import sassImg from "./images/skills/sass.webp";
+// import gitImg from "./images/skills/git.webp";
+// import nodeImg from "./images/skills/node.webp";
+// import expressImg from "./images/skills/express.webp";
+// import mongoDBImg from "./images/skills/mongoDB.webp";
 
 // //Project Images
 // //City Viewer
@@ -52,35 +52,34 @@ export { ImCross } from "react-icons/im";
 export { MdOpenInNew } from "react-icons/md";
 export { HiDownload } from "react-icons/hi";
 
-export {
-  //headshot
-  headshot,
-  //Skills
-  HTMLImg,
-  CSSImg,
-  javascriptImg,
-  reactImg,
-  reduxImg,
-  typescriptImg,
-  sassImg,
-  gitImg,
-  nodeImg,
-  expressImg,
-  mongoDBImg,
-  // /* Projects */
-  // //CityViewer
-  // cityViewerHero,
-  // cityViewerPricing,
-  // cityViewerCountries,
-  // cityViewerCities,
-  // cityViewerCity,
-  // //Portfolio
-  // portfolioHero,
-  // portfolioSkills,
-  // portfolioContact,
-  // portfolioLighthouse,
-  // //Daily inspiration
-  // dailyInspirationHero,
-  // dailyInspirationHeader,
-  // dailyInspirationMealDrink,
-};
+export //headshot
+// headshot,
+//Skills
+// HTMLImg,
+// CSSImg,
+// javascriptImg,
+// reactImg,
+// reduxImg,
+// typescriptImg,
+// sassImg,
+// gitImg,
+// nodeImg,
+// expressImg,
+// mongoDBImg,
+// /* Projects */
+// //CityViewer
+// cityViewerHero,
+// cityViewerPricing,
+// cityViewerCountries,
+// cityViewerCities,
+// cityViewerCity,
+// //Portfolio
+// portfolioHero,
+// portfolioSkills,
+// portfolioContact,
+// portfolioLighthouse,
+// //Daily inspiration
+// dailyInspirationHero,
+// dailyInspirationHeader,
+// dailyInspirationMealDrink,
+ {};
