@@ -13,24 +13,24 @@ import nodeImg from "./images/skills/node.webp";
 import expressImg from "./images/skills/express.webp";
 import mongoDBImg from "./images/skills/mongoDB.webp";
 
-//Project Images
-//City Viewer
-import cityViewerHero from "./images/projects/cityViewer/cityViewer-hero.webp";
-import cityViewerPricing from "./images/projects/cityViewer/cityViewer-pricing.webp";
-import cityViewerCountries from "./images/projects/cityViewer/cityViewer-countries.webp";
-import cityViewerCities from "./images/projects/cityViewer/cityViewer-cities.webp";
-import cityViewerCity from "./images/projects/cityViewer/cityViewer-city.webp";
+// //Project Images
+// //City Viewer
+// import cityViewerHero from "./images/projects/cityViewer/cityViewer-hero.webp";
+// import cityViewerPricing from "./images/projects/cityViewer/cityViewer-pricing.webp";
+// import cityViewerCountries from "./images/projects/cityViewer/cityViewer-countries.webp";
+// import cityViewerCities from "./images/projects/cityViewer/cityViewer-cities.webp";
+// import cityViewerCity from "./images/projects/cityViewer/cityViewer-city.webp";
 
-//Portfolio
-import portfolioHero from "./images/projects/portfolio/portfolio-hero.webp";
-import portfolioSkills from "./images/projects/portfolio/portfolio-skills.webp";
-import portfolioContact from "./images/projects/portfolio/portfolio-contact.webp";
-import portfolioLighthouse from "./images/projects/portfolio/portfolio-lighthouse.webp";
+// //Portfolio
+// import portfolioHero from "./images/projects/portfolio/portfolio-hero.webp";
+// import portfolioSkills from "./images/projects/portfolio/portfolio-skills.webp";
+// import portfolioContact from "./images/projects/portfolio/portfolio-contact.webp";
+// import portfolioLighthouse from "./images/projects/portfolio/portfolio-lighthouse.webp";
 
-//Daily Inspiration
-import dailyInspirationHeader from "./images/projects/dailyInspiration-png/dailyInspiration-hero.PNG";
-import dailyInspirationHero from "./images/projects/dailyInspiration-png/dailyInspiration-quotes.PNG";
-import dailyInspirationMealDrink from "./images/projects/dailyInspiration-png/dailyInspiration-mealDrink.PNG";
+// //Daily Inspiration
+// import dailyInspirationHeader from "./images/projects/dailyInspiration-png/dailyInspiration-hero.PNG";
+// import dailyInspirationHero from "./images/projects/dailyInspiration-png/dailyInspiration-quotes.PNG";
+// import dailyInspirationMealDrink from "./images/projects/dailyInspiration-png/dailyInspiration-mealDrink.PNG";
 
 //Icons
 export { GiHamburgerMenu } from "react-icons/gi";
@@ -67,20 +67,20 @@ export {
   nodeImg,
   expressImg,
   mongoDBImg,
-  /* Projects */
-  //CityViewer
-  cityViewerHero,
-  cityViewerPricing,
-  cityViewerCountries,
-  cityViewerCities,
-  cityViewerCity,
-  //Portfolio
-  portfolioHero,
-  portfolioSkills,
-  portfolioContact,
-  portfolioLighthouse,
-  //Daily inspiration
-  dailyInspirationHero,
-  dailyInspirationHeader,
-  dailyInspirationMealDrink,
+  // /* Projects */
+  // //CityViewer
+  // cityViewerHero,
+  // cityViewerPricing,
+  // cityViewerCountries,
+  // cityViewerCities,
+  // cityViewerCity,
+  // //Portfolio
+  // portfolioHero,
+  // portfolioSkills,
+  // portfolioContact,
+  // portfolioLighthouse,
+  // //Daily inspiration
+  // dailyInspirationHero,
+  // dailyInspirationHeader,
+  // dailyInspirationMealDrink,
 };

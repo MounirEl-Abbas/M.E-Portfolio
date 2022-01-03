@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import projects from "../components/utils/projectsData";
 
 //Create Context
 const AppContext = React.createContext();
@@ -22,20 +21,20 @@ const AppContextProvider = ({ children }) => {
       : bodyTag.classList.replace("light", "dark") && setAppTheme("dark");
   };
 
-  const handleChangePage = (e) => {
+  const handleChangePage = e => {
     const pageSelected = e.currentTarget.name;
     setCurrentPage(pageSelected);
     isMenuOpen && setIsMenuOpen(false);
   };
 
-  const handleModalView = (e) => {
-    const projectSelected = e.currentTarget.name;
-    const projectSelectedInfo = projects.find(
-      (project) => project.name === projectSelected
-    );
-    setProjectInfo(projectSelectedInfo);
-    setIsModalOpen(true);
-  };
+  // const handleModalView = (e) => {
+  //   const projectSelected = e.currentTarget.name;
+  //   const projectSelectedInfo = projects.find(
+  //     (project) => project.name === projectSelected
+  //   );
+  //   setProjectInfo(projectSelectedInfo);
+  //   setIsModalOpen(true);
+  // };
 
   return (
     <AppContext.Provider
@@ -52,8 +51,7 @@ const AppContextProvider = ({ children }) => {
         setIsModalOpen,
         isModalOpen,
         projectInfo,
-      }}
-    >
+      }}>
       {children}
     </AppContext.Provider>
   );

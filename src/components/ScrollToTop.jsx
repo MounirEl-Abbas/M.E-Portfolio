@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaArrowCircleUp } from "../../assets";
+import { FaArrowCircleUp } from "../assets";
 
 const ScrollToTop = () => {
   // const application = document.getElementById("app");
@@ -17,7 +17,7 @@ const ScrollToTop = () => {
     application.scrollTo(0, 0);
   };
 
-  const listenToScroll = (e) => {
+  const listenToScroll = e => {
     const { scrollTop } = e.target;
     if (scrollTop >= 600) {
       setShowScroll(true);

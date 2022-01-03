@@ -1,7 +1,7 @@
 import React from "react";
-import { FiMail } from "../../assets";
-import { AiFillGithub } from "../../assets";
-import { FaLinkedin } from "../../assets";
+import { FiMail } from "../assets";
+import { AiFillGithub } from "../assets";
+import { FaLinkedin } from "../assets";
 import Socials from "../navbar/partials/Socials";
 const Contact = () => {
   return (

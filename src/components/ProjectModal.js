@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useAppContext } from "../../../context/AppContext";
+import { useAppContext } from "../context/AppContext";
 import {
   FaChevronLeft,
   FaChevronRight,
   ImCross,
   MdOpenInNew,
   AiFillGithub,
-} from "../../../assets";
+} from "../assets";
 
 const ProjectModal = () => {
   const { isModalOpen, setIsModalOpen, projectInfo } = useAppContext();
@@ -26,8 +26,7 @@ const ProjectModal = () => {
   return (
     <div
       className={`${isModalOpen ? "modal modal-open" : "modal"}`}
-      data-aos="zoom-out-down"
-    >
+      data-aos="zoom-out-down">
       {Object.keys(projectInfo).length && (
         <section>
           <div className="slider-container">

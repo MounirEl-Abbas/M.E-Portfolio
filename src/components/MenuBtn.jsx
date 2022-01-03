@@ -1,7 +1,7 @@
 import React from "react";
-import { useAppContext } from "../../../context/AppContext";
+import { useAppContext } from "../context/AppContext";
 //Icons
-import { ImCross, GiHamburgerMenu } from "../../../assets";
+import { ImCross, GiHamburgerMenu } from "../assets";
 const MenuBtn = () => {
   const { isMenuOpen, setIsMenuOpen } = useAppContext();
 

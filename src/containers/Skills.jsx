@@ -10,7 +10,7 @@ import {
   typescriptImg,
   sassImg,
   gitImg,
-} from "../../assets";
+} from "../assets";
 
 const Skills = () => {
   return (

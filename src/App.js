@@ -1,12 +1,15 @@
 import React from "react";
-//Components
-import Navbar from "./components/navbar/Navbar";
-import About from "./components/about/About";
+
+//Containers
+import About from "./containers/About";
 import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
-import Education from "./components/education/Education";
-import Contact from "./components/contact/Contact";
-import ScrollToTop from "./components/utils/ScrollToTop";
+import Projects from "./containers/Projects";
+import Education from "./containers/Education";
+import Contact from "./containers/Contact";
+
+//Components
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import { useAppContext } from "./context/AppContext";
 
 const App = () => {
