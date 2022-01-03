@@ -1,25 +1,3 @@
-// //City Viewer Images
-// import {
-//   cityViewerHero,
-//   cityViewerPricing,
-//   cityViewerCountries,
-//   cityViewerCities,
-//   cityViewerCity,
-// } from "../../assets";
-// //Portfolio Images
-// import {
-//   portfolioHero,
-//   portfolioSkills,
-//   portfolioContact,
-//   portfolioLighthouse,
-// } from "../../assets";
-
-// import {
-//   dailyInspirationHero,
-//   dailyInspirationHeader,
-//   dailyInspirationMealDrink,
-// } from "../../assets";
-
 export const projects = [
   {
     id: 1,
@@ -38,50 +16,41 @@ export const projects = [
     ],
   },
 
-  // {
-  //   id: 2,
-  //   name: "Portfolio",
-  //   subTitle: "A little about me, and where to find me",
-  //   description:
-  //     "Feel free to browse my projects and see what I'm capable of. Also do not hesitate to contact me, I'm very approachable!",
-  //   url: "https://www.mounirelabbas.com",
-  //   github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
-  //   images: [
-  //     portfolioLighthouse,
-  //     portfolioHero,
-  //     portfolioSkills,
-  //     portfolioContact,
-  //   ],
-  // },
-  // {
-  //   id: 2,
-  //   name: "Daily Inspiration",
-  //   subTitle: "Randomized quotes, sayings and more.",
-  //   description:
-  //     "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
-  //   url: "https://me-time.netlify.app/",
-  //   github: "https://github.com/MounirEl-Abbas/daily-inspiration",
-  //   images: [
-  //     dailyInspirationHero,
-  //     dailyInspirationHeader,
-  //     dailyInspirationMealDrink,
-  //   ],
-  // },
+  {
+    id: 2,
+    name: "Portfolio",
+    subTitle: "A little about me, and where to find me",
+    description:
+      "Feel free to browse my projects and see what I'm capable of. Also do not hesitate to contact me, I'm very approachable!",
+    url: "https://www.mounirelabbas.com",
+    github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
+    images: [
+      "/images/projects/portfolio/portfolio-hero.webp",
+      "/images/projects/portfolio/portfolio-skills.webp",
+    ],
+  },
+  {
+    id: 3,
+    name: "Space Tourims",
+    subTitle: "Randomized quotes, sayings and more.",
+    description:
+      "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
+    url: "https://me-time.netlify.app/",
+    github: "https://github.com/MounirEl-Abbas/daily-inspiration",
+    images: [
+      "/images/projects/dailyInspiration-png/dailyInspiration-hero.PNG",
+      "/images/projects/dailyInspiration-png/dailyInspiration-quotes.PNG",
+    ],
+  },
 ];
 
 export const greetings = {
   name: "Mounir El-Abbas",
   title: "Hello, I'm Mounir",
   description:
-    "A self-motivated Front-End Web Developer primarily building Web applications with JavaScript / Reactjs / Redux / SCSS and some other cool libraries and frameworks I've experimented with.",
+    "A self-motivated Front-End Web Developer Enthusiastic to apply my obsessive attention to detail and experience building Web applications with JavaScript / Reactjs / Redux / SCSS and some other cool libraries and frameworks I've experimented with.",
   resumeLink: "https://mounirelabbas.com/static/media/ME-Resume.f22c3498.pdf",
 };
-
-export const openSource = {
-  githubUserName: "MounirEl-Abbas",
-};
-
-export const contact = {};
 
 export const socialLinks = {
   github: "https://github.com/MounirEl-Abbas",
@@ -93,150 +62,73 @@ export const skillsSection = {
   title: "What I do",
   subTitle:
     "Front-End Developer on a mission to become a well-rounded programmer",
-  // skills: [
-  //   emoji(
-  //     "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-  //   ),
-  //   emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-  //   emoji(
-  //     "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-  //   ),
-  // ],
+  skills: [
+    "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+    "⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks",
+    "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+  ],
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "vscode-icons:file-type-html",
+      skillName: "HTML-5",
+      skillIcon: "/images/skills/html.webp",
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "vscode-icons:file-type-css",
+      skillName: "CSS-3",
+      skillIcon: "/images/skills/css.webp",
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "logos:javascript",
+      skillIcon: "/images/skills/javascript.webp",
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "vscode-icons:file-type-reactjs",
+      skillIcon: "/images/skills/react.webp",
     },
     {
       skillName: "sass",
-      fontAwesomeClassname: "logos:sass",
+      skillIcon: "/images/skills/sass.webp",
     },
 
     {
       skillName: "git",
-      fontAwesomeClassname: "logos:git-icon",
+      skillIcon: "/images/skills/git.webp",
     },
     {
       skillName: "TypeScript",
-      fontAwesomeClassname: "logos:typescript-icon",
+      skillIcon: "/images/skills/typescript.webp",
     },
   ],
 };
 
-export const SkillBars = [
-  // {
-  //   Stack: "Frontend/Design", //Insert stack or technology you have experience in
-  //   progressPercentage: "90", //Insert relative proficiency in percentage
-  // },
-  // {
-  //   Stack: "Backend",
-  //   progressPercentage: "70",
-  // },
-  // {
-  //   Stack: "Programming",
-  //   progressPercentage: "60",
-  // },
-];
-
 export const educationInfo = [
   {
-    schoolName: "Harvard University",
+    schoolName: "TeachyourselfCS",
     subHeader: "Master of Science in Computer Science",
     duration: "September 2017 - April 2019",
     desc: "Participated in the research of XXX and published 3 papers.",
     descBullets: [
-      "Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "1Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
+      "2Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     ],
   },
   {
-    schoolName: "Harvard",
+    schoolName: "St. Clair College",
     subHeader: "Master of Science in Computer Science",
     duration: "September 2017 - April 2019",
     desc: "Participated in the research of XXX and published 3 papers.",
     descBullets: [
-      "Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "3Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
+      "4Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     ],
   },
   {
-    schoolName: "Stanford University",
+    schoolName: "University Of Windsor",
     subHeader: "Bachelor of Science in Computer Science",
     duration: "September 2013 - April 2017",
     desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-    descBullets: ["Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit"],
+    descBullets: [
+      "5Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
+    ],
   },
-];
-
-export const experience = [
-  // {
-  //   role: "Software Engineer",
-  //   company: "Google",
-  //   companylogo: "/img/icons/common/google.svg",
-  //   date: "June 2018 – Present",
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  //   descBullets: [
-  //     "Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  //   ],
-  // },
-  // {
-  //   role: "Front-End Developer",
-  //   company: "Github",
-  //   companylogo: "/img/icons/common/github.svg",
-  //   date: "May 2017 – May 2018",
-  //   desc: "Lorem ipsum dolor sit amet, consefdctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  // },
-  // {
-  //   role: "Software Engineer Intern",
-  //   company: "Airbnb",
-  //   companylogo: "/img/icons/common/airbnbLogo.png",
-  //   date: "Jan 2015 – Sep 2015",
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  // },
-];
-
-// export const projects = [
-//   {
-//     name: "lorem ipsum",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-//     link: "https://example.com",
-//   },
-//   {
-//     name: "lorem ipsum",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-//     github: "https://github.com/1hanzla100",
-//   },
-//   {
-//     name: "lorem ipsum",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-//     github: "https://github.com/1hanzla100",
-//     link: "https://example.com",
-//   },
-// ];
-
-export const feedbacks = [
-  // {
-  //   name: "Hassan Mehmood",
-  //   feedback:
-  //     "We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with the customer service at Hanzla tauqeer has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on daily reports so we know how our site is doing. I would recommend that u have choose hanzla web developer services for u.",
-  // },
-  // {
-  //   name: "Maheen Altaf",
-  //   feedback:
-  //     "the website is very nice, everything was perfectly made as i need. it just loads in moments, without giving u the chance to wait. the quality is also very amazing. i am using it without any problem. great job",
-  // },
 ];

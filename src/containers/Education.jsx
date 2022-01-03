@@ -1,11 +1,10 @@
 import React from "react";
+import EducationCard from "../components/EducationCard";
 
 const Education = () => {
   return (
     <div>
-      <article>Teachyourselfcs</article>
-      <article>St. Clair College</article>
-      <article>University Of Windsor</article>
+      <EducationCard />
     </div>
   );
 };

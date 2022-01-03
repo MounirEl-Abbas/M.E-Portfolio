@@ -1,18 +1,14 @@
 import React from "react";
 import Socials from "../components/Socials";
+import { greetings } from "../myInfo";
 
 const About = () => {
   return (
     <section className="about">
       <section className="about-info">
         <article className="about-info-title">
-          <h1>Hello, I'm Mounir</h1>
-          <p>
-            A self-motivated Front-End Developer. Enthusiastic to apply my
-            obsessive attention to detail and perfectionism to serve our
-            customers/users. Eager to meet, collaborate, and learn with
-            like-minded individuals.
-          </p>
+          <h1>{greetings.title}</h1>
+          <p>{greetings.description}</p>
         </article>
         <Socials />
       </section>
