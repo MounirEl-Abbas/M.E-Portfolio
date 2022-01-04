@@ -1,23 +1,24 @@
 import React from "react";
 import { FiMail } from "../assets";
-import { AiFillGithub } from "../assets";
-import { FaLinkedin } from "../assets";
 import Socials from "../components/Socials";
+import { footerInfo } from "../myInfo";
 const Contact = () => {
+  const { headshot, title, subtitle, role, location, email } = footerInfo;
   return (
-    <footer className="contact page">
+    <footer className="contact">
       <div>
-        <figure>Selfie</figure>
+        <figure>
+          <img src={headshot} alt="" />
+        </figure>
       </div>
       <div>
-        <h3>Reach Out to me!</h3>
-        <p>Brief paragraph</p>
-        <p>I'm a Front-End Developer | React | Typescript</p>
-        <p>Location</p>
+        <h3>{title}</h3>
+        <p>{subtitle}</p>
+        <p>{role}</p>
+        <p>{location}</p>
         <Socials />
-        <a href="mailto:eamounir1@gmail.com" aria-label="Email Mounir">
+        <a href={`mailto:${email}`} aria-label={`Send an Email to ${email}`}>
           <FiMail />
-          <p>eamounir1@gmail.com</p>
         </a>
       </div>
     </footer>

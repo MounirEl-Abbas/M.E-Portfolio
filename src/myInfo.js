@@ -70,11 +70,11 @@ export const skillsSection = {
 
   softwareSkills: [
     {
-      skillName: "HTML-5",
+      skillName: "HTML5",
       skillIcon: "/images/skills/html.webp",
     },
     {
-      skillName: "CSS-3",
+      skillName: "CSS3",
       skillIcon: "/images/skills/css.webp",
     },
     {
@@ -82,16 +82,16 @@ export const skillsSection = {
       skillIcon: "/images/skills/javascript.webp",
     },
     {
-      skillName: "reactjs",
+      skillName: "Reactjs",
       skillIcon: "/images/skills/react.webp",
     },
     {
-      skillName: "sass",
+      skillName: "Sass",
       skillIcon: "/images/skills/sass.webp",
     },
 
     {
-      skillName: "git",
+      skillName: "Git",
       skillIcon: "/images/skills/git.webp",
     },
     {
@@ -132,3 +132,12 @@ export const educationInfo = [
     ],
   },
 ];
+
+export const footerInfo = {
+  headshot: "/images/me-headshot.webp",
+  title: "Reach out to me!",
+  subtitle: "Discuss a project or just want to say hi? my inbox bladffsdfsdf",
+  role: "I'm a Front-End Developer | ReactJS | Typescript",
+  location: "Ontario, Canada",
+  email: "eamounir1@gmail.com",
+};

@@ -3,7 +3,7 @@ import { skillsSection } from "../myInfo";
 
 const Skills = () => {
   return (
-    <section className="skills-container">
+    <section className="skills">
       <header>
         <h2>{skillsSection.title}</h2>
         <p>{skillsSection.subTitle}</p>

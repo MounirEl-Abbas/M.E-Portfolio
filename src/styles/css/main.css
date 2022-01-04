@@ -23,13 +23,8 @@ body,
 }
 
 body {
-  transition: all 0.3s linear;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
-}
-
-.app {
-  overflow-x: hidden;
 }
 
 h1,

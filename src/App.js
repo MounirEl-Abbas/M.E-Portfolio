@@ -16,7 +16,7 @@ const App = () => {
   const { setIsMenuOpen } = useAppContext();
 
   return (
-    <div className="app" id="app" onScroll={() => setIsMenuOpen(false)}>
+    <div className="app" id="app">
       <ScrollToTop />
       <div className="container">
         <Navbar />

@@ -3,9 +3,9 @@ import EducationCard from "../components/EducationCard";
 
 const Education = () => {
   return (
-    <div>
+    <section className="education">
       <EducationCard />
-    </div>
+    </section>
   );
 };
 

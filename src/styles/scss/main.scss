@@ -22,13 +22,11 @@ body,
 body {
   // background-color: $bgColor;
   // color: $textColor;
-  transition: all 0.3s linear;
+  // transition: all 0.3s linear;
   font-family: $ff-secondary;
   font-size: 1.4rem;
 }
-.app {
-  overflow-x: hidden;
-}
+
 //Tags
 h1,
 h2,
@@ -72,6 +70,3 @@ img {
   height: 200px;
   object-fit: cover;
 }
-// .accent-color {
-//   color: $accentColor;
-// }
