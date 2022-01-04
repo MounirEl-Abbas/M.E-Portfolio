@@ -1,19 +1,30 @@
 import React from "react";
-import Socials from "../components/Socials";
+import SocialsIcons from "../components/SocialsIcons";
 import { greetings } from "../myInfo";
 
 const About = () => {
   return (
     <section className="about">
-      <section className="about-info">
+      <div id="hero-bg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div className="container-max-width">
         <article className="about-info-title">
           <h1>{greetings.title}</h1>
           <p>{greetings.description}</p>
         </article>
-        <Socials />
-      </section>
-
-      <figure></figure>
+        <SocialsIcons IconsOnly={false} />
+        <figure></figure>
+      </div>
     </section>
   );
 };

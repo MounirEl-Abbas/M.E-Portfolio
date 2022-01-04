@@ -1,9 +1,8 @@
 import React from "react";
-import { FiMail } from "../assets";
-import Socials from "../components/Socials";
+import SocialsIcons from "../components/SocialsIcons";
 import { footerInfo } from "../myInfo";
 const Contact = () => {
-  const { headshot, title, subtitle, role, location, email } = footerInfo;
+  const { headshot, title, subtitle, role, location } = footerInfo;
   return (
     <footer className="contact">
       <div>
@@ -16,10 +15,7 @@ const Contact = () => {
         <p>{subtitle}</p>
         <p>{role}</p>
         <p>{location}</p>
-        <Socials />
-        <a href={`mailto:${email}`} aria-label={`Send an Email to ${email}`}>
-          <FiMail />
-        </a>
+        <SocialsIcons IconsOnly={true} />
       </div>
     </footer>
   );
