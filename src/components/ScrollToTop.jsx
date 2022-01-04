@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "../assets";
 
 const ScrollToTop = () => {
-  // const application = document.getElementById("app");
-
   const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
@@ -11,9 +9,9 @@ const ScrollToTop = () => {
 
     application.addEventListener("scroll", listenToScroll);
   }, []);
+
   const scrollToTop = () => {
     const application = document.getElementById("app");
-
     application.scrollTo(0, 0);
   };
 
@@ -29,7 +27,7 @@ const ScrollToTop = () => {
   return (
     <>
       {showScroll && (
-        <button className="scrollTop" onClick={scrollToTop}>
+        <button id="scrollTop" onClick={scrollToTop}>
           <FaArrowCircleUp />
         </button>
       )}
