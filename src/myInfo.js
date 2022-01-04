@@ -49,7 +49,6 @@ export const greetings = {
   title: "Hello, I'm Mounir",
   description:
     "A self-motivated Front-End Web Developer Enthusiastic to apply my obsessive attention to detail and experience building Web applications with JavaScript / Reactjs / Redux / SCSS and some other cool libraries and frameworks I've experimented with.",
-  resumeLink: "https://mounirelabbas.com/static/media/ME-Resume.f22c3498.pdf",
 };
 
 export const socialLinks = {
