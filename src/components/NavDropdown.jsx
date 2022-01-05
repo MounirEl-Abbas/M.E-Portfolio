@@ -9,7 +9,7 @@ const NavDropdown = () => {
   const { isMenuOpen } = useAppContext();
 
   return (
-    <section
+    <nav
       className={
         isMenuOpen ? "navbar-dropdown navbar-dropdown-open" : "navbar-dropdown"
       }>
@@ -48,7 +48,7 @@ const NavDropdown = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </nav>
   );
 };
 
