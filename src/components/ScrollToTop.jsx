@@ -5,23 +5,20 @@ const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
-    const application = document.getElementById("app");
-
-    application.addEventListener("scroll", listenToScroll);
+    console.log("useeffect");
+    window.onscroll = () => {
+      console.log("1");
+      if (window.scrollY < 200) {
+        setShowScroll(false);
+      }
+      if (window.scrollY >= 200) {
+        setShowScroll(true);
+      }
+    };
   }, []);
 
   const scrollToTop = () => {
-    const application = document.getElementById("app");
-    application.scrollTo(0, 0);
-  };
-
-  const listenToScroll = e => {
-    const { scrollTop } = e.target;
-    if (scrollTop >= 600) {
-      setShowScroll(true);
-    } else {
-      setShowScroll(false);
-    }
+    window.scrollTo(0, 0);
   };
 
   return (

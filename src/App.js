@@ -10,14 +10,13 @@ import Contact from "./containers/Contact";
 
 //Components
 import ScrollToTop from "./components/ScrollToTop";
-import { useAppContext } from "./context/AppContext";
 
 const App = () => {
   return (
     <div className="app" id="app">
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
+      <Navigation />
       <div className="container" id="container">
-        <Navigation />
         <main className="pages" id="pages-container">
           <About />
           <Skills />
