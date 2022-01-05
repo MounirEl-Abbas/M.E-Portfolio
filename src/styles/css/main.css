@@ -15,7 +15,6 @@ Main CSS (General tags)
 body {
   width: 100%;
   height: 100%;
-  overflow: auto;
   scroll-behavior: smooth;
   font-family: sans-serif;
 }
@@ -44,6 +43,27 @@ img {
   position: relative;
   width: 100%;
   padding: 6rem 0;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-content article {
+  height: 50%;
+}
+
+.about-content figure {
+  width: 80%;
+  height: 50%;
+}
+
+.about-content figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #hero-bg {
@@ -139,6 +159,7 @@ img {
 }
 
 .navbar-dropdown-open {
+  position: fixed;
   padding: 1.5rem;
   border-radius: 5px;
   background-color: #fff;
@@ -174,6 +195,7 @@ img {
   position: fixed;
   width: 100%;
   background-color: #172b4d;
+  z-index: 7;
 }
 
 .navbar .socials {
@@ -188,6 +210,15 @@ img {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+#scrollTop {
+  background-color: red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
 }
 
 @media (min-width: 992px) {

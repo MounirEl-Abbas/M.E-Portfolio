@@ -9,22 +9,20 @@ import Education from "./containers/Education";
 import Contact from "./containers/Contact";
 
 //Components
-import ScrollToTop from "./components/ScrollToTop";
+// import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div className="app" id="app">
       {/* <ScrollToTop /> */}
       <Navigation />
-      <div className="container" id="container">
-        <main className="pages" id="pages-container">
-          <About />
-          <Skills />
-          <Projects />
-          <Education />
-          <Contact />
-        </main>
-      </div>
+      <main className="pages">
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </main>
     </div>
   );
 };

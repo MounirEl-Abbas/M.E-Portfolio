@@ -17,13 +17,15 @@ const About = () => {
         <span></span>
       </div>
 
-      <div className="container-max-width">
+      <div className="about-content container-max-width">
         <article className="about-info-title">
           <h1>{greetings.title}</h1>
           <p>{greetings.description}</p>
+          <SocialsIcons IconsOnly={false} />
         </article>
-        <SocialsIcons IconsOnly={false} />
-        <figure></figure>
+        <figure>
+          <img src="./images/illustrations/pic2.png" alt="" />
+        </figure>
       </div>
     </section>
   );
