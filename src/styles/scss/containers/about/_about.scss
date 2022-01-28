@@ -1,0 +1,64 @@
+/* About Page (Hero) */
+.about {
+  border: 1px solid green;
+  position: relative;
+  width: 100%;
+  padding: 6rem 0;
+
+  &-content {
+    @extend %container-max-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+    /* About Page Text */
+    article {
+      border: 1px solid red;
+      color: #fff;
+      width: 100%;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        line-height: 1.75;
+        font-size: 1.25rem;
+        padding: 1.75rem 0 3rem 0;
+      }
+      .socials {
+        #colored-socials {
+          @extend %socials-colored;
+        }
+        #hero-resume-btn {
+          @extend %hero-resume-btn;
+        }
+      }
+    }
+    figure {
+      border: 1px solid red;
+      width: 80%;
+      height: 50%;
+      margin: 6rem 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@import "./partials/hero-bg";
+
+@media (min-width: 992px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    article {
+      width: 45%;
+    }
+    figure {
+      width: 50%;
+    }
+  }
+}

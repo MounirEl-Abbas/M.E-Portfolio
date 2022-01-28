@@ -3,6 +3,90 @@ Config
 **********************/
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+.navbar-content, .about-content {
+  width: 94%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.about-content article .socials #hero-resume-btn {
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  padding: 0.75rem 0.2rem;
+  font-weight: 600;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10.5rem;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-content article .socials #hero-resume-btn svg {
+  font-size: 1.2rem;
+}
+
+.about-content article .socials #hero-resume-btn span {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.about-content article .socials #colored-socials, .pages .contact .socials #colored-socials {
+  display: flex;
+  width: 20rem;
+  color: white;
+}
+
+.about-content article .socials #colored-socials a, .pages .contact .socials #colored-socials a {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-right: 0.75rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.about-content article .socials #colored-socials a svg, .pages .contact .socials #colored-socials a svg {
+  font-size: 1.2rem;
+}
+
+.about-content article .socials #colored-socials a:first-child, .pages .contact .socials #colored-socials a:first-child {
+  background-color: #222;
+}
+
+.about-content article .socials #colored-socials a:nth-child(2), .pages .contact .socials #colored-socials a:nth-child(2) {
+  background-color: #1da1f2;
+}
+
+.about-content article .socials #colored-socials a:nth-child(3), .pages .contact .socials #colored-socials a:nth-child(3) {
+  background-color: #e4405f;
+}
+
+.about-content article .socials #colored-socials a:nth-child(4), .pages .contact .socials #colored-socials a:nth-child(4) {
+  background-color: #a84ea8;
+}
+
+.navbar .socials {
+  width: 20%;
+  max-width: 12rem;
+  z-index: 5;
+}
+
+.navbar .socials div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .socials div svg {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 /**********************
 Main CSS (General tags)
 **********************/
@@ -39,7 +123,162 @@ img {
   object-fit: cover;
 }
 
+.navbar {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  transition: all 0.3s linear;
+  height: 5rem;
+  color: #fff;
+}
+
+.navbar-content {
+  width: 80vw;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-content h3 {
+  font-family: "Waterfall", cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+  width: 90%;
+}
+
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  background-color: #172b4d;
+  z-index: 7;
+}
+
+.navbar .socials {
+  display: none;
+}
+
+#open-menu-btn {
+  width: 10%;
+  z-index: 5;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+#open-menu-btn svg {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 992px) {
+  /* Navbar responsive */
+  #open-menu-btn {
+    display: none;
+  }
+  .navbar-dropdown-open {
+    display: none;
+  }
+  .navbar .socials {
+    display: flex;
+  }
+}
+
+.navbar-dropdown {
+  width: 93vw;
+  margin: 0.7rem;
+  height: auto;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  overflow-y: auto;
+}
+
+.navbar-dropdown div:first-of-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Separation line */
+}
+
+.navbar-dropdown div:first-of-type h3 {
+  font-family: "Waterfall", cursive;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #172b4d;
+  width: 80%;
+}
+
+.navbar-dropdown div:first-of-type #close-menu-btn {
+  width: 5%;
+  background-color: transparent;
+  border: none;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  color: #172b4d;
+  cursor: pointer;
+}
+
+.navbar-dropdown div:first-of-type::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  background-color: #ddd;
+}
+
+.navbar-dropdown div:last-child ul {
+  margin-top: 1.5rem;
+}
+
+.navbar-dropdown div:last-child ul li {
+  padding: 0.5rem;
+}
+
+.navbar-dropdown div:last-child ul li a {
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.navbar-dropdown div:last-child ul li a svg {
+  margin-right: 0.5rem;
+  padding-bottom: 2px;
+  font-size: 1.2rem;
+}
+
+.navbar-dropdown-open {
+  position: fixed;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: show-navbar-collapse 0.2s ease forwards;
+  z-index: 9;
+}
+
+#scrollTop {
+  background-color: red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* About Page (Hero) */
 .about {
+  border: 1px solid green;
   position: relative;
   width: 100%;
   padding: 6rem 0;
@@ -47,17 +286,33 @@ img {
 
 .about-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+  /* About Page Text */
 }
 
 .about-content article {
-  height: 50%;
+  border: 1px solid red;
+  color: #fff;
+  width: 100%;
+}
+
+.about-content article h1 {
+  font-size: 2rem;
+}
+
+.about-content article p {
+  line-height: 1.75;
+  font-size: 1.25rem;
+  padding: 1.75rem 0 3rem 0;
 }
 
 .about-content figure {
+  border: 1px solid red;
   width: 80%;
   height: 50%;
+  margin: 6rem 0;
 }
 
 .about-content figure img {
@@ -140,97 +395,17 @@ img {
   right: 2%;
 }
 
-.container-max-width {
-  width: 80vw;
-  max-width: 65rem;
-  margin: 0 auto;
-}
-
-.navbar-dropdown {
-  width: 96vw;
-  position: absolute;
-  top: 0rem;
-  right: 0;
-  left: 0;
-  margin: 0.7rem;
-  overflow-y: auto;
-  height: auto;
-  opacity: 0;
-}
-
-.navbar-dropdown-open {
-  position: fixed;
-  padding: 1.5rem;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-  animation: show-navbar-collapse 0.2s ease forwards;
-  z-index: 9;
-}
-
-.navbar {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  transition: all 0.3s linear;
-  height: 4.5rem;
-  color: #fff;
-}
-
-.navbar div {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar div h3 {
-  font-family: "Waterfall", cursive;
-  font-weight: 100;
-  font-size: 3rem;
-}
-
-.navbar-fixed {
-  position: fixed;
-  width: 100%;
-  background-color: #172b4d;
-  z-index: 7;
-}
-
-.navbar .socials {
-  display: none;
-}
-
-#open-menu-btn {
-  z-index: 5;
-}
-
-#close-menu-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-#scrollTop {
-  background-color: red;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100px;
-  height: 100px;
-}
-
 @media (min-width: 992px) {
-  /* Navbar responsive */
-  #open-menu-btn {
-    display: none;
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  .navbar-dropdown-open {
-    display: none;
+  .about-content article {
+    width: 45%;
   }
-  .navbar .socials {
-    display: flex;
+  .about-content figure {
+    width: 50%;
   }
 }
 
@@ -256,4 +431,81 @@ img {
     opacity: 0;
     transform: scale(0.95);
   }
+}
+
+.pages .skills {
+  border: 1px solid green;
+  margin: 5px 0;
+}
+
+.pages .skills-content {
+  border: 1px solid blue;
+}
+
+.pages .skills-content header {
+  border: 1px solid red;
+}
+
+.pages .skills-content figure {
+  border: 1px solid red;
+}
+
+.pages .skills-content ul {
+  border: 1px solid red;
+  /*  */
+  /*  */
+}
+
+.pages .skills-content ul img {
+  width: 50px;
+  height: 50px;
+}
+
+.pages .projects {
+  border: 1px solid green;
+  margin: 5px 0;
+}
+
+.pages .projects-content {
+  border: 1px solid blue;
+}
+
+.pages .projects-content header {
+  border: 1px solid red;
+}
+
+.pages .projects-content .projects-container {
+  border: 1px solid red;
+}
+
+.pages .projects-content .projects-container article {
+  width: 33%;
+  border: 1px solid orange;
+}
+
+.pages .education {
+  border: 1px solid green;
+  margin: 5px 0;
+}
+
+.pages .education-content {
+  border: 1px solid blue;
+}
+
+.pages .education-content header {
+  border: 1px solid red;
+}
+
+.pages .education-content .education-container {
+  border: 1px solid red;
+}
+
+.pages .education-content .education-container article {
+  width: 33%;
+  border: 1px solid orange;
+}
+
+.pages .contact {
+  border: 1px solid green;
+  margin: 5px 0;
 }
