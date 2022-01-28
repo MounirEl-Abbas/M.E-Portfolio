@@ -4,15 +4,14 @@ import { skillsSection } from "../myInfo";
 const Skills = () => {
   return (
     <section className="skills">
-      <header>
-        <h2>{skillsSection.title}</h2>
-        <p>{skillsSection.subTitle}</p>
+      <div className="skills-content">
+        <header>
+          <h2>{skillsSection.title}</h2>
+          <p>{skillsSection.subTitle}</p>
+        </header>
 
-        <ul>
-          {skillsSection.skills.map(skill => (
-            <li>{skill}</li>
-          ))}
-        </ul>
+        <figure>img</figure>
+
         <ul>
           {skillsSection.softwareSkills.map(skill => (
             <li title={skill.skillName}>
@@ -20,7 +19,12 @@ const Skills = () => {
             </li>
           ))}
         </ul>
-      </header>
+        <ul>
+          {skillsSection.skills.map(skill => (
+            <li>{skill}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

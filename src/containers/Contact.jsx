@@ -15,8 +15,8 @@ const Contact = () => {
         <p>{subtitle}</p>
         <p>{role}</p>
         <p>{location}</p>
-        <SocialsIcons IconsOnly={true} />
       </div>
+      <SocialsIcons IconsOnly={true} />
     </footer>
   );
 };

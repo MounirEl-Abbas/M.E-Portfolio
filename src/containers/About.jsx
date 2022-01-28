@@ -17,8 +17,8 @@ const About = () => {
         <span></span>
       </div>
 
-      <div className="about-content container-max-width">
-        <article className="about-info-title">
+      <div className="about-content">
+        <article>
           <h1>{greetings.title}</h1>
           <p>{greetings.description}</p>
           <SocialsIcons IconsOnly={false} />
