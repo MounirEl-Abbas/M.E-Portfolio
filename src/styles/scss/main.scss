@@ -1,4 +1,4 @@
-@import "./utils/config";
+@import "./config";
 
 /**********************
 Main CSS (General tags)
@@ -8,52 +8,31 @@ Main CSS (General tags)
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 10px;
-}
+
 //Containers
-html,
-body,
-#root,
-.app {
+body {
   width: 100%;
   height: 100%;
-  overflow: auto;
   scroll-behavior: smooth;
-}
-body {
-  background-color: $bgColor;
-  color: $textColor;
-  transition: all 0.3s linear;
-  font-family: $ff-secondary;
-  font-size: 1.4rem;
-}
-.app {
+  font-family: $ff-primary;
   overflow-x: hidden;
 }
-//Tags
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $ff-primary;
-}
-h1 {
-  font-size: 2.4rem;
-}
-h2 {
-  font-size: 2.2rem;
-}
-h3 {
-  font-size: 2rem;
-}
-h4 {
-  font-size: 1.8rem;
-}
-h5 {
-  font-size: 1.6rem;
-}
+
+// h1 {
+//   font-size: 2.4rem;
+// }
+// h2 {
+//   font-size: 2.2rem;
+// }
+// h3 {
+//   font-size: 2rem;
+// }
+// h4 {
+//   font-size: 1.8rem;
+// }
+// h5 {
+//   font-size: 1.6rem;
+// }
 
 //Remove default <a> styles
 a {
@@ -69,10 +48,89 @@ li {
   list-style-type: none;
 }
 
-.accent-color {
-  color: $accentColor;
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
-@import "./components/global";
-@import "./utils/mediaQueries";
-@import "./utils/animations";
+@import "./containers/navigation/navigation";
+@import "./containers/about/about";
+@import "./containers/skills/skills";
+
+@keyframes show-navbar-collapse {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    transform-origin: 100% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hide-navbar-collapse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: 100% 0;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.pages {
+  .projects {
+    border: 1px solid green;
+    margin: 5px 0;
+    &-content {
+      border: 1px solid blue;
+
+      header {
+        border: 1px solid red;
+      }
+      .projects-container {
+        border: 1px solid red;
+        // display: flex;
+
+        article {
+          width: 33%;
+          border: 1px solid orange;
+        }
+      }
+    }
+  }
+  .education {
+    border: 1px solid green;
+    margin: 5px 0;
+
+    &-content {
+      border: 1px solid blue;
+
+      header {
+        border: 1px solid red;
+      }
+      .education-container {
+        border: 1px solid red;
+        // display: flex;
+        article {
+          width: 33%;
+          border: 1px solid orange;
+        }
+      }
+    }
+  }
+  .contact {
+    border: 1px solid green;
+    margin: 5px 0;
+
+    .socials {
+      #colored-socials {
+        @extend %socials-colored;
+      }
+    }
+  }
+}
