@@ -1,7 +1,7 @@
 import React from "react";
 import resume from "../assets/ME-Resume.pdf";
 //icons
-import { AiFillGithub, FaLinkedin, VscFilePdf } from "../assets";
+import { AiFillGithub, FaLinkedinIn, VscFilePdf } from "../assets";
 import { useAppContext } from "../context/AppContext";
 import { CloseMenuBtn } from "./MenuBtn";
 
@@ -14,7 +14,7 @@ const NavDropdown = () => {
         isMenuOpen ? "navbar-dropdown navbar-dropdown-open" : "navbar-dropdown"
       }>
       <div>
-        <h1>name</h1>
+        <h3>Mounir El-Abbas</h3>
         <CloseMenuBtn />
       </div>
 
@@ -36,7 +36,7 @@ const NavDropdown = () => {
               aria-label="View Mounir on LinkedIn"
               target="_blank"
               rel="noreferrer">
-              <FaLinkedin />
+              <FaLinkedinIn />
               <span>Linkedin</span>
             </a>
           </li>

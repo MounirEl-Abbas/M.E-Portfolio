@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className={showNavbarThreshold ? "navbar navbar-fixed" : "navbar"}>
-      <div className="container-max-width">
+      <div className="navbar-content">
         <h3>Mounir El-Abbas</h3>
         <OpenMenuBtn />
         <SocialsIcons IconsOnly={true} />
