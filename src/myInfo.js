@@ -48,7 +48,7 @@ export const greetings = {
   name: "Mounir El-Abbas",
   title: "Hello, I'm Mounir",
   description:
-    "A self-motivated Front-End Web Developer Enthusiastic to apply my obsessive attention to detail and experience building Web applications with JavaScript / Reactjs / Redux / SCSS and some other cool libraries and frameworks I've experimented with.",
+    "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build Web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to become a well-rounded programmer.",
 };
 
 export const socialLinks = {
