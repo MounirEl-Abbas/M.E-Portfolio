@@ -34,8 +34,9 @@ $ff-signature: "Waterfall", cursive;
 
 %socials-colored {
   display: flex;
-  width: 20rem;
+  width: 12rem;
   color: white;
+  justify-content: space-around;
   a {
     width: 2.5rem;
     height: 2.5rem;

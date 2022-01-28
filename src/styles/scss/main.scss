@@ -15,6 +15,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   font-family: $ff-primary;
+  overflow-x: hidden;
 }
 
 // h1 {
@@ -55,6 +56,7 @@ img {
 
 @import "./containers/navigation/navigation";
 @import "./containers/about/about";
+@import "./containers/skills/skills";
 
 @keyframes show-navbar-collapse {
   0% {
@@ -81,31 +83,6 @@ img {
 }
 
 .pages {
-  .skills {
-    border: 1px solid green;
-    margin: 5px 0;
-    &-content {
-      border: 1px solid blue;
-
-      header {
-        border: 1px solid red;
-      }
-      figure {
-        border: 1px solid red;
-      }
-      ul {
-        border: 1px solid red;
-        /*  */
-        /*  */
-        // display: flex;
-        // flex-flow: row wrap;
-        img {
-          width: 50px;
-          height: 50px;
-        }
-      }
-    }
-  }
   .projects {
     border: 1px solid green;
     margin: 5px 0;

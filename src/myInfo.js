@@ -48,7 +48,7 @@ export const greetings = {
   name: "Mounir El-Abbas",
   title: "Hello, I'm Mounir",
   description:
-    "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build Web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to become a well-rounded programmer.",
+    "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to becoming a well-rounded programmer.",
 };
 
 export const socialLinks = {
@@ -59,8 +59,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "What I do",
-  subTitle:
-    "Front-End Developer on a mission to become a well-rounded programmer",
+  subTitle: "Develop responsive, cross-compatible websites accessible to all",
   skills: [
     "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
     "⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks",
@@ -81,11 +80,11 @@ export const skillsSection = {
       skillIcon: "/images/skills/javascript.webp",
     },
     {
-      skillName: "Reactjs",
+      skillName: "ReactJS",
       skillIcon: "/images/skills/react.webp",
     },
     {
-      skillName: "Sass",
+      skillName: "SASS",
       skillIcon: "/images/skills/sass.webp",
     },
 
@@ -102,6 +101,7 @@ export const skillsSection = {
 
 export const educationInfo = [
   {
+    id: 1,
     schoolName: "TeachyourselfCS",
     subHeader: "Master of Science in Computer Science",
     duration: "September 2017 - April 2019",
@@ -112,6 +112,7 @@ export const educationInfo = [
     ],
   },
   {
+    id: 2,
     schoolName: "St. Clair College",
     subHeader: "Master of Science in Computer Science",
     duration: "September 2017 - April 2019",
@@ -122,6 +123,7 @@ export const educationInfo = [
     ],
   },
   {
+    id: 3,
     schoolName: "University Of Windsor",
     subHeader: "Bachelor of Science in Computer Science",
     duration: "September 2013 - April 2017",
