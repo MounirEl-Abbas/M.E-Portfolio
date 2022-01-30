@@ -24,7 +24,7 @@ const About = () => {
           <SocialsIcons IconsOnly={false} />
         </article>
         <figure>
-          <img src="./images/illustrations/pic2.png" alt="" />
+          <img src="./images/illustrations/pair.png" alt="" />
         </figure>
       </div>
     </section>

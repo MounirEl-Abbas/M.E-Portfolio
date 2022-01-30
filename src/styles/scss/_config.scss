@@ -7,8 +7,8 @@ $ff-primary: sans-serif;
 $ff-signature: "Waterfall", cursive;
 
 %container-max-width {
-  width: 94%;
-  max-width: 65rem;
+  width: 92%;
+  max-width: 35rem;
   margin: 0 auto;
 }
 
@@ -82,10 +82,21 @@ $ff-signature: "Waterfall", cursive;
   }
 }
 
+@media (min-width: 768px) {
+  %container-max-width {
+    max-width: 50rem;
+  }
+  .about .about-content article {
+    max-width: 45rem;
+  }
+}
 @media (min-width: 992px) {
-  // %container-max-width {
-  //   width: 90vw;
-  //   max-width: 80rem;
-  //   margin: 0 auto;
-  // }
+  %container-max-width {
+    max-width: 55rem;
+  }
+}
+@media (min-width: 1200px) {
+  %container-max-width {
+    max-width: 60rem;
+  }
 }

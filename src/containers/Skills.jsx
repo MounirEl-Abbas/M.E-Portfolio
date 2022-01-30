@@ -13,7 +13,7 @@ const Skills = () => {
         </header>
         <div>
           <figure>
-            <img src="./images/illustrations/skills2.png" alt="" />
+            <img src="./images/illustrations/skills.png" alt="" />
           </figure>
 
           <div className="lists-container">
