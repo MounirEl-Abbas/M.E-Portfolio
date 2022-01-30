@@ -1,6 +1,8 @@
 import React from "react";
 import { skillsSection } from "../myInfo";
 
+import { SiRedux, MdWeb, IoIosBrowsers } from "../assets";
+
 const Skills = () => {
   let uniqueKey1 = 0;
   let uniqueKey2 = 999;
@@ -30,7 +32,20 @@ const Skills = () => {
             <ul>
               {skillsSection.skills.map(skill => {
                 uniqueKey2--;
-                return <li key={uniqueKey2}>{skill}</li>;
+                return (
+                  <li key={uniqueKey2}>
+                    <span>
+                      {skill.icon === "MdWeb" ? (
+                        <MdWeb />
+                      ) : skill.icon === "SiRedux" ? (
+                        <SiRedux />
+                      ) : (
+                        <IoIosBrowsers />
+                      )}
+                    </span>
+                    <p>{skill.info}</p>
+                  </li>
+                );
               })}
             </ul>
           </div>

@@ -61,9 +61,18 @@ export const skillsSection = {
   title: "What I do",
   subTitle: "Develop responsive, cross-compatible websites accessible to all",
   skills: [
-    "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-    "⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks",
-    "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+    {
+      icon: "MdWeb",
+      info: "Develop Responsive Front End / User Interfaces for your web and mobile applications",
+    },
+    {
+      icon: "SiRedux",
+      info: "Utilize React coupled with Redux for efficient and scalable applications",
+    },
+    {
+      icon: "IoIosBrowsers",
+      info: "Mindful of browser-compatability as well as persons with disability",
+    },
   ],
 
   softwareSkills: [

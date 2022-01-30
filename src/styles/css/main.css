@@ -517,6 +517,15 @@ img {
   color: #525f7f;
 }
 
+.skills-content ul:last-child li {
+  display: flex;
+  align-items: center;
+}
+
+.skills-content ul:last-child li span {
+  margin-right: 0.5rem;
+}
+
 @media (min-width: 992px) {
   .skills-content div:first-of-type {
     flex-direction: row;
