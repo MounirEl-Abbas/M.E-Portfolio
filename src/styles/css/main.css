@@ -495,16 +495,19 @@ img {
 
 .skills-content ul:first-of-type li {
   border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 13%;
+  max-width: 3.5rem;
+  max-height: 3.5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  padding: 0.8rem;
   margin: 0 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-content ul:first-of-type li img {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   object-fit: contain;
 }
 
