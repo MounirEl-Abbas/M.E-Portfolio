@@ -336,13 +336,13 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 20%;
+  bottom: 28%;
   right: 25px;
   left: 0;
   margin: auto;
   width: 25%;
-  height: 35%;
-  background-color: #020f57;
+  height: 38%;
+  background-color: #ddd;
   z-index: -1;
 }
 
