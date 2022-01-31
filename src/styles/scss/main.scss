@@ -57,6 +57,7 @@ img {
 @import "./containers/navigation/navigation";
 @import "./containers/about/about";
 @import "./containers/skills/skills";
+@import "./containers/projects/projects";
 
 @keyframes show-navbar-collapse {
   0% {
@@ -83,35 +84,19 @@ img {
 }
 
 .pages {
-  .projects {
-    border: 1px solid green;
-    margin: 5px 0;
-    &-content {
-      border: 1px solid blue;
-
-      header {
-        border: 1px solid red;
-      }
-      .projects-container {
-        border: 1px solid red;
-        // display: flex;
-
-        article {
-          width: 33%;
-          border: 1px solid orange;
-        }
-      }
-    }
-  }
+  overflow: hidden;
   .education {
     border: 1px solid green;
-    margin: 5px 0;
+    margin: 10rem 0;
 
     &-content {
+      @extend %container-max-width;
+      @extend %section-header;
       border: 1px solid blue;
 
       header {
         border: 1px solid red;
+        color: #11cdef;
       }
       .education-container {
         border: 1px solid red;

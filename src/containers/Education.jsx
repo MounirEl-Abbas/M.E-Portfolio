@@ -1,11 +1,14 @@
 import React from "react";
 import EducationCard from "../components/EducationCard";
-
+import { ImBooks } from "../assets";
 const Education = () => {
   return (
     <section className="education">
       <div className="education-content">
         <header>
+          <span>
+            <ImBooks />
+          </span>
           <h2>Education</h2>
         </header>
         <EducationCard />
