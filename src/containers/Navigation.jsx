@@ -4,7 +4,9 @@ import NavDropdown from "../components/NavDropdown";
 
 const Navigation = () => {
   return (
-    <div aria-label="container for navigation components">
+    <div
+      className="nav-container"
+      aria-label="container for navigation components">
       <Navbar />
       <NavDropdown />
     </div>
