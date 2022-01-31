@@ -3,10 +3,34 @@ Config
 **********************/
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
-.navbar-content, .about-content, .skills-content {
+.navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
   width: 92%;
   max-width: 35rem;
   margin: 0 auto;
+}
+
+.projects-content header, .pages .education-content header {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.projects-content header span, .pages .education-content header span {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #11cdef;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-right: 1.3rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-content header h2, .pages .education-content header h2 {
+  font-size: 2rem;
 }
 
 .about-content article .socials #hero-resume-btn {
@@ -89,7 +113,7 @@ Config
 }
 
 @media (min-width: 768px) {
-  .navbar-content, .about-content, .skills-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
     max-width: 50rem;
   }
   .about .about-content article {
@@ -98,13 +122,13 @@ Config
 }
 
 @media (min-width: 992px) {
-  .navbar-content, .about-content, .skills-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
     max-width: 55rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .navbar-content, .about-content, .skills-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
     max-width: 60rem;
   }
 }
@@ -146,6 +170,10 @@ img {
   object-fit: cover;
 }
 
+.nav-container {
+  width: 100%;
+}
+
 .navbar {
   width: 100%;
   position: absolute;
@@ -157,8 +185,14 @@ img {
   color: #fff;
 }
 
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  background-color: #172b4d;
+  z-index: 7;
+}
+
 .navbar-content {
-  margin: auto;
   height: 100%;
   display: flex;
   align-items: center;
@@ -170,13 +204,6 @@ img {
   font-weight: 100;
   font-size: 2.5rem;
   width: 90%;
-}
-
-.navbar-fixed {
-  position: fixed;
-  width: 100%;
-  background-color: #172b4d;
-  z-index: 7;
 }
 
 .navbar .socials {
@@ -512,18 +539,19 @@ img {
 }
 
 .skills-content ul:last-child {
-  margin: 5rem auto;
-  line-height: 2.5;
+  margin: 3.5rem auto;
   color: #525f7f;
 }
 
 .skills-content ul:last-child li {
   display: flex;
   align-items: center;
+  margin: 1.5rem 0;
 }
 
 .skills-content ul:last-child li span {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 992px) {
@@ -546,6 +574,49 @@ img {
     width: 4rem;
     height: 4rem;
   }
+}
+
+.projects {
+  border: 1px solid green;
+  position: relative;
+  padding: 8rem 0;
+}
+
+.projects-content header {
+  color: #fff;
+}
+
+.projects-content .projects-container {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.projects-content .projects-container article {
+  width: 60rem;
+  border: 1px solid orange;
+}
+
+#projects-bg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(35deg, #11cdef, #1171ef);
+  transform: rotateZ(-3deg);
+  z-index: -1;
+}
+
+#projects-bg::before {
+  content: "";
+  width: 100%;
+  height: 10rem;
+  background-color: #fff;
+  position: absolute;
+  top: -8%;
+  transform: rotateZ(3deg);
+  z-index: 0;
 }
 
 @keyframes show-navbar-collapse {
@@ -572,31 +643,13 @@ img {
   }
 }
 
-.pages .projects {
-  border: 1px solid green;
-  margin: 5px 0;
-}
-
-.pages .projects-content {
-  border: 1px solid blue;
-}
-
-.pages .projects-content header {
-  border: 1px solid red;
-}
-
-.pages .projects-content .projects-container {
-  border: 1px solid red;
-}
-
-.pages .projects-content .projects-container article {
-  width: 33%;
-  border: 1px solid orange;
+.pages {
+  overflow: hidden;
 }
 
 .pages .education {
   border: 1px solid green;
-  margin: 5px 0;
+  margin: 10rem 0;
 }
 
 .pages .education-content {
@@ -605,6 +658,7 @@ img {
 
 .pages .education-content header {
   border: 1px solid red;
+  color: #11cdef;
 }
 
 .pages .education-content .education-container {

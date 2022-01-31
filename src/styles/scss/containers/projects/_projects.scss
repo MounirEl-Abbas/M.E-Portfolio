@@ -1,0 +1,25 @@
+.projects {
+  border: 1px solid green;
+  position: relative;
+  padding: 8rem 0;
+
+  &-content {
+    @extend %container-max-width;
+    @extend %section-header;
+    header {
+      color: #fff;
+    }
+    .projects-container {
+      border: 1px solid red;
+      display: flex;
+      flex-flow: row wrap;
+
+      article {
+        width: 60rem;
+        border: 1px solid orange;
+      }
+    }
+  }
+}
+
+@import "./partials/projects-bg";

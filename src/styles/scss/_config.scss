@@ -11,6 +11,29 @@ $ff-signature: "Waterfall", cursive;
   max-width: 35rem;
   margin: 0 auto;
 }
+%section-header {
+  header {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    span {
+      background-color: #fff;
+      border-radius: 50%;
+      color: #11cdef;
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin-right: 1.3rem;
+      box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
 
 %hero-resume-btn {
   display: flex;

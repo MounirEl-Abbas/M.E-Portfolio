@@ -1,0 +1,21 @@
+#projects-bg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: -webkit-linear-gradient(55deg, #11cdef, #1171ef);
+  background: linear-gradient(35deg, #11cdef, #1171ef);
+  transform: rotateZ(-3deg);
+  z-index: -1;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    position: absolute;
+    top: -8%;
+    transform: rotateZ(3deg);
+    z-index: 0;
+  }
+}
