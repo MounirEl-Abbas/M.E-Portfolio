@@ -512,18 +512,19 @@ img {
 }
 
 .skills-content ul:last-child {
-  margin: 5rem auto;
-  line-height: 2.5;
+  margin: 3.5rem auto;
   color: #525f7f;
 }
 
 .skills-content ul:last-child li {
   display: flex;
   align-items: center;
+  margin: 1.5rem 0;
 }
 
 .skills-content ul:last-child li span {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 992px) {
