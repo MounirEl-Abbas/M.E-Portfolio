@@ -114,7 +114,7 @@ Config
 }
 
 .project-card #btn-container a {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-card, .education-card {
@@ -396,9 +396,9 @@ img {
 #hero-bg {
   position: absolute;
   z-index: -1;
-  top: -15%;
+  top: -25%;
   left: -10%;
-  width: 120%;
+  width: 150%;
   height: 110%;
   background: linear-gradient(35deg, #11cdef, #1171ef);
   transform: rotateZ(-3deg);
@@ -753,8 +753,8 @@ img {
 #projects-bg {
   position: absolute;
   top: 0;
-  left: -10%;
-  width: 120%;
+  left: -25%;
+  width: 150%;
   height: 100%;
   background: linear-gradient(35deg, #11cdef, #1171ef);
   transform: rotateZ(-3deg);
