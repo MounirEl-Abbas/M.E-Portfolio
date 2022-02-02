@@ -65,7 +65,7 @@ const ProjectSlider = ({ projectID }) => {
             );
           });
         }
-        // return here
+        return <span style={{ display: "none" }} key={project.id}></span>;
       })}
       <div className="slider-btns">
         <button
