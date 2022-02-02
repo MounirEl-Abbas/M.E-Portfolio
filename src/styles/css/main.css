@@ -3,7 +3,7 @@ Config
 **********************/
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
-.navbar-content, .about-content, .skills-content, .projects-content, .education-content {
+.navbar-content, .about-content, .skills-content, .projects-content, .education-content, .contact-content {
   width: 92%;
   max-width: 35rem;
   margin: 0 auto;
@@ -56,14 +56,14 @@ Config
   font-size: 0.9rem;
 }
 
-.about-content article .socials #colored-socials, .pages .contact .socials #colored-socials {
+.about-content article .socials #colored-socials, .contact .socials #colored-socials {
   display: flex;
   width: 12rem;
   color: white;
   justify-content: space-around;
 }
 
-.about-content article .socials #colored-socials a, .pages .contact .socials #colored-socials a {
+.about-content article .socials #colored-socials a, .contact .socials #colored-socials a {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -75,23 +75,23 @@ Config
   cursor: pointer;
 }
 
-.about-content article .socials #colored-socials a svg, .pages .contact .socials #colored-socials a svg {
+.about-content article .socials #colored-socials a svg, .contact .socials #colored-socials a svg {
   font-size: 1.2rem;
 }
 
-.about-content article .socials #colored-socials a:first-child, .pages .contact .socials #colored-socials a:first-child {
+.about-content article .socials #colored-socials a:first-child, .contact .socials #colored-socials a:first-child {
   background-color: #222;
 }
 
-.about-content article .socials #colored-socials a:nth-child(2), .pages .contact .socials #colored-socials a:nth-child(2) {
+.about-content article .socials #colored-socials a:nth-child(2), .contact .socials #colored-socials a:nth-child(2) {
   background-color: #1da1f2;
 }
 
-.about-content article .socials #colored-socials a:nth-child(3), .pages .contact .socials #colored-socials a:nth-child(3) {
+.about-content article .socials #colored-socials a:nth-child(3), .contact .socials #colored-socials a:nth-child(3) {
   background-color: #e4405f;
 }
 
-.about-content article .socials #colored-socials a:nth-child(4), .pages .contact .socials #colored-socials a:nth-child(4) {
+.about-content article .socials #colored-socials a:nth-child(4), .contact .socials #colored-socials a:nth-child(4) {
   background-color: #a84ea8;
 }
 
@@ -123,11 +123,11 @@ Config
 }
 
 .project-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
 }
 
 @media (min-width: 768px) {
-  .navbar-content, .about-content, .skills-content, .projects-content, .education-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .education-content, .contact-content {
     max-width: 50rem;
   }
   .about .about-content article {
@@ -136,13 +136,13 @@ Config
 }
 
 @media (min-width: 992px) {
-  .navbar-content, .about-content, .skills-content, .projects-content, .education-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .education-content, .contact-content {
     max-width: 55rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .navbar-content, .about-content, .skills-content, .projects-content, .education-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .education-content, .contact-content {
     max-width: 60rem;
   }
 }
@@ -616,7 +616,7 @@ img {
 
 .project-card-info {
   color: #32325d;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 
 .project-card-info h3 {
@@ -652,7 +652,7 @@ img {
 }
 
 .project-card #btn-container {
-  padding: 0.3rem 0.4rem;
+  padding: 0.4rem;
   display: flex;
   column-gap: 0.5rem;
 }
@@ -826,10 +826,15 @@ img {
 }
 
 .education-card {
-  margin: 2rem 2rem;
+  margin: 2rem 1rem;
   max-width: 30rem;
-  padding: 2rem 3rem;
+  padding: 1.5rem 1.5rem;
   color: #525f7f;
+  transition: transform 0.05s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-20px);
 }
 
 .education-card h3 {
@@ -871,7 +876,8 @@ img {
 @media (min-width: 768px) {
   .education-card {
     max-width: none;
-    width: 60rem;
+    width: 45rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -879,6 +885,87 @@ img {
   .education-card {
     width: 25rem;
     margin: 2rem 1rem;
+  }
+}
+
+.contact {
+  border: 1px solid green;
+  margin: 5px 0;
+  background: linear-gradient(35deg, #11cdef, #1171ef);
+}
+
+.contact-content {
+  padding: 5rem 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content figure {
+  width: 10rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #0465e4;
+  margin-bottom: 1rem;
+}
+
+.contact-content figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-content .contact-info {
+  width: 100%;
+}
+
+.contact-content .contact-info h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.contact-content .contact-info h5 {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  max-width: 40rem;
+}
+
+.contact-content .contact-info span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #11cdef;
+  width: 10.5rem;
+  padding: 0.8rem 0.1rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.contact-content .contact-info span svg {
+  font-size: 1.5rem;
+}
+
+.contact .socials #colored-socials {
+  width: 13rem;
+}
+
+@media (min-width: 992px) {
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contact-content figure {
+    order: 1;
+  }
+  .contact-content .contact-info {
+    width: 60%;
   }
 }
 
@@ -908,9 +995,4 @@ img {
 
 .pages {
   overflow: hidden;
-}
-
-.pages .contact {
-  border: 1px solid green;
-  margin: 5px 0;
 }

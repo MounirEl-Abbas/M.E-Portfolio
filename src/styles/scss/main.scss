@@ -59,6 +59,7 @@ img {
 @import "./containers/skills/skills";
 @import "./containers/projects/projects";
 @import "./containers/education/education";
+@import "./containers/contact/contact";
 
 @keyframes show-navbar-collapse {
   0% {
@@ -86,15 +87,4 @@ img {
 
 .pages {
   overflow: hidden;
-
-  .contact {
-    border: 1px solid green;
-    margin: 5px 0;
-
-    .socials {
-      #colored-socials {
-        @extend %socials-colored;
-      }
-    }
-  }
 }

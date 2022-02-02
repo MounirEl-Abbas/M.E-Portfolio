@@ -144,7 +144,8 @@ export const educationInfo = [
 export const footerInfo = {
   headshot: "/images/me-headshot.webp",
   title: "Reach out to me!",
-  subtitle: "Discuss a project or just want to say hi? my inbox bladffsdfsdf",
+  subtitle:
+    "Discuss a project, collaborate or just want to say hi? Feel free to contact me, I'm very approachable!",
   role: "I'm a Front-End Developer | ReactJS | Typescript",
   location: "Ontario, Canada",
   email: "eamounir1@gmail.com",
