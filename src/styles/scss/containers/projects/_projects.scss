@@ -23,6 +23,9 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  &:hover {
+    @extend %card-shadow-hover;
+  }
 
   &-info {
     color: #32325d;
