@@ -1,8 +1,8 @@
 .skills {
-  margin: 10rem auto;
+  margin: 10rem auto 0 auto;
   &-content {
     @extend %container-max-width;
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
 
     //Title + subtitle
     header {

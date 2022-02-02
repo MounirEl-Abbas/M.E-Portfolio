@@ -1,5 +1,4 @@
 .projects {
-  border: 1px solid green;
   position: relative;
   padding: 8rem 0;
 
@@ -10,16 +9,182 @@
       color: #fff;
     }
     .projects-container {
-      border: 1px solid red;
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: column;
+    }
+  }
+}
+.project-card {
+  @extend %card-shadow;
+  border-radius: 10px;
+  max-width: 21.5rem;
+  max-height: 50rem;
+  margin: 2rem auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 
-      article {
-        width: 60rem;
-        border: 1px solid orange;
+  &-info {
+    color: #32325d;
+    padding: 0.5rem;
+    h3 {
+      margin-top: 0.2rem;
+      letter-spacing: 1px;
+      font-size: 1.4rem;
+    }
+    h5 {
+      font-size: 0.8rem;
+      opacity: 0.5;
+      margin: 0.2rem 0 0.7rem 0;
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    p {
+      color: #525f7f;
+      font-size: 0.9rem;
+      line-height: 1.3;
+      padding: 0.5rem 0;
+    }
+  }
+
+  #btn-container {
+    padding: 0.3rem 0.4rem;
+    display: flex;
+    column-gap: 0.5rem;
+    a {
+      @include flex-center;
+      @extend %button-shadow;
+      color: #fff;
+      padding: 0.4em 0.7em;
+      border-radius: 5px;
+      transition: all 0.2s ease;
+      will-change: transform;
+
+      &:hover {
+        transform: translateY(-1px);
+      }
+
+      svg {
+        margin-right: 0.2rem;
+        position: relative;
+        top: 1px;
+      }
+
+      &:first-of-type {
+        background-color: #2dce89;
+        &:hover {
+          background-color: #26af74;
+        }
+      }
+      &:last-child {
+        background-color: #1e1e1e;
+        &:hover {
+          background-color: #1a1a1a;
+        }
       }
     }
   }
 }
 
+.slider-container {
+  position: relative;
+  figure {
+    height: 18rem;
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .otherImage,
+  .nextImage {
+    display: none;
+  }
+}
+.slider-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  button {
+    @include flex-center;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: #fff;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.7);
+    }
+
+    &:first-of-type {
+      border-radius: 0 7px 0 0;
+    }
+    &:last-child {
+      border-radius: 7px 0 0 0;
+    }
+
+    svg {
+      font-size: 1rem;
+    }
+  }
+}
+
 @import "./partials/projects-bg";
+
+@media (min-width: 768px) {
+  .project-card {
+    max-width: 50rem;
+    flex-direction: row;
+    justify-content: space-between;
+    .project-content {
+      width: 58%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      #btn-container {
+        justify-content: flex-end;
+      }
+    }
+    &-info {
+      padding: 1rem 0.5rem;
+      h5 {
+        margin: 0.5rem 0 1rem 0;
+      }
+      p {
+        padding: 0.8rem 0;
+        line-height: 1.7;
+      }
+    }
+  }
+  .slider-container {
+    width: 40%;
+    figure img {
+      border-radius: 10px 0 0 10px;
+    }
+  }
+  .slider-btns {
+    button:first-of-type {
+      border-radius: 0 5px 0 10px;
+    }
+    button:last-child {
+      border-radius: 5px 0 0 0;
+    }
+  }
+}
