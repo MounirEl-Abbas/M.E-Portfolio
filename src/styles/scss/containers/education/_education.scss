@@ -19,10 +19,14 @@
 
 .education-card {
   @extend %card-shadow;
-  margin: 2rem 2rem;
+  margin: 2rem 1rem;
   max-width: 30rem;
-  padding: 2rem 3rem;
+  padding: 1.5rem 1.5rem;
   color: #525f7f;
+  transition: transform 0.05s ease;
+  &:hover {
+    transform: translateY(-20px);
+  }
 
   h3 {
     color: #11cdef;
@@ -61,7 +65,8 @@
 @media (min-width: 768px) {
   .education-card {
     max-width: none;
-    width: 60rem;
+    width: 45rem;
+    padding: 2rem 3rem;
   }
 }
 @media (min-width: 992px) {
