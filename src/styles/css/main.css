@@ -480,11 +480,11 @@ img {
 }
 
 .skills {
-  margin: 10rem auto;
+  margin: 10rem auto 0 auto;
 }
 
 .skills-content {
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
 }
 
 .skills-content header {
