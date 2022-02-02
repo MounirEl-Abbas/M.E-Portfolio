@@ -1,0 +1,72 @@
+.education {
+  margin: 10rem auto;
+
+  &-content {
+    @extend %container-max-width;
+    @extend %section-header;
+    // max-width: 90rem;
+
+    header {
+      color: #11cdef;
+    }
+    .education-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.education-card {
+  @extend %card-shadow;
+  margin: 2rem 2rem;
+  max-width: 30rem;
+  padding: 2rem 3rem;
+  color: #525f7f;
+
+  h3 {
+    color: #11cdef;
+    font-weight: 600;
+  }
+  h5 {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #32325d;
+  }
+
+  span {
+    background-color: #11cdef;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  p {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  ul {
+    margin-left: 2rem;
+    li {
+      list-style-type: disc;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .education-card {
+    max-width: none;
+    width: 60rem;
+  }
+}
+@media (min-width: 992px) {
+  .education-card {
+    width: 25rem;
+    margin: 2rem 1rem;
+  }
+}
