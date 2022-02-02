@@ -109,36 +109,34 @@ export const skillsSection = {
 };
 
 export const educationInfo = [
-  {
-    id: 1,
-    schoolName: "TeachyourselfCS",
-    subHeader: "Master of Science in Computer Science",
-    duration: "September 2017 - April 2019",
-    desc: "Participated in the research of XXX and published 3 papers.",
-    descBullets: [
-      "1Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-      "2Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    ],
-  },
+  // {
+  //   id: 1,
+  //   schoolName: "TeachyourselfCS",
+  //   subHeader: "Master of Science in Computer Science",
+  //   duration: "September 2017 - April 2019",
+  //   desc: "Participated in the research of XXX and published 3 papers.",
+  //   descBullets: [
+  //     "1Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
+  //     "2Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  //   ],
+  // },
   {
     id: 2,
     schoolName: "St. Clair College",
-    subHeader: "Master of Science in Computer Science",
-    duration: "September 2017 - April 2019",
-    desc: "Participated in the research of XXX and published 3 papers.",
-    descBullets: [
-      "3Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
-      "4Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    ],
+    subHeader: "Robotics Programmer",
+    duration: "September 2019 - April 2021",
+    desc: "Ulitized C# to program ABB robots to perform repeatable tasks with precision.",
+    descBullets: ["Excelled at PLC (Programmable Logic Controller)"],
   },
   {
     id: 3,
     schoolName: "University Of Windsor",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2013 - April 2017",
-    desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    subHeader: "Biological Science",
+    duration: "September 2016 - April 2019",
+    desc: "Cultivated my concentration with long study hours.",
     descBullets: [
-      "5Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
+      "Participated in Students Offering Support (SOS) Program",
+      "Active part of Science Society",
     ],
   },
 ];

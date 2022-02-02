@@ -13,9 +13,10 @@ $ff-signature: "Waterfall", cursive;
 }
 %section-header {
   header {
+    width: 80%;
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    margin: 1rem auto;
     span {
       background-color: #fff;
       border-radius: 50%;
@@ -109,7 +110,11 @@ $ff-signature: "Waterfall", cursive;
   box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
 }
 %card-shadow {
-  box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.5);
+  box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
+  transition: box-shadow 0.15s ease;
+}
+%card-shadow-hover {
+  box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.7);
 }
 @mixin flex-center {
   display: flex;

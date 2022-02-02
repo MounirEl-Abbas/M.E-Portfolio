@@ -3,19 +3,20 @@ Config
 **********************/
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
-.navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
+.navbar-content, .about-content, .skills-content, .projects-content, .education-content {
   width: 92%;
   max-width: 35rem;
   margin: 0 auto;
 }
 
-.projects-content header, .pages .education-content header {
+.projects-content header, .education-content header {
+  width: 80%;
   display: flex;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
-.projects-content header span, .pages .education-content header span {
+.projects-content header span, .education-content header span {
   background-color: #fff;
   border-radius: 50%;
   color: #11cdef;
@@ -29,7 +30,7 @@ Config
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.projects-content header h2, .pages .education-content header h2 {
+.projects-content header h2, .education-content header h2 {
   font-size: 2rem;
 }
 
@@ -116,12 +117,17 @@ Config
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.project-card {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+.project-card, .education-card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 768px) {
-  .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .education-content {
     max-width: 50rem;
   }
   .about .about-content article {
@@ -130,13 +136,13 @@ Config
 }
 
 @media (min-width: 992px) {
-  .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .education-content {
     max-width: 55rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
+  .navbar-content, .about-content, .skills-content, .projects-content, .education-content {
     max-width: 60rem;
   }
 }
@@ -586,7 +592,7 @@ img {
 
 .projects {
   position: relative;
-  padding: 8rem 0;
+  padding: 8rem 0 0 0;
 }
 
 .projects-content header {
@@ -805,6 +811,77 @@ img {
   }
 }
 
+.education {
+  margin: 10rem auto;
+}
+
+.education-content header {
+  color: #11cdef;
+}
+
+.education-content .education-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.education-card {
+  margin: 2rem 2rem;
+  max-width: 30rem;
+  padding: 2rem 3rem;
+  color: #525f7f;
+}
+
+.education-card h3 {
+  color: #11cdef;
+  font-weight: 600;
+}
+
+.education-card h5 {
+  margin: 0.7rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #32325d;
+}
+
+.education-card span {
+  background-color: #11cdef;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.education-card p {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.education-card ul {
+  margin-left: 2rem;
+}
+
+.education-card ul li {
+  list-style-type: disc;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .education-card {
+    max-width: none;
+    width: 60rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .education-card {
+    width: 25rem;
+    margin: 2rem 1rem;
+  }
+}
+
 @keyframes show-navbar-collapse {
   0% {
     opacity: 0;
@@ -831,29 +908,6 @@ img {
 
 .pages {
   overflow: hidden;
-}
-
-.pages .education {
-  border: 1px solid green;
-  margin: 10rem 0;
-}
-
-.pages .education-content {
-  border: 1px solid blue;
-}
-
-.pages .education-content header {
-  border: 1px solid red;
-  color: #11cdef;
-}
-
-.pages .education-content .education-container {
-  border: 1px solid red;
-}
-
-.pages .education-content .education-container article {
-  width: 33%;
-  border: 1px solid orange;
 }
 
 .pages .contact {

@@ -6,15 +6,17 @@ const EducationCard = () => {
   return (
     <div className="education-container">
       {educationInfo.map(education => (
-        <article key={education.id}>
-          <h2>{education.schoolName}</h2>
-          <h4>{education.subHeader}</h4>
-          <p>{education.duration}</p>
+        <article className="education-card" key={education.id}>
+          <h3>{education.schoolName}</h3>
+          <h5>{education.subHeader}</h5>
+          <span>{education.duration}</span>
           <p>{education.desc}</p>
-          {education.descBullets.map(bullet => {
-            uniqueKey++;
-            return <p key={uniqueKey}>{bullet}</p>;
-          })}
+          <ul>
+            {education.descBullets.map(bullet => {
+              uniqueKey++;
+              return <li key={uniqueKey}>{bullet}</li>;
+            })}
+          </ul>
         </article>
       ))}
     </div>
