@@ -10,11 +10,11 @@
   z-index: -1;
   &::before {
     content: "";
-    width: 100%;
+    width: 120%;
     height: 10rem;
     background-color: #fff;
     position: absolute;
-    top: -8%;
+    top: -4%;
     transform: rotateZ(3deg);
     z-index: 0;
   }

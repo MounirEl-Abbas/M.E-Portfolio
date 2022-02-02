@@ -112,6 +112,14 @@ Config
   font-size: 1.2rem;
 }
 
+.project-card #btn-container a {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
 @media (min-width: 768px) {
   .navbar-content, .about-content, .skills-content, .projects-content, .pages .education-content {
     max-width: 50rem;
@@ -577,7 +585,6 @@ img {
 }
 
 .projects {
-  border: 1px solid green;
   position: relative;
   padding: 8rem 0;
 }
@@ -587,14 +594,154 @@ img {
 }
 
 .projects-content .projects-container {
-  border: 1px solid red;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
-.projects-content .projects-container article {
-  width: 60rem;
-  border: 1px solid orange;
+.project-card {
+  border-radius: 10px;
+  max-width: 21.5rem;
+  max-height: 50rem;
+  margin: 2rem auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-info {
+  color: #32325d;
+  padding: 0.5rem;
+}
+
+.project-card-info h3 {
+  margin-top: 0.2rem;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+.project-card-info h5 {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin: 0.2rem 0 0.7rem 0;
+  position: relative;
+}
+
+.project-card-info h5::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.project-card-info p {
+  color: #525f7f;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 0.5rem 0;
+}
+
+.project-card #btn-container {
+  padding: 0.3rem 0.4rem;
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.project-card #btn-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.4em 0.7em;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  will-change: transform;
+}
+
+.project-card #btn-container a:hover {
+  transform: translateY(-1px);
+}
+
+.project-card #btn-container a svg {
+  margin-right: 0.2rem;
+  position: relative;
+  top: 1px;
+}
+
+.project-card #btn-container a:first-of-type {
+  background-color: #2dce89;
+}
+
+.project-card #btn-container a:first-of-type:hover {
+  background-color: #26af74;
+}
+
+.project-card #btn-container a:last-child {
+  background-color: #1e1e1e;
+}
+
+.project-card #btn-container a:last-child:hover {
+  background-color: #1a1a1a;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-container figure {
+  height: 18rem;
+}
+
+.slider-container figure img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-container .otherImage,
+.slider-container .nextImage {
+  display: none;
+}
+
+.slider-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.slider-btns button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.slider-btns button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-btns button:first-of-type {
+  border-radius: 0 7px 0 0;
+}
+
+.slider-btns button:last-child {
+  border-radius: 7px 0 0 0;
+}
+
+.slider-btns button svg {
+  font-size: 1rem;
 }
 
 #projects-bg {
@@ -610,13 +757,52 @@ img {
 
 #projects-bg::before {
   content: "";
-  width: 100%;
+  width: 120%;
   height: 10rem;
   background-color: #fff;
   position: absolute;
-  top: -8%;
+  top: -4%;
   transform: rotateZ(3deg);
   z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    max-width: 50rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-card .project-content {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .project-card .project-content #btn-container {
+    justify-content: flex-end;
+  }
+  .project-card-info {
+    padding: 1rem 0.5rem;
+  }
+  .project-card-info h5 {
+    margin: 0.5rem 0 1rem 0;
+  }
+  .project-card-info p {
+    padding: 0.8rem 0;
+    line-height: 1.7;
+  }
+  .slider-container {
+    width: 40%;
+  }
+  .slider-container figure img {
+    border-radius: 10px 0 0 10px;
+  }
+  .slider-btns button:first-of-type {
+    border-radius: 0 5px 0 10px;
+  }
+  .slider-btns button:last-child {
+    border-radius: 5px 0 0 0;
+  }
 }
 
 @keyframes show-navbar-collapse {

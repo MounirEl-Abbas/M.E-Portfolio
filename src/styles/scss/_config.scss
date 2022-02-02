@@ -105,6 +105,18 @@ $ff-signature: "Waterfall", cursive;
   }
 }
 
+%button-shadow {
+  box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
+}
+%card-shadow {
+  box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.5);
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   %container-max-width {
     max-width: 50rem;
