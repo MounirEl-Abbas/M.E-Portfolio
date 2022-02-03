@@ -1,7 +1,7 @@
 import React from "react";
 //icons
 import { AiFillGithub, FaLinkedinIn, VscFilePdf, IoMdMail } from "../assets";
-import { footerInfo, socialLinks } from "../myInfo";
+import { socialLinks } from "../myInfo";
 
 const SocialsIcons = ({ IconsOnly }) => {
   return (
@@ -22,8 +22,8 @@ const SocialsIcons = ({ IconsOnly }) => {
           <FaLinkedinIn />
         </a>
         <a
-          href={`mailto:${footerInfo.email}`}
-          aria-label={`Send an Email to ${footerInfo.email}`}>
+          href={`mailto:${socialLinks.email}`}
+          aria-label={`Send an Email to ${socialLinks.email}`}>
           <IoMdMail />
         </a>
         {IconsOnly && (
