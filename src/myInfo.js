@@ -40,8 +40,11 @@ export const projects = [
     url: "https://www.mounirelabbas.com",
     github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
     images: [
-      "/images/projects/portfolio/portfolio-hero.webp",
-      "/images/projects/portfolio/portfolio-skills.webp",
+      "/images/projects/portfolio/lighthouse.webp",
+      "/images/projects/portfolio/hero.webp",
+      "/images/projects/portfolio/skills.webp",
+      "/images/projects/portfolio/projects.webp",
+      "/images/projects/portfolio/education.webp",
     ],
   },
 ];
