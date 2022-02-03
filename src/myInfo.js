@@ -18,6 +18,21 @@ export const projects = [
 
   {
     id: 2,
+    name: "Space Tourism",
+    subTitle: "Randomized quotes, sayings and more.",
+    description:
+      "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
+    url: "https://me-space-tourism.netlify.app/",
+    github: "https://github.com/MounirEl-Abbas/daily-inspiration",
+    images: [
+      "/images/projects/spaceTourism/hero.webp",
+      "/images/projects/spaceTourism/destination.webp",
+      "/images/projects/spaceTourism/crew.webp",
+      "/images/projects/spaceTourism/tech.webp",
+    ],
+  },
+  {
+    id: 3,
     name: "Portfolio",
     subTitle: "A little about me, and where to find me",
     description:
@@ -27,19 +42,6 @@ export const projects = [
     images: [
       "/images/projects/portfolio/portfolio-hero.webp",
       "/images/projects/portfolio/portfolio-skills.webp",
-    ],
-  },
-  {
-    id: 3,
-    name: "Space Tourims",
-    subTitle: "Randomized quotes, sayings and more.",
-    description:
-      "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
-    url: "https://me-time.netlify.app/",
-    github: "https://github.com/MounirEl-Abbas/daily-inspiration",
-    images: [
-      "/images/projects/dailyInspiration-png/dailyInspiration-hero.PNG",
-      "/images/projects/dailyInspiration-png/dailyInspiration-quotes.PNG",
     ],
   },
 ];
