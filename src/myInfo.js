@@ -1,3 +1,10 @@
+export const greetings = {
+  name: "Mounir El-Abbas",
+  title: "Hello, I'm Mounir",
+  description:
+    "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to becoming a well-rounded programmer.",
+};
+
 export const projects = [
   {
     id: 1,
@@ -15,15 +22,14 @@ export const projects = [
       "/images/projects/cityViewer/cityViewer-city.webp",
     ],
   },
-
   {
     id: 2,
     name: "Space Tourism",
-    subTitle: "Randomized quotes, sayings and more.",
+    subTitle: "Front-End Mentor FIGMA Design",
     description:
-      "Utilizing 9 different APIs, this website is never the same! On every refresh you will be inspired by quotes, images, affirmations and more!",
+      "This project is a clone of a FIGMA Design provided by Front-End Mentor. You can find a link to the project in the Github README. Created using React & SCSS.",
     url: "https://me-space-tourism.netlify.app/",
-    github: "https://github.com/MounirEl-Abbas/daily-inspiration",
+    github: "https://github.com/MounirEl-Abbas/space-tourism-FIGMA",
     images: [
       "/images/projects/spaceTourism/hero.webp",
       "/images/projects/spaceTourism/destination.webp",
@@ -34,9 +40,9 @@ export const projects = [
   {
     id: 3,
     name: "Portfolio",
-    subTitle: "A little about me, and where to find me",
+    subTitle: "View my work and where to find me.",
     description:
-      "Feel free to browse my projects and see what I'm capable of. Also do not hesitate to contact me, I'm very approachable!",
+      "This very website is a clone of a Portfolio Template. See github README for more info.",
     url: "https://www.mounirelabbas.com",
     github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
     images: [
@@ -49,17 +55,11 @@ export const projects = [
   },
 ];
 
-export const greetings = {
-  name: "Mounir El-Abbas",
-  title: "Hello, I'm Mounir",
-  description:
-    "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to becoming a well-rounded programmer.",
-};
-
 export const socialLinks = {
   github: "https://github.com/MounirEl-Abbas",
   linkedin: "https://www.linkedin.com/in/mounir-el-abbas-04b733212/",
   resume: "https://mounirelabbas.com/static/media/ME-Resume.f22c3498.pdf",
+  email: "eamounir1@gmail.com",
 };
 
 export const skillsSection = {
@@ -117,7 +117,7 @@ export const educationInfo = [
   // {
   //   id: 1,
   //   schoolName: "TeachyourselfCS",
-  //   subHeader: "Master of Science in Computer Science",
+  //   subHeader: "",
   //   duration: "September 2017 - April 2019",
   //   desc: "Participated in the research of XXX and published 3 papers.",
   //   descBullets: [
@@ -153,5 +153,4 @@ export const footerInfo = {
     "Discuss a project, collaborate or just want to say hi? Feel free to contact me, I'm very approachable!",
   role: "I'm a Front-End Developer | ReactJS | Typescript",
   location: "Ontario, Canada",
-  email: "eamounir1@gmail.com",
 };
