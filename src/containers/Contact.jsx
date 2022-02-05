@@ -13,7 +13,7 @@ const Contact = () => {
     <footer className="contact">
       <div className="contact-content">
         <figure>
-          <img src={headshot} alt="Photo of Mounir El-Abbas" />
+          <img src={headshot} alt="Headshot of Mounir El-Abbas" />
         </figure>
         <div className="contact-info">
           <h3>{title}</h3>

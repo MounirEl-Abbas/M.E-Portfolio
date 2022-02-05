@@ -73,7 +73,7 @@ const ProjectSlider = ({ projectID }) => {
               <figure className={position} key={imageIndex}>
                 <img
                   src={image}
-                  alt="Image taken from this project's live demo"
+                  alt="Screenshot taken from this project's live demo"
                 />
               </figure>
             );
