@@ -35,7 +35,7 @@ const SocialsIcons = ({ IconsOnly }) => {
             href={socialLinks.resume}
             target="_blank"
             rel="noreferrer"
-            id="resume-icon">
+            name="open resume in pdf">
             <VscFilePdf />
           </a>
         )}
