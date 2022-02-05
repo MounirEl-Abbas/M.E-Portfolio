@@ -7,7 +7,10 @@ export const OpenMenuBtn = () => {
   const { setIsMenuOpen } = useAppContext();
 
   return (
-    <button id="open-menu-btn" onClick={() => setIsMenuOpen(true)}>
+    <button
+      id="open-menu-btn"
+      name="open-menu-button"
+      onClick={() => setIsMenuOpen(true)}>
       <AiOutlineMenu />
     </button>
   );
@@ -17,7 +20,10 @@ export const CloseMenuBtn = () => {
   const { setIsMenuOpen } = useAppContext();
 
   return (
-    <button id="close-menu-btn" onClick={() => setIsMenuOpen(false)}>
+    <button
+      id="close-menu-btn"
+      name="close-menu-button"
+      onClick={() => setIsMenuOpen(false)}>
       <ImCross />
     </button>
   );
