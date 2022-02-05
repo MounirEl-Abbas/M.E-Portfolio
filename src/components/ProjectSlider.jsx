@@ -87,7 +87,6 @@ const ProjectSlider = ({ projectID }) => {
           className="prev"
           value="decrement"
           name="last-slide"
-          id={projectID}
           onClick={e => handleSlider(e, projectID)}>
           <FaChevronLeft />
         </button>
@@ -95,7 +94,6 @@ const ProjectSlider = ({ projectID }) => {
           className="next"
           value="increment"
           name="next-slide"
-          id={projectID}
           onClick={e => handleSlider(e, projectID)}>
           <FaChevronRight />
         </button>
