@@ -1,10 +1,15 @@
 import React from "react";
-import { skillsSection } from "../myInfo";
 
+//Info
+import { skillsSection } from "../myInfo";
+//Icons
 import { SiRedux, MdWeb, IoIosBrowsers } from "../assets";
 
 const Skills = () => {
+  //Seperate keys for <ul>
+  //Software Skills
   let uniqueKey1 = 0;
+  //Additional skills (descritive)
   let uniqueKey2 = 999;
   return (
     <section className="skills">
@@ -15,20 +20,28 @@ const Skills = () => {
         </header>
         <div>
           <figure>
-            <img src="./images/illustrations/skills.png" alt="" />
+            <img
+              src="./images/illustrations/skills.png"
+              alt="Illustration of a developer on a computer"
+            />
           </figure>
 
           <div className="lists-container">
+            {/* List of software skills */}
             <ul>
               {skillsSection.softwareSkills.map(skill => {
                 uniqueKey1++;
                 return (
                   <li key={uniqueKey1} title={skill.skillName}>
-                    <img src={skill.skillIcon} alt="" />
+                    <img
+                      src={skill.skillIcon}
+                      alt={`Icon of ${skill.skillName}`}
+                    />
                   </li>
                 );
               })}
             </ul>
+            {/* List of descriptive skills */}
             <ul>
               {skillsSection.skills.map(skill => {
                 uniqueKey2--;
