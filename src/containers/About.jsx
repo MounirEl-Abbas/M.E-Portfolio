@@ -1,5 +1,9 @@
 import React from "react";
+
+//Components
 import SocialsIcons from "../components/SocialsIcons";
+
+//Info
 import { greetings } from "../myInfo";
 
 const About = () => {
@@ -24,7 +28,10 @@ const About = () => {
           <SocialsIcons IconsOnly={false} />
         </article>
         <figure>
-          <img src="./images/illustrations/pair.png" alt="" />
+          <img
+            src="./images/illustrations/pair.png"
+            alt="Pair programming illustration"
+          />
         </figure>
       </div>
     </section>
@@ -32,15 +39,3 @@ const About = () => {
 };
 
 export default About;
-
-/* <div className="quotes">
-          <blockquote>
-            “First, solve the problem. Then, write the code.”
-            <cite>-John Johnson</cite>
-          </blockquote>
-          <div id="quote-sep"></div>
-          <blockquote>
-            "Man is not disturbed by things, but of the views he takes of them."
-            <cite>-Epictetus</cite>
-          </blockquote>
-        </div> */
