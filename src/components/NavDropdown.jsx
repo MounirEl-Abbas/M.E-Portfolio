@@ -1,9 +1,13 @@
 import React from "react";
-import resume from "../assets/ME-Resume.pdf";
+
+//Context
+import { useAppContext } from "../context/AppContext";
+//Components
+import { CloseMenuBtn } from "./MenuBtn";
 //icons
 import { AiFillGithub, FaLinkedinIn, VscFilePdf } from "../assets";
-import { useAppContext } from "../context/AppContext";
-import { CloseMenuBtn } from "./MenuBtn";
+//Resume
+import resume from "../assets/ME-Resume.pdf";
 
 const NavDropdown = () => {
   const { isMenuOpen } = useAppContext();
@@ -18,6 +22,7 @@ const NavDropdown = () => {
         <CloseMenuBtn />
       </div>
 
+      {/* Dropdown panel */}
       <div>
         <ul>
           <li>
