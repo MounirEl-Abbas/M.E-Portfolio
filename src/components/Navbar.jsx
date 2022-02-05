@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 
 //Components
 import { OpenMenuBtn } from "./MenuBtn";
+//Icons
 import SocialsIcons from "./SocialsIcons";
 
 const Navbar = () => {
   const [showNavbarThreshold, setShowNavbarThreshold] = useState(false);
 
+  //After 150px scrollY, navbar becomes fixed (top)
   useEffect(() => {
     window.onscroll = () => {
       if (window.scrollY < 150) {
