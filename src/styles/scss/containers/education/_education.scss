@@ -4,7 +4,6 @@
   &-content {
     @extend %container-max-width;
     @extend %section-header;
-    // max-width: 90rem;
 
     header {
       color: #11cdef;
@@ -17,6 +16,7 @@
   }
 }
 
+/* Each card */
 .education-card {
   @extend %card-shadow;
   margin: 2rem 1rem;

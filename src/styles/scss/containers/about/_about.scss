@@ -6,9 +6,6 @@
 
   &-content {
     @extend %container-max-width;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     /* About Page Text */
     article {
       color: #fff;
@@ -57,6 +54,7 @@
   }
 }
 
+/* background gradient + "bubbles" for about-section */
 @import "./partials/hero-bg";
 
 @media (min-width: 992px) {
