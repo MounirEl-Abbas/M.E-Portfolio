@@ -1,9 +1,15 @@
+import React from "react";
+
+//Components
 import ProjectCard from "../components/ProjectCard";
+//Icons
 import { BiCodeAlt } from "../assets";
+
 const Projects = () => {
   return (
     <section className="projects">
-      <div id="projects-bg"></div>
+      {/* Projects-Section BG gradient */}
+      <div id="projects-bg"> </div>
       <div className="projects-content">
         <header>
           <span>
