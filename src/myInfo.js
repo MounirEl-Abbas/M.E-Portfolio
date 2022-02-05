@@ -5,56 +5,6 @@ export const greetings = {
     "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to becoming a well-rounded programmer.",
 };
 
-export const projects = [
-  {
-    id: 1,
-    name: "City Viewer",
-    subTitle: "Browse Countries to find real-time data on a city",
-    description:
-      "Website capable of browsing countries to see real-time events offered by ticketmaster, as well as the current weather, and of course, beautiful images. Created using Create-React-App, Redux, SCSS and React-Router v6",
-    url: "https://pseudo-travel-app.netlify.app/",
-    github: "https://github.com/MounirEl-Abbas/Travel-portfolio-project",
-    images: [
-      "/images/projects/cityViewer/cityViewer-hero.webp",
-      "/images/projects/cityViewer/cityViewer-pricing.webp",
-      "/images/projects/cityViewer/cityViewer-countries.webp",
-      "/images/projects/cityViewer/cityViewer-cities.webp",
-      "/images/projects/cityViewer/cityViewer-city.webp",
-    ],
-  },
-  {
-    id: 2,
-    name: "Space Tourism",
-    subTitle: "Front-End Mentor FIGMA Design",
-    description:
-      "This project is a clone of a FIGMA Design provided by Front-End Mentor. You can find a link to the project in the Github README. Created using React & SCSS.",
-    url: "https://me-space-tourism.netlify.app/",
-    github: "https://github.com/MounirEl-Abbas/space-tourism-FIGMA",
-    images: [
-      "/images/projects/spaceTourism/hero.webp",
-      "/images/projects/spaceTourism/destination.webp",
-      "/images/projects/spaceTourism/crew.webp",
-      "/images/projects/spaceTourism/tech.webp",
-    ],
-  },
-  {
-    id: 3,
-    name: "Portfolio",
-    subTitle: "View my work and where to find me.",
-    description:
-      "This very website is a clone of a Portfolio Template. See github README for more info.",
-    url: "https://www.mounirelabbas.com",
-    github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
-    images: [
-      "/images/projects/portfolio/lighthouse.webp",
-      "/images/projects/portfolio/hero.webp",
-      "/images/projects/portfolio/skills.webp",
-      "/images/projects/portfolio/projects.webp",
-      "/images/projects/portfolio/education.webp",
-    ],
-  },
-];
-
 export const socialLinks = {
   github: "https://github.com/MounirEl-Abbas",
   linkedin: "https://www.linkedin.com/in/mounir-el-abbas-04b733212/",
@@ -64,7 +14,7 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "What I do",
-  subTitle: "Develop responsive, cross-compatible websites accessible to all",
+  subTitle: "Develop responsive, browser-compatible websites accessible to all",
   skills: [
     {
       icon: "MdWeb",
@@ -112,6 +62,56 @@ export const skillsSection = {
     },
   ],
 };
+
+export const projects = [
+  {
+    id: 1,
+    name: "City Viewer",
+    subTitle: "Browse Countries to find real-time data on a city",
+    description:
+      "Website capable of browsing countries to see real- time events offered by ticketmaster, as well as the current weather, and of course, beautiful images. See Github README for list of APIs used.Created using Create-React-App, Redux, SCSS and React-Router v6",
+    url: "https://pseudo-travel-app.netlify.app/",
+    github: "https://github.com/MounirEl-Abbas/Travel-portfolio-project",
+    images: [
+      "/images/projects/cityViewer/cityViewer-hero.webp",
+      "/images/projects/cityViewer/cityViewer-pricing.webp",
+      "/images/projects/cityViewer/cityViewer-countries.webp",
+      "/images/projects/cityViewer/cityViewer-cities.webp",
+      "/images/projects/cityViewer/cityViewer-city.webp",
+    ],
+  },
+  {
+    id: 2,
+    name: "Space Tourism",
+    subTitle: "Front-End Mentor FIGMA Design",
+    description:
+      "This project is a clone of a FIGMA Design provided by Front-End Mentor. You can find a link to the project in the Github README. Created using React & SCSS.",
+    url: "https://me-space-tourism.netlify.app/",
+    github: "https://github.com/MounirEl-Abbas/space-tourism-FIGMA",
+    images: [
+      "/images/projects/spaceTourism/hero.webp",
+      "/images/projects/spaceTourism/destination.webp",
+      "/images/projects/spaceTourism/crew.webp",
+      "/images/projects/spaceTourism/tech.webp",
+    ],
+  },
+  {
+    id: 3,
+    name: "Portfolio",
+    subTitle: "View my work and where to find me.",
+    description:
+      "This very website is a clone of a Portfolio Template. See github README for more info.",
+    url: "https://www.mounirelabbas.com",
+    github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
+    images: [
+      "/images/projects/portfolio/lighthouse.webp",
+      "/images/projects/portfolio/hero.webp",
+      "/images/projects/portfolio/skills.webp",
+      "/images/projects/portfolio/projects.webp",
+      "/images/projects/portfolio/education.webp",
+    ],
+  },
+];
 
 export const educationInfo = [
   // {
