@@ -1,11 +1,14 @@
 import React from "react";
+
+//info
+import { socialLinks } from "../myInfo";
 //icons
 import { AiFillGithub, FaLinkedinIn, VscFilePdf, IoMdMail } from "../assets";
-import { socialLinks } from "../myInfo";
 
 const SocialsIcons = ({ IconsOnly }) => {
   return (
     <section className="socials">
+      {/* All Socials Icons share the following: */}
       <div id="colored-socials">
         <a
           href={`${socialLinks.github}`}
@@ -26,6 +29,7 @@ const SocialsIcons = ({ IconsOnly }) => {
           aria-label={`Send an Email to ${socialLinks.email}`}>
           <IoMdMail />
         </a>
+        {/* Footer social icons ONLY*/}
         {IconsOnly && (
           <a
             href={socialLinks.resume}
@@ -36,6 +40,7 @@ const SocialsIcons = ({ IconsOnly }) => {
           </a>
         )}
       </div>
+      {/* Hero social Icons ONLY */}
       {!IconsOnly && (
         <div>
           <a
