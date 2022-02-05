@@ -86,14 +86,14 @@ const ProjectSlider = ({ projectID }) => {
         <button
           className="prev"
           value="decrement"
-          name="last-slide"
+          aria-label="last-slide"
           onClick={e => handleSlider(e, projectID)}>
           <FaChevronLeft />
         </button>
         <button
           className="next"
           value="increment"
-          name="next-slide"
+          aria-label="next-slide"
           onClick={e => handleSlider(e, projectID)}>
           <FaChevronRight />
         </button>
