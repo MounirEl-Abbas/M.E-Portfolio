@@ -9,7 +9,7 @@ export const OpenMenuBtn = () => {
   return (
     <button
       id="open-menu-btn"
-      name="open-menu-button"
+      aria-label="open-menu-button"
       onClick={() => setIsMenuOpen(true)}>
       <AiOutlineMenu />
     </button>
@@ -22,7 +22,7 @@ export const CloseMenuBtn = () => {
   return (
     <button
       id="close-menu-btn"
-      name="close-menu-button"
+      aria-label="close-menu-button"
       onClick={() => setIsMenuOpen(false)}>
       <ImCross />
     </button>
