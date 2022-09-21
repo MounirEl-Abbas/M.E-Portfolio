@@ -66,6 +66,21 @@ export const skillsSection = {
 export const projects = [
   {
     id: 1,
+    name: "Run Tracker",
+    subTitle: "Track your runs and visualize your improvement!",
+    description:
+      "Track your jogs and get instant feedback including run pace, average distance covered, and total distance ran in the past year.",
+    url: "https://me-run-tracker.herokuapp.com/",
+    github: "https://github.com/MounirEl-Abbas/runTracker",
+    images: [
+      "/images/projects/runTracker/runTracker-stats.webp",
+      "/images/projects/runTracker/runTracker-runs.webp",
+      "/images/projects/runTracker/runTracker-login.webp",
+      "/images/projects/runTracker/runTracker-landing.webp",
+    ],
+  },
+  {
+    id: 2,
     name: "City Viewer",
     subTitle: "Browse Countries to find real-time data on a city",
     description:
@@ -81,7 +96,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Space Tourism",
     subTitle: "Front-End Mentor FIGMA Design",
     description:
@@ -93,22 +108,6 @@ export const projects = [
       "/images/projects/spaceTourism/destination.webp",
       "/images/projects/spaceTourism/crew.webp",
       "/images/projects/spaceTourism/tech.webp",
-    ],
-  },
-  {
-    id: 3,
-    name: "Portfolio",
-    subTitle: "View my work and where to find me.",
-    description:
-      "This very website is a clone of a Portfolio Template. See github README for more info.",
-    url: "https://www.mounirelabbas.com",
-    github: "https://github.com/MounirEl-Abbas/M.E-Portfolio",
-    images: [
-      "/images/projects/portfolio/lighthouse.webp",
-      "/images/projects/portfolio/hero.webp",
-      "/images/projects/portfolio/skills.webp",
-      "/images/projects/portfolio/projects.webp",
-      "/images/projects/portfolio/education.webp",
     ],
   },
 ];
