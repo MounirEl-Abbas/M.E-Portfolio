@@ -11,15 +11,15 @@
     align-items: center;
 
     figure {
-      width: 10rem;
-      height: 12rem;
-      border-radius: 50%;
-      overflow: hidden;
-      background-color: #0465e4;
+      //portrait dimensions
+      width: 159px;
+      height: 212.375px;
+
+      box-shadow: 3px 3px 15px  #1e1e1e;
       margin-bottom: 1rem;
       img {
         width: 100%;
-        height: 100%;
+        // height: 100%;
         object-fit: cover;
       }
     }

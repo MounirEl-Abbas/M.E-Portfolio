@@ -8,7 +8,7 @@ export const greetings = {
 export const socialLinks = {
   github: "https://github.com/MounirEl-Abbas",
   linkedin: "https://www.linkedin.com/in/mounir-el-abbas-04b733212/",
-  resume: "https://mounirelabbas.com/static/media/ME-Resume.f22c3498.pdf",
+  resume: "/me-resume.pdf",
   email: "eamounir1@gmail.com",
 };
 
@@ -26,7 +26,7 @@ export const skillsSection = {
     },
     {
       icon: "IoIosBrowsers",
-      info: "Mindful of browser-compatability as well as persons with disability",
+      info: "Mindful of browser-compatibility as well as persons with disability",
     },
   ],
 
@@ -129,7 +129,7 @@ export const educationInfo = [
     schoolName: "St. Clair College",
     subHeader: "Robotics Programmer",
     duration: "September 2019 - April 2021",
-    desc: "Ulitized C# to program ABB robots to perform repeatable tasks with precision.",
+    desc: "Used C# to program ABB robots to perform repeatable tasks with precision.",
     descBullets: ["Excelled at PLC (Programmable Logic Controller)"],
   },
   {
@@ -146,10 +146,10 @@ export const educationInfo = [
 ];
 
 export const footerInfo = {
-  headshot: "/images/me-headshot.webp",
+  headshot: "/images/me-headshot.jpg",
   title: "Reach out to me!",
   subtitle:
     "Discuss a project, collaborate or just want to say hi? Feel free to contact me, I'm very approachable!",
-  role: "I'm a Front-End Developer | ReactJS | Typescript",
+  role: "I'm a Front-End Developer | React | Node.js",
   location: "Ontario, Canada",
 };
