@@ -7,7 +7,7 @@ import { CloseMenuBtn } from "./MenuBtn";
 //icons
 import { AiFillGithub, FaLinkedinIn, VscFilePdf } from "../assets";
 //Resume
-import resume from "../assets/me-resume.pdf";
+import { socialLinks } from "../myInfo";
 
 const NavDropdown = () => {
   const { isMenuOpen } = useAppContext();
@@ -46,7 +46,7 @@ const NavDropdown = () => {
             </a>
           </li>
           <li>
-            <a href={resume} target="_blank" rel="noreferrer">
+            <a href={socialLinks.resume} target="_blank" rel="noreferrer">
               <VscFilePdf />
               <span>Resume</span>
             </a>
