@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 
 /* This context is mainly used for navbar purposes
 >Conditionally display Burger-menu or X btn
->Conditionnaly display Navbar dropdown panel
+>Conditionally display Navbar dropdown panel
 */
 
 //Create Context

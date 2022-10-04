@@ -400,10 +400,14 @@ Hero Page
 }
 
 .about-content article p {
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 1.25rem;
-  padding: 1.75rem 0 3rem 0;
+  padding: 0.7rem 0 1rem 0;
   width: 100%;
+}
+
+.about-content article p:last-of-type {
+  padding-bottom: 3rem;
 }
 
 .about-content figure {

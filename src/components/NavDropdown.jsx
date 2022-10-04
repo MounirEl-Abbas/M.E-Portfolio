@@ -7,7 +7,7 @@ import { CloseMenuBtn } from "./MenuBtn";
 //icons
 import { AiFillGithub, FaLinkedinIn, VscFilePdf } from "../assets";
 //Resume
-import resume from "../assets/ME-Resume.pdf";
+import resume from "../assets/me-resume.pdf";
 
 const NavDropdown = () => {
   const { isMenuOpen } = useAppContext();

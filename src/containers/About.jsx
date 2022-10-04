@@ -24,7 +24,10 @@ const About = () => {
       <div className="about-content">
         <article>
           <h1>{greetings.title}</h1>
-          <p>{greetings.description}</p>
+          <p>{greetings.descriptionHeader}</p>
+          <p>{greetings.descriptionBodyIntro}</p>
+          {/* <p>{greetings.descriptionBody}</p> */}
+          <p>{greetings.descriptionFooter}</p>
           <SocialsIcons IconsOnly={false} />
         </article>
         <figure>

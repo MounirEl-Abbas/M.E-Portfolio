@@ -1,8 +1,13 @@
 export const greetings = {
   name: "Mounir El-Abbas",
   title: "Hello, I'm Mounir",
-  description:
-    "A self-motivated Front-End Web Developer enthusiastic to apply my obsessive attention to detail to build web applications with JavaScript / ReactJS / Redux / SCSS and some other cool libraries and frameworks I've experimented with on my mission to becoming a well-rounded programmer.",
+  descriptionHeader: "I'm a robot programmer but I've broadened the scope.",
+  descriptionBodyIntro:
+    "I was first exposed to programming with the intention of getting a robot to repeat a task efficiently and with precision.",
+  descriptionBody:
+    "I was captivated by the idea of programming something once, and have it repeat, as per my instructions, indefinitely.",
+  descriptionFooter:
+    "Soon I began to explore more ways to automate tasks, and eventually ditched the robot completely!",
 };
 
 export const socialLinks = {
@@ -48,17 +53,16 @@ export const skillsSection = {
       skillIcon: "/images/skills/react.webp",
     },
     {
-      skillName: "SASS",
-      skillIcon: "/images/skills/sass.webp",
+      skillName: "Node.js",
+      skillIcon: "/images/skills/node.webp",
     },
-
     {
       skillName: "Git",
       skillIcon: "/images/skills/git.webp",
     },
     {
-      skillName: "TypeScript",
-      skillIcon: "/images/skills/typescript.webp",
+      skillName: "SASS",
+      skillIcon: "/images/skills/sass.webp",
     },
   ],
 };
@@ -69,7 +73,7 @@ export const projects = [
     name: "Run Tracker",
     subTitle: "Track your runs and visualize your improvement!",
     description:
-      "Track your jogs and get instant feedback including run pace, average distance covered, and total distance ran in the past year.",
+      "Track your jogs and get instant feedback including run pace, average distance covered, and total distance ran in the past year. Created using: React | Node.js | Express | MongoDB | Styled-components | Context API",
     url: "https://me-run-tracker.herokuapp.com/",
     github: "https://github.com/MounirEl-Abbas/runTracker",
     images: [
@@ -84,7 +88,7 @@ export const projects = [
     name: "City Viewer",
     subTitle: "Browse Countries to find real-time data on a city",
     description:
-      "Website capable of browsing countries to see real- time events offered by ticketmaster, as well as the current weather, and of course, beautiful images. See Github README for list of APIs used.Created using Create-React-App, Redux, SCSS and React-Router v6",
+      "Website capable of browsing countries to see real- time events offered by ticketmaster, as well as the current weather, and of course, beautiful images. See Github README for list of APIs used.Created using Create-React-App, Redux, SCSS and React-Router v6.",
     url: "https://pseudo-travel-app.netlify.app/",
     github: "https://github.com/MounirEl-Abbas/Travel-portfolio-project",
     images: [
@@ -100,7 +104,7 @@ export const projects = [
     name: "Space Tourism",
     subTitle: "Front-End Mentor FIGMA Design",
     description:
-      "This project is a clone of a FIGMA Design provided by Front-End Mentor. You can find a link to the project in the Github README. Created using React & SCSS.",
+      "This project is a clone of a FIGMA Design provided by Front-End Mentor. You can find their link to the project in the Github README. Created using React & SCSS.",
     url: "https://me-space-tourism.netlify.app/",
     github: "https://github.com/MounirEl-Abbas/space-tourism-FIGMA",
     images: [
